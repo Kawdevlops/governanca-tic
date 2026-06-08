@@ -1,0 +1,195 @@
+# ==================== Variáveis de Ambiente ====================
+# Arquivos de variáveis de ambiente (never commit!)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+*.env
+
+# Mas mantenha o exemplo para outros desenvolvedores
+! .env.example
+! .env.local.example
+
+# ==================== Docker e Containers ====================
+# Imagens Docker construídas (não uploadar imagens)
+*.tar
+*.img
+*.docker-image
+
+# Logs do Docker
+docker-compose*.log
+*.log
+
+# Volumes Docker local (dados persistentes)
+mariadb_data/
+docker-data/
+volumes/
+data/
+db-data/
+.airflow-data/
+.bookstack-data/
+.fastapi-data/
+.mariadb-data/
+.neo4j-data/
+.nginx-data/
+
+# Cache do Docker
+.docker/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos temporários do Docker
+.tmp
+*.tmp
+temp/
+
+# ==================== Apache Airflow ====================
+# Logs do Airflow
+airflow/logs/
+airflow-logs/
+logs/airflow/
+
+# Database local do Airflow (sqlite)
+airflow.db
+*.airflow.db
+
+# Ridge/serialized do Airflow
+airflow/serialized_dags/
+
+# ==================== Bookstack ====================
+bookstack/config/.migrations
+bookstack/config/php/**
+bookstack/config/nginx/**
+bookstack/config/www/**
+bookstack/config/www/framework/cache/**
+bookstack/config/www/framework/sessions/**
+bookstack/config/www/framework/views/**
+bookstack/config/www/storage/logs/**
+bookstack/config/www/storage/framework/cache/**
+bookstack/config/www/storage/framework/sessions/**
+bookstack/config/www/storage/framework/views/**
+
+# Uploads do Bookstack (imagens, PDFs)
+bookstack/uploads/
+bookstack-storage/
+storage/uploads/
+
+# Cache do Bookstack
+bookstack/cache/
+storage/cache/
+
+# Logs do Bookstack
+bookstack/storage/logs/
+storage/logs/
+
+# ==================== FastAPI ====================
+# Ambiente Python virtual
+venv/
+.env/
+.venv/
+env/
+pythonenv/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Build do Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Testes do Python
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# Migrations do FastAPI (SQLAlchemy)
+# (opcional: se quer ignorar migrations geradas)
+# migrations/versions/*.pyc
+
+# ==================== MariaDB ====================
+# Dados do MariaDB
+mariadb-data/
+mariadb_data/
+mysql-data/
+db-data/
+database/
+
+# Logs do MariaDB
+mariadb/logs/
+mysql/logs/
+*.log
+
+# Backups do banco (opcional - ignorar se não quer versionar)
+backups/
+*.sql
+*.bak
+*.dump
+
+# ==================== Neo4j ====================
+# Dados do Neo4j
+neo4j-data/
+neo4j/storage/
+data/dbs/
+data/logs/
+neo4j/data/
+
+# Logs do Neo4j
+neo4j/logs/
+*.log
+
+# Backup do Neo4j
+neo4j/backups/
+backups/neo4j/
+
+# ==================== Nginx ====================
+# Logs do Nginx
+nginx/logs/
+nginx-log/
+logs/nginx/
+*.log
+
+# Cache do Nginx
+nginx/cache/
+proxy_cache/
+
+# Configs temporárias
+nginx/conf.tmp
+*.conf.tmp
+
+# ==================== Geral ====================
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operacional
+.DS_Store  # Mac
+Thumbs.db  # Windows
+
+# Node_modules (se usar algum frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Arquivos gerados automaticamente
+generated/
+output/
+dist/
+
+# Chaves e certificados (nunca commit!)
+*.key
+*.pem
+certificates/
+keys/

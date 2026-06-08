@@ -1,0 +1,50 @@
+norma,artigo,sigla,nome,tipo,pertence_a
+Decreto nº 65.089/2026,"Art. 3º, I; Art. 4º",GAB,Gabinete do Secretário,Gabinete,SMSUB
+Decreto nº 65.089/2026,"Art. 3º, II, a; Art. 5º",COPURB,Coordenadoria de Posturas Urbanas,Coordenadoria,SMSUB
+Decreto nº 65.089/2026,"Art. 3º, II, b; Art. 6º",CDUOS,Coordenadoria de Uso e Ocupação do Solo,Coordenadoria,SMSUB
+Decreto nº 65.089/2026,"Art. 3º, II, c; Art. 7º",DZU,Coordenadoria de Zeladoria Urbana,Coordenadoria,SMSUB
+Decreto nº 65.089/2026,"Art. 3º, II, d; Art. 8º",CVIAS,Coordenadoria de Vias Públicas,Coordenadoria,SMSUB
+Decreto nº 65.089/2026,"Art. 3º, II, e; Art. 9º",CLIMP,Coordenadoria de Limpeza Urbana,Coordenadoria,SMSUB
+Decreto nº 65.089/2026,"Art. 3º, II, f; Art. 10",COGEL,Coordenadoria de Licitações e Contratos,Coordenadoria,SMSUB
+Decreto nº 65.089/2026,"Art. 3º, II, g; Art. 11",COTIC,Coordenadoria de Tecnologia da Informação e Comunicação,Coordenadoria,SMSUB
+Decreto nº 65.089/2026,"Art. 3º, II, h; Art. 12",COGEP,Coordenadoria de Gestão de Pessoas,Coordenadoria,SMSUB
+Decreto nº 65.089/2026,"Art. 3º, II, i; Art. 13",CAF,Coordenadoria de Administração e Finanças,Coordenadoria,SMSUB
+Decreto nº 65.089/2026,"Art. 3º, II, j; Art. 14",CSO,Coordenadoria de Serviços e Obras,Coordenadoria,SMSUB
+Decreto nº 65.089/2026,"Art. 3º, II, k; Art. 15",SEAT,Secretaria Executiva de Articulação Territorial,Secretaria Executiva,SMSUB
+Decreto nº 65.089/2026,"Art. 4º, I",ASCOM,Assessoria de Comunicação,Assessoria,GAB
+Decreto nº 65.089/2026,"Art. 4º, II",AJ,Assessoria Jurídica,Assessoria,GAB
+Decreto nº 65.089/2026,"Art. 4º, III",AT,Assessoria Técnica,Assessoria,GAB
+Decreto nº 65.089/2026,"Art. 4º, IV",ACI,Assessoria de Controle Interno,Assessoria,GAB
+Decreto nº 65.089/2026,"Art. 4º, V",ASPLAN,Assessoria de Planejamento,Assessoria,GAB
+Decreto nº 65.089/2026,"Art. 5º, I",PSIU,Divisão de Silêncio Urbano,Divisão,COPURB
+Decreto nº 65.089/2026,"Art. 5º, II",DIFIS,Divisão de Fiscalização Urbana,Divisão,COPURB
+Decreto nº 65.089/2026,"Art. 5º, III",DIFIL,Divisão de Fiscalização de Limpeza Urbana,Divisão,COPURB
+Decreto nº 65.089/2026,"Art. 6º, I",DSPM,Divisão de Sistemas de Posturas Municipais,Divisão,CDUOS
+Decreto nº 65.089/2026,"Art. 6º, II",DLIC,Divisão de Licenciamento,Divisão,CDUOS
+Decreto nº 65.089/2026,"Art. 6º, III",DG,Divisão de Gerenciamento do Uso do Espaço Público,Divisão,CDUOS
+Decreto nº 65.089/2026,"Art. 7º, I",DCPVU,Divisão de Conservação de Pavimentos Viários Urbanos,Divisão,DZU
+Decreto nº 65.089/2026,"Art. 7º, II",DDREN,Divisão de Drenagem,Divisão,DZU
+Decreto nº 65.089/2026,"Art. 7º, III",DAV,Divisão de Áreas Verdes,Divisão,DZU
+Decreto nº 65.089/2026,"Art. 7º, IV",DZP,Divisão de Zeladoria Pública,Divisão,DZU
+Decreto nº 65.089/2026,"Art. 7º, V",DPAI,Divisão de Paisagismo,Divisão,DZU
+Decreto nº 65.089/2026,"Art. 8º, I",CONVIAS,Departamento de Controle de Uso de Vias Públicas,Departamento,CVIAS
+Decreto nº 65.089/2026,"Art. 8º, I, a",DAIU,Divisão de Autorizações de Infraestrutura Urbana,Divisão,CONVIAS
+Decreto nº 65.089/2026,"Art. 8º, I, b",DMIU,Divisão de Monitoramento de Infraestrutura Urbana,Divisão,CONVIAS
+Decreto nº 65.089/2026,"Art. 8º, II",CONSEMAVI,Departamento de Conservação e Manutenção da Malha Viária,Departamento,CVIAS
+Decreto nº 65.089/2026,"Art. 8º, II, a",DEMV,Divisão de Execução da Malha Viária,Divisão,CONSEMAVI
+Decreto nº 65.089/2026,"Art. 8º, II, b",DPMV,Divisão de Projetos da Malha Viária,Divisão,CONSEMAVI
+Decreto nº 65.089/2026,"Art. 9º, I",DGCLU,Divisão de Gestão de Contratos de Limpeza Urbana,Divisão,CLIMP
+Decreto nº 65.089/2026,"Art. 9º, II",DOLU,Divisão de Operações de Limpeza Urbana,Divisão,CLIMP
+Decreto nº 65.089/2026,"Art. 10, I",DL,Divisão de Licitações,Divisão,COGEL
+Decreto nº 65.089/2026,"Art. 10, II",DCON,Divisão de Contratos,Divisão,COGEL
+Decreto nº 65.089/2026,"Art. 11, I",DIS,Divisão de Infraestrutura e Suporte,Divisão,COTIC
+Decreto nº 65.089/2026,"Art. 11, II",DSS,Divisão de Sistemas e Soluções,Divisão,COTIC
+Decreto nº 65.089/2026,"Art. 11, III",DGTIC,Divisão de Governança de Tecnologia da Informação e Comunicação,Divisão,COTIC
+Decreto nº 65.089/2026,"Art. 12, I",DAP,Divisão de Administração de Pessoal,Divisão,COGEP
+Decreto nº 65.089/2026,"Art. 12, II",DPD,Divisão de Planejamento e Desenvolvimento,Divisão,COGEP
+Decreto nº 65.089/2026,"Art. 13, I",CADM,Coordenação de Administração,Coordenação,CAF
+Decreto nº 65.089/2026,"Art. 13, II",DCONTAB,Divisão de Contabilidade,Divisão,CAF
+Decreto nº 65.089/2026,"Art. 13, III",DO,Divisão de Orçamento,Divisão,CAF
+Decreto nº 65.089/2026,"Art. 14, I",DMB,Divisão de Projetos e Obras de Melhorias de Bairros,Divisão,CSO
+Decreto nº 65.089/2026,"Art. 14, II",DMOB,Divisão de Projetos e Obras de Mobilidade,Divisão,CSO
+Decreto nº 65.089/2026,"Art. 14, III",DMEAG,Divisão de Meio Ambiente e Geologia,Divisão,CSO

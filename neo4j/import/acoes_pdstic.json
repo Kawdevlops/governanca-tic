@@ -1,0 +1,3511 @@
+[
+    {
+        "numero_linha": 1,
+        "titulo": "Documentar e Publicar inventário ativos de microinformática",
+        "periodo": [
+            "2026-02-03T00:00:00",
+            "2026-03-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Realizar o levantamento físico dos equipamentos de microinformática e promover as atualizações necessárias na base de dados.",
+        "status": "Concluída",
+        "concluido": "100 %",
+        "comentario": "Atividade concluída.",
+        "etiquetas": [
+            "INVENTÁRIO EQUIPAMENTOS"
+        ],
+        "atividades": [
+            {
+                "atividade": "Levantamento físico",
+                "numero_pessoas": 2,
+                "horas_estimadas": 80
+            },
+            {
+                "atividade": "Atualização cadastral",
+                "numero_pessoas": 2,
+                "horas_estimadas": 80
+            },
+            {
+                "atividade": "Publicação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 2
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Inventário de Ativos de Microinformática",
+                "quantidade": 1.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 2,
+        "titulo": "Documentar e Publicar inventário ativos de rede",
+        "periodo": [
+            "2026-02-03T00:00:00",
+            "2026-03-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Realizar o levantamento físico dos ativos de rede e promover as atualizações necessárias na base de dados.",
+        "status": "Concluída",
+        "concluido": "100 %",
+        "comentario": "Atividade concluída.",
+        "etiquetas": [
+            "INVENTÁRIO ATIVOS DE REDE"
+        ],
+        "atividades": [
+            {
+                "atividade": "Levantamento físico",
+                "numero_pessoas": 1,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Atualização cadastral",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Publicação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 2
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Inventário de Ativos de Redes",
+                "quantidade": 1.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 3,
+        "titulo": "Documentar e Publicar inventário licenças de software",
+        "periodo": [
+            "2026-02-03T00:00:00",
+            "2026-03-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Realizar o levantamento físico das licenças de softwares e promover as atualizações necessárias na base de dados.",
+        "status": "Concluída",
+        "concluido": "100 %",
+        "comentario": "Atividade concluída.",
+        "etiquetas": [
+            "INVENTÁRIO DE SOFTWARE"
+        ],
+        "atividades": [
+            {
+                "atividade": "Levantamento físico",
+                "numero_pessoas": 2,
+                "horas_estimadas": 80
+            },
+            {
+                "atividade": "Atualização cadastral",
+                "numero_pessoas": 1,
+                "horas_estimadas": 32
+            },
+            {
+                "atividade": "Publicação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 2
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Inventário de Licenças de Software",
+                "quantidade": 1.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 4,
+        "titulo": "Eliminar ativos de TI inservíveis",
+        "periodo": [
+            "2026-06-02T00:00:00",
+            "2026-11-28T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Realizar a baixa patrimonial dos ativos de TI inservíveis.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "ELIMINIAR INSERVÍVEIS"
+        ],
+        "atividades": [
+            {
+                "atividade": "Relacionar equipamentos",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaborar laudo técnico",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Baixa patrimonial",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Descarte adequado",
+                "numero_pessoas": 2,
+                "horas_estimadas": 8
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Descarte adequado",
+                "quantidade": 50.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            },
+            {
+                "recurso": "Monitores",
+                "quantidade": 50.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            },
+            {
+                "recurso": "Notebook",
+                "quantidade": 5.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 5,
+        "titulo": "Implantar sistema de informação gestão de demanda",
+        "periodo": [
+            "2026-02-03T00:00:00",
+            "2026-06-30T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "A implantação do sistema GLPI permitirá a centralização e padronização das demandas de Tecnologia da Informação, proporcionando maior agilidade no atendimento, melhor controle dos chamados e mais transparência nos processos. Como resultado, espera-se a otimização do trabalho da equipe de TI, o aprimoramento do controle de ativos e a disponibilização de informações gerenciais que apoiem a tomada de decisão, contribuindo para a melhoria contínua da qualidade dos serviços prestados.",
+        "status": "Em andamento",
+        "concluido": "25 %",
+        "comentario": "Atividade em andamento.",
+        "etiquetas": [
+            "IMPLANTAR GLPI"
+        ],
+        "atividades": [
+            {
+                "atividade": "Planejamento e definição do escopo",
+                "numero_pessoas": 4,
+                "horas_estimadas": 80
+            },
+            {
+                "atividade": "Instalação e configuração do sistema",
+                "numero_pessoas": 2,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Cadastro e inventário de ativos",
+                "numero_pessoas": 4,
+                "horas_estimadas": 160
+            },
+            {
+                "atividade": "Testes e ajustes",
+                "numero_pessoas": 2,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Capacitação dos usuários e da equipe de TI",
+                "numero_pessoas": 10,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Implantação em produção e acompanhamento inicial",
+                "numero_pessoas": 2,
+                "horas_estimadas": 80
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Implantação do sistema GLPI",
+                "quantidade": 1.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 6,
+        "titulo": "Manter ou evoluir SaaS outro",
+        "periodo": [
+            "2026-02-03T00:00:00",
+            "2026-05-07T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover renovação do contrato de licenciamento da ferramenta gráfica Adobe Creative Cloud, contribuindo para o aumento da produtividade e eficiência no desenvolvimento de atividades no Órgão.",
+        "status": "Em andamento",
+        "concluido": "50 %",
+        "comentario": "Atividade em andamento.",
+        "etiquetas": [
+            "RENOVAÇÃO ADOBE"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Adobe Creative Cloud",
+                "quantidade": 10.0,
+                "vlr_unitario": 4932.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 49320.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 7,
+        "titulo": "Manter ou evoluir SaaS outro",
+        "periodo": [
+            "2026-03-03T00:00:00",
+            "2026-06-26T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover renovação do licenciamento da ferramenta de engenharia/arquitetura Autodesk, contribuindo para aumento da produtividade e eficiência no desenvolvimento de atividades de desenvolvimento de projetos de engenharia/arquitetura.",
+        "status": "Em andamento",
+        "concluido": "50 %",
+        "comentario": "Atividade em andamento.",
+        "etiquetas": [
+            "RENOVAÇÃO AUTODESK"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade 1",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Architeture Engineering & Construction Collection Commercial Single-user Annual Subscrition",
+                "quantidade": 30.0,
+                "vlr_unitario": 14000.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 420000.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Autodesk Civil 3D Commercial Single-user Annual Subscription",
+                "quantidade": 140.0,
+                "vlr_unitario": 9800.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 1372000.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 8,
+        "titulo": "Manter ou evoluir SaaS suíte de escritório",
+        "periodo": [
+            "2026-03-03T00:00:00",
+            "2026-06-27T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover renovação da contratação de fornecimento de solução integrada de colaboração e comunicação corporativa baseada em computação em nuvem (Google Workspace), contribuindo para aumento da produtividade e eficiência no desenvolvimento de comunicação corporativa no Órgão.",
+        "status": "Em andamento",
+        "concluido": "25 %",
+        "comentario": "Atividade em andamento.",
+        "etiquetas": [
+            "RENOVAÇÃO GOOGLE WORKSPACE"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Workspace Enterprise Started",
+                "quantidade": 5730.0,
+                "vlr_unitario": 25.94,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 1783634.4,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Workspace Enterprise Standard",
+                "quantidade": 180.0,
+                "vlr_unitario": 67.58,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 145972.8,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Workspace Enterprise Plus",
+                "quantidade": 20.0,
+                "vlr_unitario": 101.37,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 24328.8,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 9,
+        "titulo": "Contratar SaaS outro",
+        "periodo": [
+            "2026-03-03T00:00:00",
+            "2026-07-18T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover aquisição do serviço de licenciamento da ferramenta de planejamento MS Project, contribuindo para aumento da produtividade e eficiência no desenvolvimento de atividades nas área de Planejamento, CONVIAS e Projetos e Obras.",
+        "status": "Em andamento",
+        "concluido": "25 %",
+        "comentario": "Atividade em andamento.",
+        "etiquetas": [
+            "LICENCIAMENTO MS PROJECT"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação de processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaborar Estudo Técnico Preliminiar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaborar Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento dos serviços",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Microsoft Project Professional",
+                "quantidade": 15.0,
+                "vlr_unitario": 3925.01,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 58875.15,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 10,
+        "titulo": "Contratar SaaS BI",
+        "periodo": [
+            "2026-06-02T00:00:00",
+            "2026-10-15T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover aquisição do serviço de licenciamento do software de Power BI Pro e Premium, contribuindo para o desenvolvimento e eficiência na construção de dashboards e relatórios de business Intelligence (BI).",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "LICENCIAMENTO POWER BI"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação do processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaboração Estudo Técnico Preliminar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaboração Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento das licenças e configuração",
+                "numero_pessoas": 4,
+                "horas_estimadas": 24
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Microsoft Power BI PRO",
+                "quantidade": 25.0,
+                "vlr_unitario": 997.99,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 24949.75,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Microsoft Power BI Premium",
+                "quantidade": 5.0,
+                "vlr_unitario": 999.8,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 4999.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 11,
+        "titulo": "Manter ou evoluir SaaS geolocalização",
+        "periodo": [
+            "2026-06-02T00:00:00",
+            "2026-09-07T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Realizar renovação do serviço de geolocalização (Google Maps), contribuindo para aumento da produtividade e eficiência no serviço de georeferenciamento no sistema Tô Legal.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "RENOVAÇÃO GOOGLE MAPS - TÔ LEGAL"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Place Details",
+                "quantidade": 32112.0,
+                "vlr_unitario": 0.12,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 46241.28,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Dynamic Maps",
+                "quantidade": 34554.0,
+                "vlr_unitario": 0.05,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 20732.4,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Geocoding",
+                "quantidade": 34392.0,
+                "vlr_unitario": 0.04,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 16508.16,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Autocomplete Without Places Details - Per Session",
+                "quantidade": 4210.0,
+                "vlr_unitario": 0.13,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 6567.6,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Autocomplete - Per Request",
+                "quantidade": 13492.0,
+                "vlr_unitario": 0.02,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 3238.08,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Autocomplete (Included with Places Details) - Per Session",
+                "quantidade": 32052.0,
+                "vlr_unitario": 0.13,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 50001.12,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Place Details - Basic",
+                "quantidade": 32112.0,
+                "vlr_unitario": 0.12,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 46241.28,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Static Maps",
+                "quantidade": 8.0,
+                "vlr_unitario": 0.02,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 1.92,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 12,
+        "titulo": "Contratar SaaS outro",
+        "periodo": [
+            "2026-01-06T00:00:00",
+            "2026-03-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "A contratação do licenciamento do Canva Pro para Equipes proporcionará maior agilidade e padronização na produção de materiais gráficos e institucionais, com acesso a recursos profissionais de design e trabalho colaborativo. Como resultado, espera-se a otimização do tempo, a melhoria da qualidade visual das comunicações, a redução da dependência de serviços externos e o fortalecimento da identidade visual institucional.",
+        "status": "Em andamento",
+        "concluido": "25 %",
+        "comentario": "Contratação em andamento.",
+        "etiquetas": [
+            "LICENCIAMENTO CANVA PRO"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação de processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Elaborar Estudo Técnico Preliminiar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaborar Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento das licenças",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Canva Pro para Equipes",
+                "quantidade": 12.0,
+                "vlr_unitario": 606.7,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 7280.4,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 13,
+        "titulo": "Contratar SaaS outro",
+        "periodo": [
+            "2026-01-06T00:00:00",
+            "2026-03-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "A contratação do serviço de licenciamento do ChatGPT Pro trará impactos positivos na produtividade e no apoio às atividades administrativas e técnicas, ao oferecer uma ferramenta avançada de geração de textos, análise de informações e apoio à tomada de decisão. Como resultado, espera-se maior agilidade na elaboração de documentos, padronização de conteúdos, redução do tempo gasto em tarefas repetitivas e melhoria na qualidade das entregas, contribuindo para a eficiência operacional e o aprimoramento dos serviços prestados.",
+        "status": "Em andamento",
+        "concluido": "25 %",
+        "comentario": "Contratação em andamento.",
+        "etiquetas": [
+            "LICENCIAMENTO CHATGPT"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação de processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaborar Estudo Técnico Preliminiar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaborar Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento das licenças",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "ChatGPT Pro",
+                "quantidade": 8.0,
+                "vlr_unitario": 999.9,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 7999.2,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 14,
+        "titulo": "Contratar SaaS outro",
+        "periodo": [
+            "2026-01-06T00:00:00",
+            "2026-03-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "A contratação do licenciamento da plataforma Envato Elements trará impactos positivos na criação de materiais institucionais, ao disponibilizar acesso a recursos profissionais como templates, imagens, vídeos, ícones e elementos gráficos. Como resultado, espera-se maior agilidade na produção de conteúdos, padronização visual, melhoria da qualidade dos materiais publicados e redução da dependência de contratações pontuais de serviços externos, contribuindo para uma comunicação mais eficiente e profissional.",
+        "status": "Em andamento",
+        "concluido": "25 %",
+        "comentario": "Contratação em andamento.",
+        "etiquetas": [
+            "LICENCIAMENTO ENVATO ELEMENTS"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação de processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaborar Estudo Técnico Preliminiar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaborar Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento das licenças",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Plataforma Envato Elements (Plano Equipe)",
+                "quantidade": 2.0,
+                "vlr_unitario": 2941.68,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 5883.36,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 15,
+        "titulo": "Contratar SaaS outro",
+        "periodo": [
+            "2026-03-03T00:00:00",
+            "2026-06-30T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "A contratação do licenciamento da Apple Developer Enterprise Program possibilitará o desenvolvimento, teste e distribuição interna de aplicações corporativas para dispositivos Apple, de forma segura e controlada. Como resultado, espera-se maior agilidade no desenvolvimento de soluções digitais, redução da dependência de fornecedores externos, maior controle sobre aplicativos institucionais e fortalecimento da segurança e da eficiência dos processos tecnológicos da organização.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "LICENCIAMENTO APPLE DEVELOPER"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação do processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaboração Estudo Técnico Preliminar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaboração Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento das licenças e configuração",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Apple Developer Enterprise Program",
+                "quantidade": 1.0,
+                "vlr_unitario": 2000.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 2000.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 16,
+        "titulo": "Contratar sustentação Prodam",
+        "periodo": [
+            "2026-10-01T00:00:00",
+            "2026-12-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover renovação do contrato de prestação de serviços técnicos especializados de Tecnologia da Informação – SUSTENTAÇÃO TIC para SMSUB e Subprefeituras, propiciando o atendimento técnico/manutenção dos sistemas, suporte em redes e conectividades, serviços de Informação e Data Center para os sistemas de informação do Órgão",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "PRODAM SUSTENTAÇÃO TIC"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "ESPECIALISTA /ANALISTA DE SISTEMA DE INFORMAÇÃO",
+                "quantidade": 48680.0,
+                "vlr_unitario": 237.75,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 11573670.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "CONSULTORIA TÉCNICA - INFRAESTRUTURA DE REDE",
+                "quantidade": 238.0,
+                "vlr_unitario": 164.74,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 39208.12,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "DISPONIBILIZAÇÃO DE CERTIFICADO DIGITAL - SERVIDOR SSL",
+                "quantidade": 25.0,
+                "vlr_unitario": 1043.33,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 26083.25,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "GESTÃO DA INSTALAÇÃO DA SOLUÇÃO DE ACESSO A REDE CORPORATIVA PMSP - 4096 A 155000 KBPS - SEM REDUND",
+                "quantidade": 12.0,
+                "vlr_unitario": 909.9,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 10918.8,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "GESTÃO DA INSTALAÇÃO DA SOLUÇÃO DE ACESSO A REDE CORPORATIVA PMSP - 4096 A 155000 KBPS - COM REDUND",
+                "quantidade": 3.0,
+                "vlr_unitario": 1336.03,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 4008.09,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "GERENCIAMENTO DA SOLUÇÃO DE ACESSO A REDE CORPORATIVA PMSP (Para contratações de 1 a 500 acessos)",
+                "quantidade": 33.0,
+                "vlr_unitario": 236.36,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 93598.56,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "SOLUÇÃO DE ACESSO A REDE CORPORATIVA PMSP - 4096 KBPS - SEM REDUNDÂNCIA",
+                "quantidade": 20.0,
+                "vlr_unitario": 1086.92,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 260860.8,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "SOLUÇÃO DE ACESSO A REDE CORPORATIVA PMSP - 8192 KBPS - SEM REDUNDÂNCIA",
+                "quantidade": 7.0,
+                "vlr_unitario": 1296.38,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 108895.92,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "SOLUÇÃO DE ACESSO A REDE CORPORATIVA PMSP - 4096 KBPS - COM REDUNDÂNCIA",
+                "quantidade": 12.0,
+                "vlr_unitario": 1930.79,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 278033.76,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "SOLUÇÃO DE ACESSO A REDE CORPORATIVA PMSP - 8192 KBPS - COM REDUNDÂNCIA",
+                "quantidade": 5.0,
+                "vlr_unitario": 2034.82,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 122089.2,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "DISPONIBILIZAÇÃO DE PONTO DE ACESSO WIRELESS - PÚBLICO E CORPORATIVO",
+                "quantidade": 25.0,
+                "vlr_unitario": 598.92,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 179676.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "CONEXÃO INTERNET COM 100% DE BANDA GARANTIDA PARA DOWNLOAD E UPLOAD - COM REDUNDÂNCIA DE OPERADORAS",
+                "quantidade": 400.0,
+                "vlr_unitario": 1519.39,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 7293072.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "% DE BANDA GARANTIDA PARA DOWNLOAD E UPLOAD - COM REDUNDÂNCIA DE OPERADORAS",
+                "quantidade": 600.0,
+                "vlr_unitario": 1519.39,
+                "periodo": "Mensal",
+                "qtd_periodo": "2",
+                "vlr_total": 1823268.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "LINKS DE INTERNET BANDA LARGA 500MBPS (LIB) COM CPE MODEM",
+                "quantidade": 2.0,
+                "vlr_unitario": 1581.59,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 37958.16,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "HOSPEDAGEM DE APLICAÇÃO - TIPO A - GERENCIADA (1 vCPU, 2 GB RAM, 60 GB HD) - WINDOWS",
+                "quantidade": 2.0,
+                "vlr_unitario": 2561.95,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 61486.8,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "HOSPEDAGEM DE APLICAÇÃO - TIPO B - GERENCIADA (2 vCPU, 4 GB RAM, 60 GB HD) - WINDOWS",
+                "quantidade": 11.0,
+                "vlr_unitario": 3390.23,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 447510.36,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "HOSPEDAGEM DE APLICAÇÃO - TIPO C - GERENCIADA (4 vCPU, 8 GB RAM, 60 GB HD) - WINDOWS",
+                "quantidade": 18.0,
+                "vlr_unitario": 5046.78,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 1090104.48,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "HOSPEDAGEM DE APLICAÇÃO - TIPO D - GERENCIADA (8 vCPU, 8 GB RAM, 60 GB HD) - WINDOWS",
+                "quantidade": 2.0,
+                "vlr_unitario": 8354.7,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 200512.8,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "HOSPEDAGEM DE APLICAÇÃO - TIPO D - NÃO GERENCIADA (8 vCPU, 8 GB RAM, 60 GB HD) - WINDOWS",
+                "quantidade": 1.0,
+                "vlr_unitario": 7214.59,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 86575.08,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "HOSPEDAGEM DE APLICAÇÃO - TIPO A - GERENCIADA (1 vCPU, 2 GB RAM, 30 GB HD) - LINUX",
+                "quantidade": 4.0,
+                "vlr_unitario": 2561.95,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 122973.6,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "HOSPEDAGEM DE APLICAÇÃO - TIPO B - GERENCIADA (2 vCPU, 4 GB RAM, 30 GB HD) - LINUX",
+                "quantidade": 7.0,
+                "vlr_unitario": 3390.23,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 284779.32,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "HOSPEDAGEM DE APLICAÇÃO - TIPO A - NÃO GERENCIADA (1 vCPU, 2 GB RAM, 30 GB HD) - LINUX",
+                "quantidade": 2.0,
+                "vlr_unitario": 1343.7,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 32248.8,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "DISPONIBLIZAÇÃO DE VRAM ADICIONAL",
+                "quantidade": 200.0,
+                "vlr_unitario": 79.56,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 190944.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "PLATAFORMA DE BANCO DE DADOS - SQL SERVER - PERFIL F - Base de dados acima de 1.000GB até 3.000GB",
+                "quantidade": 1.0,
+                "vlr_unitario": 211431.86,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 2537182.32,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "PLATAFORMA DE BANCO DE DADOS - ORACLE/UNIX ORACLE - PERFIL A - Base de dados acima de 1GB até 10GB",
+                "quantidade": 1.0,
+                "vlr_unitario": 110027.55,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 1320330.6,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "COLOCATION",
+                "quantidade": 5.0,
+                "vlr_unitario": 166.02,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 9961.2,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "PROCESSAMENTO E GERENCIAMENTO/TRANSAÇÃO MAINFRAME",
+                "quantidade": 1.42,
+                "vlr_unitario": 11025.93,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 187881.85,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "ARMAZENAMENTO DE DADOS - GRANDE PORTE (MAINFRAME)",
+                "quantidade": 700.0,
+                "vlr_unitario": 15.6,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 131040.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "ARMAZENAMENTO DE DADOS - BAIXA PLATAFORMA - NAS",
+                "quantidade": 6080.0,
+                "vlr_unitario": 8.11,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 591705.6,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "ARMAZENAMENTO DE DADOS - BAIXA PLATAFORMA - SAN",
+                "quantidade": 5000.0,
+                "vlr_unitario": 8.11,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 486600.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "CENTRAL DE SERVIÇOS (LOTE DE 100 CHAMADOS) - ATENDIMENTO 16 X 5",
+                "quantidade": 5.0,
+                "vlr_unitario": 13383.35,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 803001.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "PERFIL OFFICE 365 – EXECUTIVE E1",
+                "quantidade": 100.0,
+                "vlr_unitario": 49.1,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 58920.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "DISPONIBILIZAÇÃO DE SERVIDOR BDC (AUTENTICAÇÃO)",
+                "quantidade": 28.0,
+                "vlr_unitario": 1899.96,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 638386.56,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "ACESSO A REDE PRODAM PARA USUÁRIOS DA PMSP",
+                "quantidade": 6500.0,
+                "vlr_unitario": 14.93,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 1164540.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "CONSULTORIA TÉCNICA - ANÁLISE TÉCNICA",
+                "quantidade": 990.0,
+                "vlr_unitario": 258.62,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 256033.8,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "DIGITAÇÃO DE DADOS E GESTÃO PARA ENTRADA NOS SISTEMAS EM PRODUÇÃO",
+                "quantidade": 95.0,
+                "vlr_unitario": 7.62,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 8686.8,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "MONITORAMENTO DE SISTEMA",
+                "quantidade": 3.0,
+                "vlr_unitario": 1548.95,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 55762.2,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "PLATAFORMA DE BI - MS SQL",
+                "quantidade": 1.0,
+                "vlr_unitario": 36868.38,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 442420.56,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "HOSPEDAGEM DE APLICAÇÃO - TIPO D - NÃO GERENCIADA (8 vCPU, 8 GB RAM, 30 GB HD) - LINUX",
+                "quantidade": 2.0,
+                "vlr_unitario": 7214.59,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 173150.16,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "HOSPEDAGEM DE APLICAÇÃO - TIPO C - NÃO GERENCIADA (4 vCPU, 8 GB RAM, 30 GB HD) - LINUX",
+                "quantidade": 1.0,
+                "vlr_unitario": 3913.94,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 46967.28,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "HOSPEDAGEM DE APLICAÇÃO - TIPO B - NÃO GERENCIADA (2 vCPU, 4 GB RAM, 30 GB HD) - LINUX",
+                "quantidade": 4.0,
+                "vlr_unitario": 2215.9,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 106363.2,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "PLATAFORMA DE BI - MS SQL",
+                "quantidade": 1.0,
+                "vlr_unitario": 9413.81,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 112965.72,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "CONSULTORIA TÉCNICA - PROJETOS DE BUSINESS INTELLIGENCE (BI)",
+                "quantidade": 150.0,
+                "vlr_unitario": 237.75,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 35662.5,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "PÁGINAS IMPRESSAS SEM ACABAMENTO E/OU FORMATO DE BLOCOS - A4 BRANCO",
+                "quantidade": 13.5,
+                "vlr_unitario": 620.72,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 100556.64,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "PÁGINAS IMPRESSAS AUTOENVELOPE - A4 BRANCO COM SERRILHA",
+                "quantidade": 6.0,
+                "vlr_unitario": 654.76,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 47142.72,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 17,
+        "titulo": "Manter ou evoluir serviço hospedagem",
+        "periodo": [
+            "2026-04-01T00:00:00",
+            "2026-07-03T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover a renovação do serviço de hospedagem NAS/SAS para o sistema GEOINFRA, propiciando a alta disponibilidade e segurança das informações armazenadas.",
+        "status": "Não iniciada",
+        "concluido": "0 %",
+        "comentario": "Contrato não será renovado, o sistema foi migrado para um serviço de nuvem.",
+        "etiquetas": [
+            "PRODAM GEOINFRA"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Especialista/Analista de Sistema de Informação",
+                "quantidade": 2400.0,
+                "vlr_unitario": 211.58,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 507792.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Hospedagem de aplicação - Tipo A - Gerenciada - Linux",
+                "quantidade": 11.0,
+                "vlr_unitario": 2532.34,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 334268.88,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Hospedagem de aplicação - Tipo C - Gerenciada - Linux",
+                "quantidade": 2.0,
+                "vlr_unitario": 4988.42,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 119722.08,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Hospedagem de aplicação - Tipo E - Gerenciada - Linux",
+                "quantidade": 3.0,
+                "vlr_unitario": 11552.78,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 415900.08,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Disponibilização de VCPU - Adicional",
+                "quantidade": 12.0,
+                "vlr_unitario": 908.47,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 130819.68,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Disponibilização de VRAM - Adicional",
+                "quantidade": 96.0,
+                "vlr_unitario": 78.64,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 90593.28,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Plataforma de Banco de Dados - Postgressql - Perfil B - Base de dados acima de 10GB até 100GB",
+                "quantidade": 1.0,
+                "vlr_unitario": 42492.27,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 509907.24,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Armazenamento de Dados - Baixa Plataforma - NAS",
+                "quantidade": 2000.0,
+                "vlr_unitario": 8.01,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 192240.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Armazenamento de Dados - Baixa Plataforma - SAS",
+                "quantidade": 6000.0,
+                "vlr_unitario": 8.01,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 576720.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Monitoramento do sistema",
+                "quantidade": 1.0,
+                "vlr_unitario": 1518.53,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 18222.36,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Dashboards de Monitoramento - Standard",
+                "quantidade": 1.0,
+                "vlr_unitario": 2406.09,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 28873.08,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 18,
+        "titulo": "Manter ou evoluir serviço SD-WAN",
+        "periodo": [
+            "2026-07-15T00:00:00",
+            "2026-10-16T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover renovação do serviço de telecomunicação para fornecimento da tecnologia SD-WAN para atender a demanda de SMSUB e das Subprefeituras, contribuindo para estabelecer a conectividade das unidades à rede corporativa da cidade de São Paulo.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "PRODAM SD-WAN"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade 1",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "LINK DE CONECTIVIDADE SIMÉTRICO 50 MBPS (LCS) COM CPE",
+                "quantidade": 33.0,
+                "vlr_unitario": 799.19,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 316479.24,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "LINKS DE INTERNET BANDA LARGA 300 MBPS (LIB) COM CPE MODEM",
+                "quantidade": 33.0,
+                "vlr_unitario": 2513.58,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 995377.68,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "DISPONIBILIZAÇÃO DE EQUIPAMENTO CPE-SD-WAN TIPO 3",
+                "quantidade": 33.0,
+                "vlr_unitario": 1274.22,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 504591.12,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "SERVIÇO DE COMUNICAÇÃO DE DADOS – SD-WAN (INSTALAÇÃO)",
+                "quantidade": 40.0,
+                "vlr_unitario": 540.15,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 21606.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "LINK DE CONECTIVIDADE SIMÉTRICO 10 MBPS (LCS) COM CPE",
+                "quantidade": 53.0,
+                "vlr_unitario": 259.6,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 165105.6,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "LINKS DE INTERNET BANDA LARGA 100 MBPS (LIB) COM CPE MODEM",
+                "quantidade": 53.0,
+                "vlr_unitario": 1089.96,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 693214.56,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "DISPONIBILIZAÇÃO DE EQUIPAMENTO CPE-SD-WAN TIPO 1",
+                "quantidade": 53.0,
+                "vlr_unitario": 715.84,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 455274.24,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 19,
+        "titulo": "Manter ou evoluir SaaS geolocalização",
+        "periodo": [
+            "2026-07-01T00:00:00",
+            "2026-10-01T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Realizar a renovação do serviço de geolocalização (Google Maps) em parceria com a PRODAM, contribuindo para aumento da produtividade e eficiência no serviço de georeferenciamento no sistema Cata Bagulho.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "PRODAM GOOGLE MAPS - CATA BAGULHO"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificar Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "MIDDLEWARE - DIREITO DE USO DE SOFTWARE",
+                "quantidade": 1.0,
+                "vlr_unitario": 1305.94,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 15671.28,
+                "dotacao_orcamentaria": "12.00.12.101.5126.3024.21.71.33.90.40"
+            },
+            {
+                "recurso": "GERENCIAMENTO DE TECNOLOGIAS EM CAMADA INTERMEDIÁRIA - M1 - DISPONIBILIZADAS NO TENANT PRODAM",
+                "quantidade": 1.0,
+                "vlr_unitario": 514.93,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 6179.16,
+                "dotacao_orcamentaria": "12.00.12.101.5126.3024.21.71.33.90.40"
+            }
+        ]
+    },
+    {
+        "numero_linha": 20,
+        "titulo": "Manter ou evoluir serviço impressão e digitalização",
+        "periodo": [
+            "2026-10-01T00:00:00",
+            "2026-12-05T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover a renovação do contrato de fornecimento do serviço de impressão departamental (Outsourcing de Impressão), visando atender a demanda de impressões, cópias e digitalizações, monocromática e em cores para imagens e textos, utilizando equipamentos de tecnologia digital. O serviço possui um sistema de gerenciamento, monitoramento, gestão de ativos e de contabilização (bilhetagem) de documentos impressos, copiados e digitalizados, além do fornecimento de todos os suprimentos, inclusive papel, mídias e suporte técnico necessário para a realização da prestação de serviço de acordo com os níveis mínimos descritos no instrumento contratual",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "SERVIÇO DE OUTSOURCING DE IMPRESSÃO"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Multifuncional Monocromática A4 (franquia mensal de 3.199 impressões)",
+                "quantidade": 41.0,
+                "vlr_unitario": 360.2,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 177218.4,
+                "dotacao_orcamentaria": "12.10.15.122.3024.2100.33.90.39.00.00"
+            },
+            {
+                "recurso": "Multifuncional Monocromática A4 (franquia mensal de 4.025 impressões)",
+                "quantidade": 7.0,
+                "vlr_unitario": 310.32,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 26066.88,
+                "dotacao_orcamentaria": "12.10.15.122.3024.2100.33.90.39.00.00"
+            },
+            {
+                "recurso": "Multifuncional Policromático A4 - (franquia mensal de 2.585 impressões)",
+                "quantidade": 7.0,
+                "vlr_unitario": 1556.94,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 130782.96,
+                "dotacao_orcamentaria": "12.10.15.122.3024.2100.33.90.39.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 21,
+        "titulo": "Alugar ativos de microinformática tablet",
+        "periodo": [
+            "2026-03-02T00:00:00",
+            "2026-06-03T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover renovação do contrato de locação de tablets e impressoras móveis junto a empresa SIMPRESS, contribuindo para aumento da produtividade e eficiência no desenvolvimento de atividades fiscalizatórias no município de São Paulo.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "LOCAÇÃO TABLET E IMPRESSORAS MÓVEIS"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Locação de Tablets",
+                "quantidade": 690.0,
+                "vlr_unitario": 56.22,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 465501.6,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Locação de Impressoras Móveis",
+                "quantidade": 690.0,
+                "vlr_unitario": 211.9,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 1754532.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 22,
+        "titulo": "Manter ou evoluir comunicação internet móvel",
+        "periodo": [
+            "2026-03-02T00:00:00",
+            "2026-06-11T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover renovação do contrato de fornecimento de internet móvel junto a operadora Vivo, contribuindo para aumento da produtividade e eficiência no desenvolvimento de atividades fiscalizatórias no município de São Paulo.",
+        "status": "Em andamento",
+        "concluido": "50 %",
+        "comentario": "Atividade em andamento",
+        "etiquetas": [
+            "SERVIÇO DE INTERNET MÓVEL"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Serviço de internet móvel (sim cards)",
+                "quantidade": 690.0,
+                "vlr_unitario": 4.13,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 34196.4,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 23,
+        "titulo": "Manter ou evoluir comunicação telefonia fixa",
+        "periodo": [
+            "2026-07-06T00:00:00",
+            "2026-10-03T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover renovação do contrato do serviço de telefonia fixa comutada STFC, junto à empresa Fibrion Internet Ltda, contribuindo para aumento da produtividade e eficiência no serviço de telefonia fixa no Órgão.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "SERVIÇO DE TELEFONIA FIXA"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Assinatura de Troncos Digitais E1",
+                "quantidade": 3.0,
+                "vlr_unitario": 708.81,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 25517.16,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Fixo-Fixo",
+                "quantidade": 35000.0,
+                "vlr_unitario": 0.01,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 4200.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Fixo-Móvel VC1",
+                "quantidade": 8000.0,
+                "vlr_unitario": 0.25,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 24000.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Intra-Estadual",
+                "quantidade": 500.0,
+                "vlr_unitario": 0.09,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 540.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Interestadual",
+                "quantidade": 500.0,
+                "vlr_unitario": 0.09,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 540.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Fixo-Móvel VC2",
+                "quantidade": 200.0,
+                "vlr_unitario": 0.25,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 600.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Fixo-Móvel VC3",
+                "quantidade": 100.0,
+                "vlr_unitario": 0.25,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 300.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Longa Distância Internacional",
+                "quantidade": 190.0,
+                "vlr_unitario": 0.65,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 1482.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 24,
+        "titulo": "Manter ou evoluir serviço helpdesk e suporte",
+        "periodo": [
+            "2026-07-07T00:00:00",
+            "2026-10-28T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Realizar renovação do contratação de empresa especializada para a prestação de serviços de suporte técnico e manutenção preventiva e corretiva da infraestrutura do Sistema de Telefonia IP e Rede de Dados LAN e WLAN instalada nas 32 Subprefeituras, visando assegurar a continuidade, estabilidade e o pleno funcionamento dos sistemas de comunicação e conectividade das Subprefeituras do Município de São Paulo.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "SUPORTE TÉCNICO SUBPREFEITURAS"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Serviço de suporte técnico e manutenção preventiva e corretiva da rede de telefonia e rede de dados",
+                "quantidade": 32.0,
+                "vlr_unitario": 5621.39,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 2158613.76,
+                "dotacao_orcamentaria": "12.00.12.101.5126.3024.21.71.33.90.40"
+            }
+        ]
+    },
+    {
+        "numero_linha": 25,
+        "titulo": "Contratar serviço segurança e acesso",
+        "periodo": [
+            "2026-05-12T00:00:00",
+            "2026-10-15T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover contratação do serviço de vigilância eletrônica junto a empresa Maxitech Sistemas e Tecnologia, contribuindo para aumento da produtividade e eficiência no serviço de vigilância eletrônica.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "SERVIÇO DE VIGILÂNCIA ELETRÔNICA"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação do processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaboração Estudo Técnico Preliminar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaboração Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento dos serviços",
+                "numero_pessoas": 2,
+                "horas_estimadas": 80
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Locação (DVR,Cameras, controle de acesso)",
+                "quantidade": 1.0,
+                "vlr_unitario": 7500.0,
+                "periodo": "Mensal",
+                "qtd_periodo": "3",
+                "vlr_total": 22500.0,
+                "dotacao_orcamentaria": "12.10.15.122.3024.2100.33.90.39.00.00"
+            },
+            {
+                "recurso": "Manutenção preventiva e corretiva (DVR,Cameras, controle de acesso)",
+                "quantidade": 1.0,
+                "vlr_unitario": 1500.0,
+                "periodo": "Mensal",
+                "qtd_periodo": "3",
+                "vlr_total": 4500.0,
+                "dotacao_orcamentaria": "12.10.15.122.3024.2100.33.90.39.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 26,
+        "titulo": "Manter ou evoluir serviço PaaS",
+        "periodo": [
+            "2026-01-02T00:00:00",
+            "2026-03-26T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover capacidade computacional em nuvem Google Cloud Plataform, migração do ambiente legado para a nova plataforma de hospedagem em nuvem e suporte técnico especializado 24x7.",
+        "status": "Em andamento",
+        "concluido": "25 %",
+        "comentario": "Contratação em andamento.",
+        "etiquetas": [
+            "SERVIÇO GCP"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Serviço de computação em Nuvem Pública",
+                "quantidade": 1440000.0,
+                "vlr_unitario": 9.11,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 13118400.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Serviço especializ ado de suporte e manutenç ão 24x7",
+                "quantidade": 17868.0,
+                "vlr_unitario": 216.57,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 3869672.76,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 27,
+        "titulo": "Manter ou evoluir serviço desenvolvimento",
+        "periodo": [
+            "2026-06-29T00:00:00",
+            "2026-10-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover renovação do serviço de desenvolvimento do sistema de informação destinado à avaliação continua do pavimento das vias do município de São Paulo por meios de sensores inerciais e sua respectivo manutenção, contribuindo para o aumento da produtividade e eficiência no sistema GAIA.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "SISTEMA GAIA"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada 1",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Sustentação Gaia",
+                "quantidade": 15953.0,
+                "vlr_unitario": 71.44,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 13676187.84,
+                "dotacao_orcamentaria": "12.10.15.452.3022.1137.44.90.39.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 28,
+        "titulo": "Manter ou evoluir serviço manutenção de sistema",
+        "periodo": [
+            "2026-08-10T00:00:00",
+            "2026-12-07T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover renovação do serviço de suporte, manutenção adaptativa e evolutiva do sistema Painel de Zeladoria, contribuindo para o aumento de produtividade e eficiência através da disponibilização de painéis de indicadores e relatórios de informações gerenciais para o acompanhamento das atividades de zeladoria no Órgão.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "SISTEMA PAINEL DE ZELADORIA"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Analista de BI",
+                "quantidade": 275.0,
+                "vlr_unitario": 277.42,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 915486.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Analista de Negócio",
+                "quantidade": 130.0,
+                "vlr_unitario": 263.56,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 411153.6,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Arquiteto de Sistema",
+                "quantidade": 175.0,
+                "vlr_unitario": 300.27,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 630567.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Desenvolvedor",
+                "quantidade": 40.0,
+                "vlr_unitario": 209.73,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 100670.4,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Especialista Gerencial",
+                "quantidade": 80.0,
+                "vlr_unitario": 394.95,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 379152.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 29,
+        "titulo": "Alugar ativos de alimentação nobreak",
+        "periodo": [
+            "2026-02-02T00:00:00",
+            "2026-04-30T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover contratação do serviço de outsourcing de nobreak para a sala técnica de SMSBU/COTI, propiciando a proteção elétrica dos equipamentos e ativos de rede que encontram-se instalados na sala técnica do Órgão.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "OUTSOURCING NOBREAK"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação do processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaboração Estudo Técnico Preliminar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaboração do Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Acionar a empresa detentora da ARP",
+                "numero_pessoas": 1,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Recebimento dos serviços",
+                "numero_pessoas": 2,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Instalação de Nobreak",
+                "quantidade": 7.0,
+                "vlr_unitario": 1500.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 10500.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Locação Nobreak 3kva",
+                "quantidade": 6.0,
+                "vlr_unitario": 1500.0,
+                "periodo": "Mensal",
+                "qtd_periodo": "8",
+                "vlr_total": 72000.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Locação Nobreak 10kva",
+                "quantidade": 1.0,
+                "vlr_unitario": 2500.0,
+                "periodo": "Mensal",
+                "qtd_periodo": "8",
+                "vlr_total": 20000.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 30,
+        "titulo": "Manter ou evoluir serviço consultoria",
+        "periodo": [
+            "2026-07-06T00:00:00",
+            "2026-11-04T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover serviços técnicos especializados de pesquisa e aconselhamento imparcial em Tecnologia da Informação e Comunicação (TIC). Contrato com vigência de 24 meses e planejamento para este ano referente a 12 meses.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "SERVIÇO DE CONSULTORIA"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Executive Programs V2 Guide d: Team Leader",
+                "quantidade": 1.0,
+                "vlr_unitario": 41083.33,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 492999.96,
+                "dotacao_orcamentaria": "12.10.04.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Executive Programs V2 Guide d: SWEL Member",
+                "quantidade": 1.0,
+                "vlr_unitario": 40691.67,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 488300.04,
+                "dotacao_orcamentaria": "12.10.04.126.3024.2171.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 31,
+        "titulo": "Manter ou evoluir serviço desenvolvimento",
+        "periodo": [
+            "2026-06-15T00:00:00",
+            "2026-10-15T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover renovação do serviço de manutenção evolutiva e adaptativa do sistema de gerenciamento de fiscalização (SGF).",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "SISTEMA SGF"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificar Economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação Jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Serviço de Computação em Nuvem GCP (USN)",
+                "quantidade": 330000.0,
+                "vlr_unitario": 8.72,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 2877600.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Serviço de desenvolvimento de funcionalidades (UST)",
+                "quantidade": 18991.0,
+                "vlr_unitario": 280.34,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 5323936.94,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Serviço de sustentação e monitoração (1.617 horas/mês)",
+                "quantidade": 12.0,
+                "vlr_unitario": 407970.26,
+                "periodo": "Mensal",
+                "qtd_periodo": "1",
+                "vlr_total": 4895643.12,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 32,
+        "titulo": "Adquirir ativos de rede switch",
+        "periodo": [
+            "2026-02-02T00:00:00",
+            "2026-03-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "A aquisição de switches tem como impacto direto o fortalecimento e a modernização da infraestrutura de rede, permitindo a substituição de equipamentos obsoletos ou defeituosos e garantindo maior estabilidade, desempenho e confiabilidade na comunicação de dados. Como resultados esperados, destaca-se a ampliação e reorganização da rede interna, com melhor distribuição do tráfego, redução de falhas e interrupções, aumento da disponibilidade dos serviços de tecnologia da informação e maior suporte às demandas atuais e futuras das áreas usuárias, contribuindo para a continuidade operacional, a eficiência dos processos internos e a melhoria geral da qualidade dos serviços prestados.",
+        "status": "Em andamento",
+        "concluido": "10 %",
+        "comentario": "Atividade em andamento.",
+        "etiquetas": [
+            "AQUISIÇÃO DE SWITCHS"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação do processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaboração Estudo Técnico Preliminar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaboração Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento dos equipamentos e configuração",
+                "numero_pessoas": 4,
+                "horas_estimadas": 24
+            },
+            {
+                "atividade": "Treinamento de Usuários",
+                "numero_pessoas": 5,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Switch Core",
+                "quantidade": 1.0,
+                "vlr_unitario": 61372.77,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 61372.77,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.52.00.00"
+            },
+            {
+                "recurso": "Switch Acesso",
+                "quantidade": 13.0,
+                "vlr_unitario": 16252.11,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 211277.43,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.52.00.00"
+            },
+            {
+                "recurso": "Transceiver Tipo 1",
+                "quantidade": 20.0,
+                "vlr_unitario": 1760.55,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 35211.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.52.00.00"
+            },
+            {
+                "recurso": "Transceiver Tipo 2",
+                "quantidade": 10.0,
+                "vlr_unitario": 927.43,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 9274.3,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.52.00.00"
+            },
+            {
+                "recurso": "Cabo DAC",
+                "quantidade": 20.0,
+                "vlr_unitario": 490.44,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 9808.8,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.52.00.00"
+            },
+            {
+                "recurso": "Licenças para solução de gerenciamento atual",
+                "quantidade": 2.0,
+                "vlr_unitario": 11115.81,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 22231.62,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Instalação e configuração",
+                "quantidade": 1.0,
+                "vlr_unitario": 10000.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 10000.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Capacitação Técnica (Treinamento)",
+                "quantidade": 1.0,
+                "vlr_unitario": 10000.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 10000.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Cordão Optico",
+                "quantidade": 20.0,
+                "vlr_unitario": 104.27,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 2085.4,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.52.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 33,
+        "titulo": "Adquirir suprimentos de informática",
+        "periodo": [
+            "2026-04-01T00:00:00",
+            "2026-05-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "A aquisição de papel sulfite nos formatos A4, A3 e A0 para utilização em impressoras a laser tem como impacto a garantia da continuidade das atividades administrativas, técnicas e operacionais que dependem de impressões regulares e em grande formato, assegurando padronização, qualidade e confiabilidade nos documentos produzidos. Como resultados esperados, destaca-se a redução de interrupções nos fluxos de trabalho, o atendimento adequado às diferentes demandas institucionais, desde documentos administrativos até plantas, projetos e materiais gráficos, a preservação do desempenho e da vida útil dos equipamentos de impressão, além do aumento da eficiência operacional, da organização interna e do suporte às ações planejadas pelas áreas demandantes.",
+        "status": "Em andamento",
+        "concluido": "15 %",
+        "comentario": "Atividade em andamento.",
+        "etiquetas": [
+            "AQUISIÇÃO DE PAPEL SULFITE"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação do processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaboração Estudo Técnico Preliminar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaboração Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento do material",
+                "numero_pessoas": 2,
+                "horas_estimadas": 8
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Papel Sulfite A4 (resmas)",
+                "quantidade": 3300.0,
+                "vlr_unitario": 25.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 82500.0,
+                "dotacao_orcamentaria": "12.10.15.122.3024.2100.33.90.30.00.00"
+            },
+            {
+                "recurso": "Papel Sulfite A3 (resmas)",
+                "quantidade": 30.0,
+                "vlr_unitario": 60.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 1800.0,
+                "dotacao_orcamentaria": "12.10.15.122.3024.2100.33.90.30.00.00"
+            },
+            {
+                "recurso": "Papel Sulfite A0 (rolo)",
+                "quantidade": 15.0,
+                "vlr_unitario": 90.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 1350.0,
+                "dotacao_orcamentaria": "12.10.15.122.3024.2100.33.90.30.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 34,
+        "titulo": "Contratar comunicação PABX",
+        "periodo": [
+            "2026-02-02T00:00:00",
+            "2026-06-30T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "A contratação do serviço de telefonia VOIP, com fornecimento dos respectivos equipamentos, tem como impacto a modernização e a padronização da infraestrutura de comunicação da SMSUB, assegurando maior eficiência, qualidade e confiabilidade nas comunicações internas e externas das unidades do Órgão. Como resultados esperados, destaca-se a ampliação da capacidade de atendimento, a redução de custos operacionais em comparação aos modelos tradicionais de telefonia, a melhoria na integração entre as áreas, a maior disponibilidade dos serviços de voz e a continuidade das atividades administrativas e operacionais, contribuindo de forma direta para a agilidade dos processos, o aprimoramento do atendimento institucional e o fortalecimento da comunicação organizacional.",
+        "status": "Em andamento",
+        "concluido": "15 %",
+        "comentario": "Atividade em andamento.",
+        "etiquetas": [
+            "TELEFONIA VOIP"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação do processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaboração Estudo Técnico Preliminar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaboração Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento dos serviços e equipamentos 1",
+                "numero_pessoas": 1,
+                "horas_estimadas": 160
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Assinatura por 36 meses de usuário básico",
+                "quantidade": 300.0,
+                "vlr_unitario": 332.5,
+                "periodo": "Mensal",
+                "qtd_periodo": "6",
+                "vlr_total": 598500.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Assinatura por 36 meses de usuário avançado",
+                "quantidade": 150.0,
+                "vlr_unitario": 376.67,
+                "periodo": "Mensal",
+                "qtd_periodo": "6",
+                "vlr_total": 339003.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Aparelho IP Básico",
+                "quantidade": 425.0,
+                "vlr_unitario": 1498.0,
+                "periodo": "Mensal",
+                "qtd_periodo": "1",
+                "vlr_total": 636650.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Aparelho IP Intermediário",
+                "quantidade": 25.0,
+                "vlr_unitario": 2550.0,
+                "periodo": "Mensal",
+                "qtd_periodo": "1",
+                "vlr_total": 63750.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Manutenção de suporte dos gateways E1 por 36 meses",
+                "quantidade": 1.0,
+                "vlr_unitario": 18156.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 18156.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 35,
+        "titulo": "Contratar serviço manutenção de TIC",
+        "periodo": [
+            "2026-04-01T00:00:00",
+            "2026-06-30T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "A solução audiovisual proposta impactará diretamente a modernização dos ambientes institucionais, elevando a qualidade de som, imagem e conectividade, além de viabilizar transmissões remotas com maior eficiência; como resultados esperados, destacam-se a melhoria da comunicação institucional, maior efetividade em reuniões e eventos, aumento da confiabilidade operacional e autonomia das equipes internas, com garantia de alta disponibilidade e melhor aproveitamento dos recursos tecnológicos",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "MODERNIZAÇÃO AUDIOVISUAL"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação de processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaborar Estudo Técnico Preliminiar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaborar Termo de Referencia",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento dos serviços",
+                "numero_pessoas": 2,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Readequação do Auditório",
+                "quantidade": 1.0,
+                "vlr_unitario": 1200000.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 1200000.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Readequação da Sala Multiuso 1",
+                "quantidade": 1.0,
+                "vlr_unitario": 100000.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 100000.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Readequação da Sala Multiuso 2",
+                "quantidade": 1.0,
+                "vlr_unitario": 100000.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 100000.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Readequação da Sala Multiuso 3",
+                "quantidade": 1.0,
+                "vlr_unitario": 250000.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 250000.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            },
+            {
+                "recurso": "Serviço de Instalação e Configuração",
+                "quantidade": 1.0,
+                "vlr_unitario": 150000.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 150000.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 36,
+        "titulo": "Adquirir suprimentos de informática",
+        "periodo": [
+            "2026-04-01T00:00:00",
+            "2026-06-30T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover aquisição de suprimentos de informática que contribuirão na produtividade e eficiência das atividades do corpo técnico de tecnologia da SMSUB, visando reparos/trocas para o bom funcionamento dos equipamentos e auxiliando a demanda dos setores.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "SUPRIMENTOS DE INFORMÁTICA"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação do processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaboração Estudo Técnico Preliminar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaboração Termo de Referencia",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento de suprimentos",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "CABO CAT 6 UTP",
+                "quantidade": 4.0,
+                "vlr_unitario": 2800.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 11200.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.30.52.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 37,
+        "titulo": "Adquirir ativos de microinformática monitor",
+        "periodo": [
+            "2026-03-02T00:00:00",
+            "2026-05-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "A aquisição de monitor de vídeo para uso como tela secundária terá como principal impacto a ampliação da capacidade de visualização simultânea de informações, contribuindo para maior organização, agilidade e precisão nas atividades operacionais e administrativas; como resultados esperados, destacam-se a melhoria da produtividade dos usuários, o aumento da eficiência no acompanhamento de sistemas, documentos ou apresentações paralelas, a redução de erros decorrentes de alternância constante de telas e o aprimoramento do fluxo de trabalho, proporcionando melhor aproveitamento dos recursos tecnológicos disponíveis.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "AQUISIÇÃO MONITORES"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação de processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaborar Estudo Técnico Preliminiar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaborar Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento dos monitores",
+                "numero_pessoas": 2,
+                "horas_estimadas": 8
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Monitor de Video 24\"",
+                "quantidade": 150.0,
+                "vlr_unitario": 1539.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 230850.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.30.52.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 38,
+        "titulo": "Contratar serviço desenvolvimento",
+        "periodo": [
+            "2026-04-01T00:00:00",
+            "2026-08-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "A contratação de desenvolvimento de software para catalogação de documentos terá como principal impacto a organização estruturada e eficiente de um acervo superior a 100.000 documentos, atualmente armazenados de forma dispersa. Com a implantação do sistema informatizado, será possível classificar, indexar e agrupar os documentos por assunto, incluindo o controle de atos revogados ou substituídos por normativos posteriores, garantindo maior confiabilidade e integridade das informações. Como resultado esperado, o processo de busca e consulta deixará de ser manual, tornando-se mais ágil, preciso e seguro, reduzindo significativamente o tempo despendido pelos servidores e minimizando riscos de erro. A solução proporcionará modernização da gestão documental, ampliará o acesso às informações e fortalecerá a capacidade de atendimento às demandas internas e externas, contribuindo para maior eficiência administrativa e melhor tomada de decisão.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "SISTEMA CATALOGAÇÃO DE DOCUMENTOS"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação de Processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Levantamento da necessidade e definição dos requisitos do sistema de catalogação de documentos",
+                "numero_pessoas": 3,
+                "horas_estimadas": 240
+            },
+            {
+                "atividade": "Elaboração do estudo técnico preliminar e do termo de referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 160
+            },
+            {
+                "atividade": "Realização do processo de contratação, com seleção e habilitação do fornecedor",
+                "numero_pessoas": 4,
+                "horas_estimadas": 480
+            },
+            {
+                "atividade": "Formalização do contrato",
+                "numero_pessoas": 2,
+                "horas_estimadas": 60
+            },
+            {
+                "atividade": "Desenvolvimento, testes e implantação do sistema",
+                "numero_pessoas": 6,
+                "horas_estimadas": 720
+            },
+            {
+                "atividade": "Capacitação dos usuários e entrega definitiva da solução",
+                "numero_pessoas": 4,
+                "horas_estimadas": 80
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Sistema de Catalogação",
+                "quantidade": 1.0,
+                "vlr_unitario": 185000.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 185000.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.40.00.00"
+            },
+            {
+                "recurso": "Treinamento de Usuários",
+                "quantidade": 1.0,
+                "vlr_unitario": 15000.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 15000.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 39,
+        "titulo": "Manter ou evoluir serviço PaaS",
+        "periodo": [
+            "2026-08-17T00:00:00",
+            "2026-12-20T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover expansão de licenciamento de direito de uso de IBM APP Connect Enterprise.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "LICENCIAMENTO APP CONNECT - SGZ"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "IBM App Connect Enterpris e Processor Value Unit (PVU) License + SW Subscription",
+                "quantidade": 800.0,
+                "vlr_unitario": 618.66,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 494928.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "IBM App Connect Enterpris e for nonproduction Processor Value Unit (PVU) License + SW Subscription",
+                "quantidade": 500.0,
+                "vlr_unitario": 312.99,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 156495.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 40,
+        "titulo": "Manter ou evoluir serviço PaaS",
+        "periodo": [
+            "2026-01-01T00:00:00",
+            "2026-01-21T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover trade-up das licenças Maximo para MAS, subscrição solução de alertas e eventos e serviço de garantia, suporte e manutenção 24x7. Contrato com vigência de 24 meses e planejamento para este ano referente a 12 meses.",
+        "status": "Em andamento",
+        "concluido": "15 %",
+        "comentario": "Atividade em andamento.",
+        "etiquetas": [
+            "LICENCIAMENTO MAS E SAE"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "IBM Maximo Applicat ion Suite per AppPoi nt from Eligible Progra ms Trade Up Licence",
+                "quantidade": 1.0,
+                "vlr_unitario": 3434102.88,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 3434102.88,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Aquisiç ão Subscriç ões Solução de Alertas e Eventos",
+                "quantidade": 1.0,
+                "vlr_unitario": 189273.41,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 189273.41,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Instalaç ão IBM MAS e Migração da Platafor ma Atual para MAS",
+                "quantidade": 1.0,
+                "vlr_unitario": 757939.57,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 757939.57,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            },
+            {
+                "recurso": "Serviços de Garantia, Suporte e Manute nção 24x7 (1626 h/mês)",
+                "quantidade": 1.0,
+                "vlr_unitario": 227638.31,
+                "periodo": "Mensal",
+                "qtd_periodo": "12",
+                "vlr_total": 2731659.72,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 41,
+        "titulo": "Manter ou evoluir serviço PaaS",
+        "periodo": [
+            "2026-04-20T00:00:00",
+            "2026-08-20T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover renovação das licenças IBM APP Connect e renovação da assinatura do serviço meteorológico IBM Weather.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "LICENCIMENTO APP CONNECT E WEATHER"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da Contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Solução de Barramento de Serviços PN: E02AULL -IBM App Connect Enterpris e Processor Value Unit",
+                "quantidade": 600.0,
+                "vlr_unitario": 448.18,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 268908.0,
+                "dotacao_orcamentaria": "12.00.12.101.5126.3024.21.71.33.90.00"
+            },
+            {
+                "recurso": "Solução de Barramento de Serviços PN: E0P73LL IBM App Connect Enterpris e for nonproduction",
+                "quantidade": 200.0,
+                "vlr_unitario": 222.36,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 44472.0,
+                "dotacao_orcamentaria": "12.00.12.101.5126.3024.21.71.33.90.00"
+            },
+            {
+                "recurso": "Assinatur a de Serviço Meteorol ógicos IBM Weather: D042PZX - IBM Environmental Intelligence",
+                "quantidade": 200.0,
+                "vlr_unitario": 2873.1,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 574620.0,
+                "dotacao_orcamentaria": "12.00.12.101.5126.3024.21.71.33.90.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 42,
+        "titulo": "Capacitar usuário outro",
+        "periodo": [
+            "2026-01-05T00:00:00",
+            "2026-03-20T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover contratação de serviço de capacitação das áreas de tecnologia das 32 subprefeituras. Os servidores participarão de cursos de formação nas areas de Governança, Infraestrutura, Data Science, Programação Web e Apps, Inteligência Artificial.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "CAPACITAÇÃO EAD"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação de Processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Elaborar Estudo Tecnico Preliminar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaborar Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 2,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento das licenças",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Cursos TI Ead",
+                "quantidade": 114.0,
+                "vlr_unitario": 1308.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 149112.0,
+                "dotacao_orcamentaria": "12.10.04.128.3011.2180.33.90.30.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 43,
+        "titulo": "Manter ou evoluir serviço manutenção de sistema",
+        "periodo": [
+            "2026-01-01T00:00:00",
+            "2026-01-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Prover a manutenção evolutiva e adaptativa da atual plataforma de zeladoria utilizada para as atuais necessidades operacionais e estratégicas.",
+        "status": "Em andamento",
+        "concluido": "25 %",
+        "comentario": "Atividade em andamento.",
+        "etiquetas": [
+            "SISTEMA SGZ"
+        ],
+        "atividades": [
+            {
+                "atividade": "Acionamento da contratada",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Justificar",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Verificação da economicidade",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação jurídica",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Manutenção evolutiva, adaptativa e melhorias da atual plataforma de zeladoria",
+                "quantidade": 28490.0,
+                "vlr_unitario": 351.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 9999990.0,
+                "dotacao_orcamentaria": "12.10.15.126.3024.2171.33.90.40.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 44,
+        "titulo": "Capacitar equipe outro",
+        "periodo": [
+            "2026-02-02T00:00:00",
+            "2026-12-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "A capacitação em IA Generativa do Google Capacity, realizada integralmente na modalidade EAD e no ambiente virtual do Google, trará impactos positivos significativos ao desenvolvimento do potencial humano da área, ao promover o crescimento pessoal e profissional dos participantes por meio do aprimoramento técnico e da atualização em conceitos modernos de inteligência artificial. Espera-se que o treinamento estimule a reflexão e a interação, possibilitando a aquisição de novos conhecimentos e técnicas que possam ser aplicados diretamente às rotinas de trabalho, resultando em maior eficiência, inovação nos processos, melhoria na qualidade das entregas e fortalecimento das competências digitais da equipe, alinhando-a às boas práticas e tendências tecnológicas atuais.",
+        "status": "",
+        "concluido": "%",
+        "comentario": "",
+        "etiquetas": [
+            "CAPACITAÇÃO IA DEGENERATIVA"
+        ],
+        "atividades": [
+            {
+                "atividade": "Inscrição no treinamento",
+                "numero_pessoas": 8,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Participação no treinamento",
+                "numero_pessoas": 8,
+                "horas_estimadas": 40
+            },
+            {
+                "atividade": "Avaliação",
+                "numero_pessoas": 8,
+                "horas_estimadas": 1
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Treinamento Google Capacity (IA Degenerativa)",
+                "quantidade": 8.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 45,
+        "titulo": "Capacitar equipe outro",
+        "periodo": [
+            "2026-01-01T00:00:00",
+            "2026-12-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "Proporcionar o desenvolvimento do potencial humano da área, promovendo o crescimento pessoal e profissional, através da realização de capacitação técnica no curso EAD na plataforma ALURA. O treinamento visa proporcionar a reflexão, interação e aquisição de novos conceitos e técnicas às rotinas de trabalho.",
+        "status": "Em andamento",
+        "concluido": "15 %",
+        "comentario": "Atividade em andamento.",
+        "etiquetas": [
+            "CAPACITAÇÃO ALURA - SMIT"
+        ],
+        "atividades": [
+            {
+                "atividade": "Inscrição no curso",
+                "numero_pessoas": 10,
+                "horas_estimadas": 1
+            },
+            {
+                "atividade": "Participação no treinamento",
+                "numero_pessoas": 10,
+                "horas_estimadas": 300
+            },
+            {
+                "atividade": "Avaliação",
+                "numero_pessoas": 10,
+                "horas_estimadas": 2
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "Treinamento ITIL",
+                "quantidade": 6.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            },
+            {
+                "recurso": "Treinamento Ciber Segurança",
+                "quantidade": 2.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            },
+            {
+                "recurso": "Treinamento Inteligência Artificial",
+                "quantidade": 5.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            },
+            {
+                "recurso": "Treinamento Rede de Computadores",
+                "quantidade": 4.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            },
+            {
+                "recurso": "Treinamento Python",
+                "quantidade": 1.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            },
+            {
+                "recurso": "Treinamento Machine Learnings",
+                "quantidade": 1.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            },
+            {
+                "recurso": "Treinamento .NET",
+                "quantidade": 1.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            },
+            {
+                "recurso": "Treinamento Segurança da Informação",
+                "quantidade": 1.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            },
+            {
+                "recurso": "Treinamento Engenharia de Software",
+                "quantidade": 1.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            },
+            {
+                "recurso": "Treinamento Blender",
+                "quantidade": 1.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            },
+            {
+                "recurso": "Treinamento Logica de Programação",
+                "quantidade": 1.0,
+                "vlr_unitario": 0.0,
+                "periodo": "",
+                "qtd_periodo": "",
+                "vlr_total": 0.0,
+                "dotacao_orcamentaria": "00.00.00.000.0000.0000.00.00.00.00.00"
+            }
+        ]
+    },
+    {
+        "numero_linha": 46,
+        "titulo": "Contratar SaaS outro",
+        "periodo": [
+            "2026-02-03T00:00:00",
+            "2026-03-31T00:00:00"
+        ],
+        "projeto_estrategico": "Sem projeto estratégico associado.",
+        "descricao": "A aquisição do CapCut Pro permitirá a produção ágil e padronizada de conteúdos audiovisuais institucionais, com melhoria da qualidade visual, aumento da produtividade das equipes e maior alcance da comunicação digital, otimizando o uso dos recursos públicos.",
+        "status": "Em andamento",
+        "concluido": "15 %",
+        "comentario": "Contratação em andamento.",
+        "etiquetas": [
+            "LICENCIAMENTO CAPCUT PRO"
+        ],
+        "atividades": [
+            {
+                "atividade": "Autuação de processo SEI",
+                "numero_pessoas": 1,
+                "horas_estimadas": 8
+            },
+            {
+                "atividade": "Elaborar Estudo Técnico Preliminiar",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Elaborar Termo de Referência",
+                "numero_pessoas": 2,
+                "horas_estimadas": 16
+            },
+            {
+                "atividade": "Licitação",
+                "numero_pessoas": 1,
+                "horas_estimadas": 192
+            },
+            {
+                "atividade": "Recebimento das icenças",
+                "numero_pessoas": 1,
+                "horas_estimadas": 40
+            }
+        ],
+        "recursos": [
+            {
+                "recurso": "CapCut Pro",
+                "quantidade": 7.0,
+                "vlr_unitario": 430.0,
+                "periodo": "Anual",
+                "qtd_periodo": "1",
+                "vlr_total": 3010.0,
+                "dotacao_orcamentaria": "12.10.04.126.3011.2818.44.90.40.00.00"
+            }
+        ]
+    }
+]

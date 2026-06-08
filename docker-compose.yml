@@ -1,0 +1,274 @@
+services:
+  mariadb:
+    image: mariadb:11.4.9
+    container_name: mariadb
+    restart: unless-stopped
+    env_file:
+      - ./mariadb/.env
+    environment:
+      TZ: America/Sao_Paulo
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+      MARIADB_DATABASE: ${MARIADB_DATABASE}
+      MARIADB_USER: ${MARIADB_USER}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --innodb-file-per-table=1
+      - --max_allowed_packet=64M
+    volumes:
+      - mariadb_data:/var/lib/mysql
+      - ./mariadb/init:/docker-entrypoint-initdb.d
+    networks:
+      - governance_net
+    healthcheck:
+      test: ["CMD-SHELL", "mariadb-admin ping -h 127.0.0.1 -uroot -p$${MARIADB_ROOT_PASSWORD} || exit 1"]
+      interval: 20s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j
+    env_file:
+      - ./neo4j/.env
+    environment:
+      NEO4J_AUTH: "${DB_NEO4J_USER}/${DB_NEO4J_PASSWORD}"
+      NEO4J_PLUGINS: '["apoc"]'
+      NEO4J_dbms_security_procedures_unrestricted: apoc.*
+      NEO4J_dbms_security_procedures_allowlist: apoc.*
+      NEO4J_apoc_import_file_enabled: true
+      NEO4J_apoc_import_file_use_neo4j_config: true
+    expose:
+      - "7474"
+      - "7687"
+    ports:
+      - "7687:7687"
+    volumes:
+      - ./neo4j/data:/data
+      - ./neo4j/logs:/logs
+      - ./neo4j/import:/import
+      - ./neo4j/plugins:/plugins
+    restart: unless-stopped
+    networks:
+      - governance_net
+    healthcheck:
+      test: ["CMD-SHELL", "cypher-shell -u ${DB_NEO4J_USER} -p '${DB_NEO4J_PASSWORD}' 'RETURN 1;' || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+  neo4j-init:
+    image: neo4j:latest
+    container_name: neo4j-init
+    depends_on:
+      neo4j:
+        condition: service_healthy
+    env_file:
+      - ./neo4j/.env
+    networks:
+      - governance_net
+    volumes:
+      - ./neo4j/scripts/:/scripts/
+
+    entrypoint: ["/bin/bash", "/scripts/init.sh"]
+
+  bookstack:
+    image: lscr.io/linuxserver/bookstack:latest
+    container_name: bookstack
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    environment:
+      PUID: 1000
+      PGID: 1000
+      TZ: America/Sao_Paulo
+      APP_URL: ${BOOKSTACK_APP_URL}
+      APP_KEY: ${BOOKSTACK_APP_KEY}
+      DB_HOST: ${DB_BOOKSTACK_HOST}
+      DB_PORT: ${DB_BOOKSTACK_PORT}
+      DB_USERNAME: ${DB_BOOKSTACK_USER}
+      DB_PASSWORD: ${DB_BOOKSTACK_PASSWORD}
+      DB_DATABASE: ${DB_BOOKSTACK_DATABASE}
+      #QUEUE_CONNECTION: #optional
+    volumes:
+      - ./bookstack/config:/config
+    networks:
+      - governance_net
+    expose:
+      - "80"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:80/ >/dev/null || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+
+  fastapi:
+    image: fastapi-smsub:1.0
+    container_name: fastapi
+    build:
+      context: ./fastapi
+      dockerfile: Dockerfile  
+    depends_on:
+      mariadb:
+        condition: service_healthy
+      neo4j:
+        condition: service_healthy
+    environment:
+      NEO4J_URI: ${DB_NEO4J_URI}
+      NEO4J_USER: ${DB_NEO4J_USER}
+      NEO4J_PASSWORD: ${DB_NEO4J_PASSWORD}
+    networks:
+      - governance_net
+    expose:
+      - "80"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:80/ || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  postgres:
+    image: postgres:16
+    container_name: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${AIRFLOW_DB_USER}
+      POSTGRES_PASSWORD: ${AIRFLOW_DB_PASSWORD}
+      POSTGRES_DB: ${AIRFLOW_DB_NAME}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - governance_net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${AIRFLOW_DB_USER} -d ${AIRFLOW_DB_NAME}"]
+      interval: 20s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  airflow-init:
+    image: apache/airflow:2.11.2
+    container_name: airflow-init
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment: &airflow-env
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${AIRFLOW_DB_USER}:${AIRFLOW_DB_PASSWORD}@postgres/${AIRFLOW_DB_NAME}
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+      AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW_WEBSERVER_SECRET_KEY}
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.session
+      AIRFLOW_UID: ${AIRFLOW_UID}
+    user: "${AIRFLOW_UID}:0"
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db migrate && \
+        airflow users create \
+          --username ${AIRFLOW_ADMIN_USER} \
+          --password ${AIRFLOW_ADMIN_PASSWORD} \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email ${AIRFLOW_ADMIN_EMAIL}
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+    networks:
+      - governance_net
+
+  airflow-webserver:
+    image: apache/airflow:2.11.2
+    container_name: airflow-webserver
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      <<: *airflow-env
+    user: "${AIRFLOW_UID}:0"
+    command: webserver
+    expose:
+      - "8080"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+    networks:
+      - governance_net
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail http://localhost:8080/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+  airflow-scheduler:
+    image: apache/airflow:2.11.2
+    container_name: airflow-scheduler
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      <<: *airflow-env
+    user: "${AIRFLOW_UID}:0"
+    command: scheduler
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+    networks:
+      - governance_net
+    healthcheck:
+      test: ["CMD-SHELL", "airflow jobs check --job-type SchedulerJob --local || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: nginx
+    restart: unless-stopped
+    depends_on:
+      bookstack:
+        condition: service_healthy
+      fastapi:
+        condition: service_healthy
+      airflow-webserver:
+        condition: service_healthy
+      neo4j:
+        condition: service_healthy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./nginx/certs:/etc/nginx/certs:ro
+      - ./nginx/logs:/var/log/nginx
+    networks:
+      - governance_net
+
+volumes:
+  mariadb_data:
+  postgres_data:
+
+networks:
+  governance_net:
+    name: governance_net
+    driver: bridge

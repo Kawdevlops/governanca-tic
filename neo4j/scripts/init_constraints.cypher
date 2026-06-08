@@ -1,0 +1,44 @@
+// Criando constraints para nós
+
+CREATE CONSTRAINT orgao_setorial IF NOT EXISTS
+FOR (n:OrgaoSetorial) REQUIRE n.sigla IS UNIQUE;
+
+CREATE CONSTRAINT unidade_sigla IF NOT EXISTS
+FOR (n:Unidade) REQUIRE n.sigla IS UNIQUE;
+
+CREATE CONSTRAINT pessoa_id IF NOT EXISTS
+FOR (n:Pessoa) REQUIRE n.id IS UNIQUE;
+
+CREATE CONSTRAINT servico_id IF NOT EXISTS
+FOR (n:ServicoTIC) REQUIRE n.id IS UNIQUE;
+
+CREATE CONSTRAINT sistema_id IF NOT EXISTS
+FOR (n:Sistema) REQUIRE n.id IS UNIQUE;
+
+CREATE CONSTRAINT basedados_id IF NOT EXISTS
+FOR (n:BaseDados) REQUIRE n.id IS UNIQUE;
+
+CREATE CONSTRAINT pdstic_id IF NOT EXISTS
+FOR (n:PDSTIC) REQUIRE n.ano IS UNIQUE;
+
+CREATE CONSTRAINT linhaacao_unica_por_ano IF NOT EXISTS
+FOR (n:LinhaAcaoPDSTIC)
+REQUIRE (n.numerolinha, n.ano_pdstic) IS UNIQUE;
+
+CREATE CONSTRAINT indicador_id IF NOT EXISTS
+FOR (n:Indicador) REQUIRE n.id IS UNIQUE;
+
+CREATE CONSTRAINT risco_id IF NOT EXISTS
+FOR (n:Risco) REQUIRE n.id IS UNIQUE;
+
+CREATE CONSTRAINT contrato_id IF NOT EXISTS
+FOR (n:Contrato) REQUIRE n.id IS UNIQUE;
+
+CREATE CONSTRAINT dotacao_dotacao IF NOT EXISTS
+FOR (n:DotacaoOrcamentaria) REQUIRE n.dotacao IS UNIQUE;
+
+CREATE CONSTRAINT norma_id IF NOT EXISTS
+FOR (n:NormaPolitica) REQUIRE n.id IS UNIQUE;
+
+CREATE CONSTRAINT ativo_id IF NOT EXISTS
+FOR (n:AtivoTIC) REQUIRE n.id IS UNIQUE;
