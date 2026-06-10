@@ -60,17 +60,7 @@ airflow.db
 airflow/serialized_dags/
 
 # ==================== Bookstack ====================
-bookstack/config/.migrations
-bookstack/config/php/**
-bookstack/config/nginx/**
-bookstack/config/www/**
-bookstack/config/www/framework/cache/**
-bookstack/config/www/framework/sessions/**
-bookstack/config/www/framework/views/**
-bookstack/config/www/storage/logs/**
-bookstack/config/www/storage/framework/cache/**
-bookstack/config/www/storage/framework/sessions/**
-bookstack/config/www/storage/framework/views/**
+bookstack/config/**
 
 # Uploads do Bookstack (imagens, PDFs)
 bookstack/uploads/
@@ -136,6 +126,8 @@ backups/
 *.dump
 
 # ==================== Neo4j ====================
+neo4j/plugins/
+
 # Dados do Neo4j
 neo4j-data/
 neo4j/storage/
