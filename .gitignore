@@ -107,6 +107,7 @@ htmlcov/
 # migrations/versions/*.pyc
 
 # ==================== MariaDB ====================
+
 # Dados do MariaDB
 mariadb-data/
 mariadb_data/
@@ -122,6 +123,7 @@ mysql/logs/
 # Backups do banco (opcional - ignorar se não quer versionar)
 backups/
 *.sql
+!mariadb/init/*.sql
 *.bak
 *.dump
 
