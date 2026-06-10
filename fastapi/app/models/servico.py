@@ -41,13 +41,26 @@ DESCRICOES_SERVICO = {
 }
 
 class CategoriaServico(str, Enum):
-    CAPACITACAO = "Capacitação"
-    COMUNICACAO_VOZ = "Comunicação e Voz"
-    CONSULTORIA_GESTAO_CONTRATUAL = "Consultoria e Gestão Contratual"
-    DESENVOLVIMENTO_SISTEMAS = "Desenvolvimento de Sistemas"
-    IMPRESSAO_DISPOSITIVOS_CAMPO = "Impressão e Dispositivos de Campo"
-    INFRAESTRUTURA_CONECTIVIDADE = "Infraestrutura e Conectividade"
-    LICENCAS_FERRAMENTAS_DIGITAIS = "Licenças e Ferramentas Digitais"
+    # Antes do alinhamento com o CATSER
+    #CAPACITACAO = "Capacitação"
+    #COMUNICACAO_VOZ = "Comunicação e Voz"
+    #CONSULTORIA_GESTAO_CONTRATUAL = "Consultoria e Gestão Contratual"
+    #DESENVOLVIMENTO_SISTEMAS = "Desenvolvimento de Sistemas"
+    #IMPRESSAO_DISPOSITIVOS_CAMPO = "Impressão e Dispositivos de Campo"
+    #INFRAESTRUTURA_CONECTIVIDADE = "Infraestrutura e Conectividade"
+    #LICENCAS_FERRAMENTAS_DIGITAIS = "Licenças e Ferramentas Digitais"
+
+    # Alinhado aos Grupos do CATSER: https://dadosabertos.compras.gov.br/modulo-servico/2_consultarDivisaoServico?pagina=1&codigoSecao=1&statusDivisao=true
+    DESENVOLVIMENTO_SISTEMAS = "Desenvolvimento, Manutenção e Sustentação de Software"
+    COMPUTACAO_NUVEM = "Computação em Nuvem"
+    TELECOMUNICACAO_TELEFONIA = "Telecomunicação e Telefonia"
+    OUTSOURCE_IMPRESSAO = "Outsourcing de Impressão"
+    INFRAESTRUTURA_TIC = "Infraestrutura de TIC"
+    CONSULTORIA_GESTAO_CONTRATUAL = "Pesquisa, Análise de Dados e Indicadores, Consultoria e Projetos de TIC"
+    LICENCIAMENTO = "Arrendamento, Licenciamento de Direitos e Transferência de Tecnologia"
+
+    # Existem subclassificações (Classes) no CATSER: https://dadosabertos.compras.gov.br/modulo-servico/4_consultarClasseServico?pagina=1&codigoGrupo=131&statusGrupo=true
+    
 
 
 class StatusServico(str, Enum):
