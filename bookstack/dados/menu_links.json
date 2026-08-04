@@ -1559,6 +1559,63 @@
   },
   {
     "tipo": "servico",
+    "codigo_servico": "4657",
+    "nome": "Descomplica SP Aricanduva/Formosa/Carrão - Elogio",
+    "titulo": "Canais de Atendimento",
+    "categoria": "Canais de Atendimento",
+    "grupo": "Descomplica SP - Aricanduva/Formosa/Carrão",
+    "caminho_servico": [
+      "Canais de Atendimento",
+      "Descomplica SP - Aricanduva/Formosa/Carrão"
+    ],
+    "caminho": [
+      "Inicio",
+      "Canais de Atendimento",
+      "Descomplica SP - Aricanduva/Formosa/Carrão",
+      "Descomplica SP Aricanduva/Formosa/Carrão - Elogio"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4657"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "4658",
+    "nome": "Descomplica SP Aricanduva/Formosa/Carrão - Reclamação",
+    "titulo": "Canais de Atendimento",
+    "categoria": "Canais de Atendimento",
+    "grupo": "Descomplica SP - Aricanduva/Formosa/Carrão",
+    "caminho_servico": [
+      "Canais de Atendimento",
+      "Descomplica SP - Aricanduva/Formosa/Carrão"
+    ],
+    "caminho": [
+      "Inicio",
+      "Canais de Atendimento",
+      "Descomplica SP - Aricanduva/Formosa/Carrão",
+      "Descomplica SP Aricanduva/Formosa/Carrão - Reclamação"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4658"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "4659",
+    "nome": "Descomplica SP Aricanduva/Formosa/Carrão - Sugestão",
+    "titulo": "Canais de Atendimento",
+    "categoria": "Canais de Atendimento",
+    "grupo": "Descomplica SP - Aricanduva/Formosa/Carrão",
+    "caminho_servico": [
+      "Canais de Atendimento",
+      "Descomplica SP - Aricanduva/Formosa/Carrão"
+    ],
+    "caminho": [
+      "Inicio",
+      "Canais de Atendimento",
+      "Descomplica SP - Aricanduva/Formosa/Carrão",
+      "Descomplica SP Aricanduva/Formosa/Carrão - Sugestão"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4659"
+  },
+  {
+    "tipo": "servico",
     "codigo_servico": "3522",
     "nome": "Descomplica SP Butantã - Elogio",
     "titulo": "Canais de Atendimento",
@@ -3361,25 +3418,6 @@
       "Construção de soluções com os usuários - Fazer Inscrição"
     ],
     "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4037"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "3318",
-    "nome": "Atendimento especializado para defesa de direitos",
-    "titulo": "Cidadania e Assistência Social",
-    "categoria": "Cidadania e Assistência Social",
-    "grupo": "Atendimento especializado para defesa de direitos",
-    "caminho_servico": [
-      "Cidadania e Assistência Social",
-      "Atendimento especializado para defesa de direitos"
-    ],
-    "caminho": [
-      "Inicio",
-      "Cidadania e Assistência Social",
-      "Atendimento especializado para defesa de direitos",
-      "Atendimento especializado para defesa de direitos"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3318"
   },
   {
     "tipo": "servico",
@@ -5435,443 +5473,6 @@
   },
   {
     "tipo": "servico",
-    "codigo_servico": "872",
-    "nome": "Alimentação escolar - Reclamar sobre alimentação nas unidades",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Alimentação escolar",
-    "caminho_servico": [
-      "Educação",
-      "Alimentação escolar"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Alimentação escolar",
-      "Alimentação escolar - Reclamar sobre alimentação nas unidades"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=872"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "2694",
-    "nome": "Alimentação escolar - Sugerir cardápio",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Alimentação escolar",
-    "caminho_servico": [
-      "Educação",
-      "Alimentação escolar"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Alimentação escolar",
-      "Alimentação escolar - Sugerir cardápio"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2694"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "880",
-    "nome": "Leve Leite - Denúncia de venda ou desvio de leite",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Leve Leite",
-    "caminho_servico": [
-      "Educação",
-      "Leve Leite"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Leve Leite",
-      "Leve Leite - Denúncia de venda ou desvio de leite"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=880"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "2652",
-    "nome": "Leve Leite - Reclamação de não entrega do leite",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Leve Leite",
-    "caminho_servico": [
-      "Educação",
-      "Leve Leite"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Leve Leite",
-      "Leve Leite - Reclamação de não entrega do leite"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2652"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "3798",
-    "nome": "Material escolar - Avisar sobre problemas na compra do material",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Material e uniforme escolar",
-    "caminho_servico": [
-      "Educação",
-      "Material e uniforme escolar"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Material e uniforme escolar",
-      "Material escolar - Avisar sobre problemas na compra do material"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3798"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "3616",
-    "nome": "Uniforme escolar - Avisar sobre problemas na compra dos uniformes",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Material e uniforme escolar",
-    "caminho_servico": [
-      "Educação",
-      "Material e uniforme escolar"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Material e uniforme escolar",
-      "Uniforme escolar - Avisar sobre problemas na compra dos uniformes"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3616"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "2747",
-    "nome": "Transporte Escolar Gratuito - Denúncia de conduta ou postura do condutor",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Transporte Escolar",
-    "caminho_servico": [
-      "Educação",
-      "Transporte Escolar"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Transporte Escolar",
-      "Transporte Escolar Gratuito - Denúncia de conduta ou postura do condutor"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2747"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "3188",
-    "nome": "Transporte Escolar Gratuito - Denúncia de irregularidade no transporte escolar",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Transporte Escolar",
-    "caminho_servico": [
-      "Educação",
-      "Transporte Escolar"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Transporte Escolar",
-      "Transporte Escolar Gratuito - Denúncia de irregularidade no transporte escolar"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3188"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "3190",
-    "nome": "Transporte Escolar Gratuito - Elogio ao condutor",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Transporte Escolar",
-    "caminho_servico": [
-      "Educação",
-      "Transporte Escolar"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Transporte Escolar",
-      "Transporte Escolar Gratuito - Elogio ao condutor"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3190"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "2753",
-    "nome": "Transporte Escolar Gratuito - Reclamar sobre transporte",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Transporte Escolar",
-    "caminho_servico": [
-      "Educação",
-      "Transporte Escolar"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Transporte Escolar",
-      "Transporte Escolar Gratuito - Reclamar sobre transporte"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2753"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "2748",
-    "nome": "Transporte Escolar Gratuito - Reclamação da conservação e manutenção do veículo",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Transporte Escolar",
-    "caminho_servico": [
-      "Educação",
-      "Transporte Escolar"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Transporte Escolar",
-      "Transporte Escolar Gratuito - Reclamação da conservação e manutenção do veículo"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2748"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4786",
-    "nome": "Transporte Escolar Privado - Elogio ao Condutor",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Transporte Escolar",
-    "caminho_servico": [
-      "Educação",
-      "Transporte Escolar"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Transporte Escolar",
-      "Transporte Escolar Privado - Elogio ao Condutor"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4786"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "2653",
-    "nome": "Denunciar irregularidades nos Centros de Educação Infantil parceiros (creches)",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Unidades escolares",
-    "caminho_servico": [
-      "Educação",
-      "Unidades escolares"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Unidades escolares",
-      "Denunciar irregularidades nos Centros de Educação Infantil parceiros (creches)"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2653"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "3506",
-    "nome": "Denunciar má conduta de profissionais da educação",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Unidades escolares",
-    "caminho_servico": [
-      "Educação",
-      "Unidades escolares"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Unidades escolares",
-      "Denunciar má conduta de profissionais da educação"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3506"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "3386",
-    "nome": "Autos de Infração - Fale com a Fazenda",
-    "titulo": "Finanças",
-    "categoria": "Finanças",
-    "grupo": "Autos de infração",
-    "caminho_servico": [
-      "Finanças",
-      "Autos de infração"
-    ],
-    "caminho": [
-      "Inicio",
-      "Finanças",
-      "Autos de infração",
-      "Autos de Infração - Fale com a Fazenda"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3386"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "3328",
-    "nome": "CADIN - Fale com a Fazenda",
-    "titulo": "Finanças",
-    "categoria": "Finanças",
-    "grupo": "CADIN - Cadastro Informativo Municipal",
-    "caminho_servico": [
-      "Finanças",
-      "CADIN - Cadastro Informativo Municipal"
-    ],
-    "caminho": [
-      "Inicio",
-      "Finanças",
-      "CADIN - Cadastro Informativo Municipal",
-      "CADIN - Fale com a Fazenda"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3328"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4015",
-    "nome": "CCM - Alterar cadastro de pessoa física ou jurídica (casos que não estão no VRE)",
-    "titulo": "Finanças",
-    "categoria": "Finanças",
-    "grupo": "Cadastro de Contribuintes Mobiliários (CCM)",
-    "caminho_servico": [
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)"
-    ],
-    "caminho": [
-      "Inicio",
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)",
-      "CCM - Alterar cadastro de pessoa física ou jurídica (casos que não estão no VRE)"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4015"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4014",
-    "nome": "CCM - Inscrever pessoa física ou jurídica (casos que não estão no VRE)",
-    "titulo": "Finanças",
-    "categoria": "Finanças",
-    "grupo": "Cadastro de Contribuintes Mobiliários (CCM)",
-    "caminho_servico": [
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)"
-    ],
-    "caminho": [
-      "Inicio",
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)",
-      "CCM - Inscrever pessoa física ou jurídica (casos que não estão no VRE)"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4014"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "3942",
-    "nome": "CCM - Solicitar correção de cadastro",
-    "titulo": "Finanças",
-    "categoria": "Finanças",
-    "grupo": "Cadastro de Contribuintes Mobiliários (CCM)",
-    "caminho_servico": [
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)"
-    ],
-    "caminho": [
-      "Inicio",
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)",
-      "CCM - Solicitar correção de cadastro"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3942"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4008",
-    "nome": "CCM - Transferir MEI para o município de São Paulo",
-    "titulo": "Finanças",
-    "categoria": "Finanças",
-    "grupo": "Cadastro de Contribuintes Mobiliários (CCM)",
-    "caminho_servico": [
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)"
-    ],
-    "caminho": [
-      "Inicio",
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)",
-      "CCM - Transferir MEI para o município de São Paulo"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4008"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "3744",
-    "nome": "CCM – Alterar ou excluir o código de TRSS",
-    "titulo": "Finanças",
-    "categoria": "Finanças",
-    "grupo": "Cadastro de Contribuintes Mobiliários (CCM)",
-    "caminho_servico": [
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)"
-    ],
-    "caminho": [
-      "Inicio",
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)",
-      "CCM – Alterar ou excluir o código de TRSS"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3744"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "3743",
-    "nome": "CCM – Excluir o Código de Anúncio (TFA)",
-    "titulo": "Finanças",
-    "categoria": "Finanças",
-    "grupo": "Cadastro de Contribuintes Mobiliários (CCM)",
-    "caminho_servico": [
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)"
-    ],
-    "caminho": [
-      "Inicio",
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)",
-      "CCM – Excluir o Código de Anúncio (TFA)"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3743"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "3333",
-    "nome": "CCM – Fale com a Fazenda",
-    "titulo": "Finanças",
-    "categoria": "Finanças",
-    "grupo": "Cadastro de Contribuintes Mobiliários (CCM)",
-    "caminho_servico": [
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)"
-    ],
-    "caminho": [
-      "Inicio",
-      "Finanças",
-      "Cadastro de Contribuintes Mobiliários (CCM)",
-      "CCM – Fale com a Fazenda"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3333"
-  },
-  {
-    "tipo": "servico",
     "codigo_servico": "3334",
     "nome": "CPOM - Fale com a Fazenda",
     "titulo": "Finanças",
@@ -7050,6 +6651,44 @@
   },
   {
     "tipo": "servico",
+    "codigo_servico": "3744",
+    "nome": "CCM – Alterar ou excluir o código de TRSS",
+    "titulo": "Finanças",
+    "categoria": "Finanças",
+    "grupo": "Taxas mobiliárias",
+    "caminho_servico": [
+      "Finanças",
+      "Taxas mobiliárias"
+    ],
+    "caminho": [
+      "Inicio",
+      "Finanças",
+      "Taxas mobiliárias",
+      "CCM – Alterar ou excluir o código de TRSS"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3744"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "3743",
+    "nome": "CCM – Excluir o Código de Anúncio (TFA)",
+    "titulo": "Finanças",
+    "categoria": "Finanças",
+    "grupo": "Taxas mobiliárias",
+    "caminho_servico": [
+      "Finanças",
+      "Taxas mobiliárias"
+    ],
+    "caminho": [
+      "Inicio",
+      "Finanças",
+      "Taxas mobiliárias",
+      "CCM – Excluir o Código de Anúncio (TFA)"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3743"
+  },
+  {
+    "tipo": "servico",
     "codigo_servico": "3505",
     "nome": "Taxas Mobiliárias – Fale com a Fazenda",
     "titulo": "Finanças",
@@ -7810,63 +7449,6 @@
   },
   {
     "tipo": "servico",
-    "codigo_servico": "4851",
-    "nome": "Solicitação de Atestado de Execução Arbórea",
-    "titulo": "Meio ambiente",
-    "categoria": "Meio ambiente",
-    "grupo": "Licenciamento Ambiental",
-    "caminho_servico": [
-      "Meio ambiente",
-      "Licenciamento Ambiental"
-    ],
-    "caminho": [
-      "Inicio",
-      "Meio ambiente",
-      "Licenciamento Ambiental",
-      "Solicitação de Atestado de Execução Arbórea"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4851"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4848",
-    "nome": "Solicitação de Manifestação Técnica sobre Incidência de Área De Preservação Permanente (App)",
-    "titulo": "Meio ambiente",
-    "categoria": "Meio ambiente",
-    "grupo": "Licenciamento Ambiental",
-    "caminho_servico": [
-      "Meio ambiente",
-      "Licenciamento Ambiental"
-    ],
-    "caminho": [
-      "Inicio",
-      "Meio ambiente",
-      "Licenciamento Ambiental",
-      "Solicitação de Manifestação Técnica sobre Incidência de Área De Preservação Permanente (App)"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4848"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4847",
-    "nome": "Solicitação de Parecer Conclusivo Sobre Implementação ou Regularização de Ocupação em Área de Preservação Permanente (APP)",
-    "titulo": "Meio ambiente",
-    "categoria": "Meio ambiente",
-    "grupo": "Licenciamento Ambiental",
-    "caminho_servico": [
-      "Meio ambiente",
-      "Licenciamento Ambiental"
-    ],
-    "caminho": [
-      "Inicio",
-      "Meio ambiente",
-      "Licenciamento Ambiental",
-      "Solicitação de Parecer Conclusivo Sobre Implementação ou Regularização de Ocupação em Área de Preservação Permanente (APP)"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4847"
-  },
-  {
-    "tipo": "servico",
     "codigo_servico": "3978",
     "nome": "Enviar documentos e/ou alterações do Termo de Ajustamento de Conduta (TAC)",
     "titulo": "Meio ambiente",
@@ -8225,196 +7807,6 @@
       "Árvore – Solicitar avaliação em calçadas e praças para fins de poda ou remoção"
     ],
     "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=1071"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4174",
-    "nome": "COHAB - Solicitar cópia de planta do imóvel",
-    "titulo": "Obras, imóveis e habitação",
-    "categoria": "Obras, imóveis e habitação",
-    "grupo": "COHAB",
-    "caminho_servico": [
-      "Obras, imóveis e habitação",
-      "COHAB"
-    ],
-    "caminho": [
-      "Inicio",
-      "Obras, imóveis e habitação",
-      "COHAB",
-      "COHAB - Solicitar cópia de planta do imóvel"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4174"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4450",
-    "nome": "COHAB - Solicitar devolução de parcelas pagas para contratos quitados",
-    "titulo": "Obras, imóveis e habitação",
-    "categoria": "Obras, imóveis e habitação",
-    "grupo": "COHAB",
-    "caminho_servico": [
-      "Obras, imóveis e habitação",
-      "COHAB"
-    ],
-    "caminho": [
-      "Inicio",
-      "Obras, imóveis e habitação",
-      "COHAB",
-      "COHAB - Solicitar devolução de parcelas pagas para contratos quitados"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4450"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4135",
-    "nome": "COHAB - Solicitar em caso de morte/invalidez permanente (Seguro habitacional)",
-    "titulo": "Obras, imóveis e habitação",
-    "categoria": "Obras, imóveis e habitação",
-    "grupo": "COHAB",
-    "caminho_servico": [
-      "Obras, imóveis e habitação",
-      "COHAB"
-    ],
-    "caminho": [
-      "Inicio",
-      "Obras, imóveis e habitação",
-      "COHAB",
-      "COHAB - Solicitar em caso de morte/invalidez permanente (Seguro habitacional)"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4135"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4133",
-    "nome": "COHAB - Solicitar indenização de danos físicos (Seguro do imóvel)",
-    "titulo": "Obras, imóveis e habitação",
-    "categoria": "Obras, imóveis e habitação",
-    "grupo": "COHAB",
-    "caminho_servico": [
-      "Obras, imóveis e habitação",
-      "COHAB"
-    ],
-    "caminho": [
-      "Inicio",
-      "Obras, imóveis e habitação",
-      "COHAB",
-      "COHAB - Solicitar indenização de danos físicos (Seguro do imóvel)"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4133"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4134",
-    "nome": "COHAB - Solicitar quitação do financiamento com recursos próprios",
-    "titulo": "Obras, imóveis e habitação",
-    "categoria": "Obras, imóveis e habitação",
-    "grupo": "COHAB",
-    "caminho_servico": [
-      "Obras, imóveis e habitação",
-      "COHAB"
-    ],
-    "caminho": [
-      "Inicio",
-      "Obras, imóveis e habitação",
-      "COHAB",
-      "COHAB - Solicitar quitação do financiamento com recursos próprios"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4134"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4249",
-    "nome": "COHAB - Transferência de titularidade do imóvel",
-    "titulo": "Obras, imóveis e habitação",
-    "categoria": "Obras, imóveis e habitação",
-    "grupo": "COHAB",
-    "caminho_servico": [
-      "Obras, imóveis e habitação",
-      "COHAB"
-    ],
-    "caminho": [
-      "Inicio",
-      "Obras, imóveis e habitação",
-      "COHAB",
-      "COHAB - Transferência de titularidade do imóvel"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4249"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4458",
-    "nome": "COHAB – Atualizar dados do cadastro",
-    "titulo": "Obras, imóveis e habitação",
-    "categoria": "Obras, imóveis e habitação",
-    "grupo": "COHAB",
-    "caminho_servico": [
-      "Obras, imóveis e habitação",
-      "COHAB"
-    ],
-    "caminho": [
-      "Inicio",
-      "Obras, imóveis e habitação",
-      "COHAB",
-      "COHAB – Atualizar dados do cadastro"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4458"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "898",
-    "nome": "Denunciar janela ou abertura a menos de 1,50m do vizinho",
-    "titulo": "Obras, imóveis e habitação",
-    "categoria": "Obras, imóveis e habitação",
-    "grupo": "Fiscalização de obras",
-    "caminho_servico": [
-      "Obras, imóveis e habitação",
-      "Fiscalização de obras"
-    ],
-    "caminho": [
-      "Inicio",
-      "Obras, imóveis e habitação",
-      "Fiscalização de obras",
-      "Denunciar janela ou abertura a menos de 1,50m do vizinho"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=898"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "928",
-    "nome": "Denunciar material de construção depositado em vias públicas",
-    "titulo": "Obras, imóveis e habitação",
-    "categoria": "Obras, imóveis e habitação",
-    "grupo": "Fiscalização de obras",
-    "caminho_servico": [
-      "Obras, imóveis e habitação",
-      "Fiscalização de obras"
-    ],
-    "caminho": [
-      "Inicio",
-      "Obras, imóveis e habitação",
-      "Fiscalização de obras",
-      "Denunciar material de construção depositado em vias públicas"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=928"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "897",
-    "nome": "Solicitar fiscalização de obra e reforma em imóvel particular",
-    "titulo": "Obras, imóveis e habitação",
-    "categoria": "Obras, imóveis e habitação",
-    "grupo": "Fiscalização de obras",
-    "caminho_servico": [
-      "Obras, imóveis e habitação",
-      "Fiscalização de obras"
-    ],
-    "caminho": [
-      "Inicio",
-      "Obras, imóveis e habitação",
-      "Fiscalização de obras",
-      "Solicitar fiscalização de obra e reforma em imóvel particular"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=897"
   },
   {
     "tipo": "servico",
@@ -10543,6 +9935,120 @@
       "Travessia de pedestres - Solicitar avaliação"
     ],
     "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=752"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "2747",
+    "nome": "Transporte Escolar Gratuito - Denúncia de conduta ou postura do condutor",
+    "titulo": "Trânsito e Transporte",
+    "categoria": "Trânsito e Transporte",
+    "grupo": "Transporte Escolar",
+    "caminho_servico": [
+      "Trânsito e Transporte",
+      "Transporte Escolar"
+    ],
+    "caminho": [
+      "Inicio",
+      "Trânsito e Transporte",
+      "Transporte Escolar",
+      "Transporte Escolar Gratuito - Denúncia de conduta ou postura do condutor"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2747"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "3188",
+    "nome": "Transporte Escolar Gratuito - Denúncia de irregularidade no transporte escolar",
+    "titulo": "Trânsito e Transporte",
+    "categoria": "Trânsito e Transporte",
+    "grupo": "Transporte Escolar",
+    "caminho_servico": [
+      "Trânsito e Transporte",
+      "Transporte Escolar"
+    ],
+    "caminho": [
+      "Inicio",
+      "Trânsito e Transporte",
+      "Transporte Escolar",
+      "Transporte Escolar Gratuito - Denúncia de irregularidade no transporte escolar"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3188"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "3190",
+    "nome": "Transporte Escolar Gratuito - Elogio ao condutor",
+    "titulo": "Trânsito e Transporte",
+    "categoria": "Trânsito e Transporte",
+    "grupo": "Transporte Escolar",
+    "caminho_servico": [
+      "Trânsito e Transporte",
+      "Transporte Escolar"
+    ],
+    "caminho": [
+      "Inicio",
+      "Trânsito e Transporte",
+      "Transporte Escolar",
+      "Transporte Escolar Gratuito - Elogio ao condutor"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3190"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "2753",
+    "nome": "Transporte Escolar Gratuito - Reclamar sobre transporte",
+    "titulo": "Trânsito e Transporte",
+    "categoria": "Trânsito e Transporte",
+    "grupo": "Transporte Escolar",
+    "caminho_servico": [
+      "Trânsito e Transporte",
+      "Transporte Escolar"
+    ],
+    "caminho": [
+      "Inicio",
+      "Trânsito e Transporte",
+      "Transporte Escolar",
+      "Transporte Escolar Gratuito - Reclamar sobre transporte"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2753"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "2748",
+    "nome": "Transporte Escolar Gratuito - Reclamação da conservação e manutenção do veículo",
+    "titulo": "Trânsito e Transporte",
+    "categoria": "Trânsito e Transporte",
+    "grupo": "Transporte Escolar",
+    "caminho_servico": [
+      "Trânsito e Transporte",
+      "Transporte Escolar"
+    ],
+    "caminho": [
+      "Inicio",
+      "Trânsito e Transporte",
+      "Transporte Escolar",
+      "Transporte Escolar Gratuito - Reclamação da conservação e manutenção do veículo"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2748"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "4786",
+    "nome": "Transporte Escolar Privado - Elogio ao Condutor",
+    "titulo": "Trânsito e Transporte",
+    "categoria": "Trânsito e Transporte",
+    "grupo": "Transporte Escolar",
+    "caminho_servico": [
+      "Trânsito e Transporte",
+      "Transporte Escolar"
+    ],
+    "caminho": [
+      "Inicio",
+      "Trânsito e Transporte",
+      "Transporte Escolar",
+      "Transporte Escolar Privado - Elogio ao Condutor"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4786"
   },
   {
     "tipo": "servico",

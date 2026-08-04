@@ -1,15 +1,8 @@
+# BookStack
 
-docker compose --env-file ./bookstack/.env --env-file ./neo4j/.env --env-file ./mariadb/.env --env-file ./airflow/.env up airflow_init
+Coleta os serviços e informativos do portal **SP156** (SMSUB/SELIMP) e publica tudo automaticamente em um **BookStack**, orquestrado pelo **Airflow**. Inclui também uma API própria de governança de TIC (FastAPI + Neo4j), independente do pipeline de coleta.
 
-docker compose --env-file ./bookstack/.env --env-file ./neo4j/.env --env-file ./mariadb/.env --env-file ./airflow/.env up -d --build
-
-
-# SP156 → BookStack
-
-Coleta os serviços e informativos do portal **SP156** (SMSUB/SELIMP) e publica tudo automaticamente em um **BookStack**, orquestrado pelo **Airflow**.
-
-![Fluxograma do projeto](assets/Vertical-%20bookstack.png)
-
+![Fluxograma do projeto](bookstack/assets/vertical-bookstack.png)
 ---
 
 ## Sumário
@@ -22,6 +15,7 @@ Coleta os serviços e informativos do portal **SP156** (SMSUB/SELIMP) e publica 
 - [Estrutura de pastas do Airflow](#estrutura-de-pastas-do-airflow)
 - [Configurar as variáveis do BookStack no Airflow](#configurar-as-variáveis-do-bookstack-no-airflow)
 - [O que a DAG faz](#o-que-a-dag-faz)
+- [API de Governança TIC (FastAPI + Neo4j)](#api-de-governança-tic-fastapi--neo4j)
 - [Se algo não subir](#se-algo-não-subir)
 - [Erros mais comuns](#erros-mais-comuns)
 - [Certificados HTTPS (porta 443)](#certificados-https-porta-443)
@@ -90,6 +84,8 @@ Revise apenas os valores "legíveis" que já vêm com exemplo (`POSTGRES_USER`, 
 | :--- | :--- | :--- |
 | **Airflow** | http://airflow.localhost | usuário `admin`, senha gerada automaticamente a cada up dos containers: veja como consultar abaixo |
 | **BookStack** | http://bookstack.localhost | `admin@admin.com` / `password`|
+| **API de Governança TIC** (FastAPI) | http://api.localhost | sem autenticação nesta versão. Documentação interativa (Swagger) em `http://api.localhost/docs` |
+| **Neo4j Browser** | http://neo4j.localhost | usuário/senha definidos em `DB_NEO4J_USER`/`DB_NEO4J_PASSWORD` no `.env` |
 
 **Pra ver a senha gerada do Airflow:**
 
@@ -105,7 +101,7 @@ docker exec airflow-webserver_service cat /opt/airflow/simple_auth_manager_passw
 
 ## Configurar as variáveis do BookStack no Airflow
 
-O pipeline precisa de um Token de API do BookStack para criar/atualizar páginas via API. Esse token **não fica no `.env`** — ele é cadastrado como **Airflow Variable**, o jeito recomendado pelo próprio Airflow de guardar configuração/segredo que a DAG usa em tempo de execução (dá pra trocar sem subir os containers de novo).
+O pipeline precisa de um Token de API do BookStack para criar/atualizar páginas via API. Esse token **não fica no `.env`** ele é cadastrado como **Airflow Variable**, o jeito recomendado pelo próprio Airflow de guardar configuração/segredo que a DAG usa em tempo de execução (dá pra trocar sem subir os containers de novo).
 
 | Passo | Ação |
 | :--- | :--- |
@@ -124,8 +120,8 @@ token_secret = os.environ.get('BOOKSTACK_TOKEN_SECRET')
 
 | Quando usar | Vantagem |
 | :--- | :--- |
-| **Airflow Variable** | Editável pela interface web, sem redeploy — ideal pra rotacionar o token sem mexer em arquivo nenhum |
-| **Variável de ambiente do contêiner** | Definida no `docker-compose.yml`/`.env`, só muda ao subir containers de novo — mais rígida, mas fica versionada junto da infra (exceto o valor do segredo em si) |
+| **Airflow Variable** | Editável pela interface web, sem redeploy ideal pra rotacionar o token sem mexer em arquivo nenhum |
+| **Variável de ambiente do contêiner** | Definida no `docker-compose.yml`/`.env`, só muda ao subir containers de novo mais rígida, mas fica versionada junto da infra (exceto o valor do segredo em si) |
 
 ---
 
@@ -135,7 +131,7 @@ token_secret = os.environ.get('BOOKSTACK_TOKEN_SECRET')
 
 ## Como disparar a DAG
 
-1. Acesse `http://airflow.localhost` e faça login (`admin` + a senha gerada — veja [Como rodar](#como-rodar)).
+1. Acesse `http://airflow.localhost` e faça login (`admin` + a senha gerada veja [Como rodar](#como-rodar)).
 2. No menu superior, clique em **DAGs**.
 3. Localize `atualizar_servicos_sp156` na lista.
 4. Se o botão ao lado do nome estiver cinza/desligado, clique nele para **ativar** a DAG.
@@ -225,6 +221,65 @@ Quer entender a lógica interna de cada etapa, função por função? Veja [Guia
 
 ---
 
+## API de Governança TIC (FastAPI + Neo4j)
+
+Além do pipeline SP156 → BookStack, o projeto sobe uma **API própria de governança de TIC**, separada do fluxo de coleta. Ela não é acionada pela DAG — é um serviço independente, pensado pra cadastro manual (ou por integração futura) de contratos, pessoas, sistemas, riscos e o catálogo de serviços de TIC da SMSUB.
+
+| Item | Detalhe |
+| :--- | :--- |
+| **Onde fica o código** | `fastapi/app/` |
+| **Banco de dados** | Neo4j (grafo) não usa MariaDB nem Postgres |
+| **Acesso** | http://api.localhost, com Swagger em `http://api.localhost/docs` |
+| **Autenticação** | Nenhuma nesta versão  a API está aberta pra quem alcançar `api.localhost` |
+
+### Modelo de dados no Neo4j
+
+Os nós e relações são criados pelos scripts em `neo4j/scripts/`, executados uma vez pelo serviço `neo4j-init` na primeira subida (`init.sh` chama, em ordem: `init_constraints.cypher` → `init_smsub_unidades.cypher` → `init_subprefeituras.cypher` → `inti_pdstic_2026.cypher`).
+
+| Nó | Representa |
+| :--- | :--- |
+| `OrgaoSetorial` | Órgão da estrutura da SMSUB |
+| `Unidade` | Unidade organizacional (identificada por sigla) |
+| `Pessoa` | Servidor/colaborador (nome, e-mail, telefones) |
+| `ServicoTIC` | Item do catálogo de serviços de TIC (categoria, público-alvo, canal de solicitação, prazo estimado, unidade responsável) |
+| `Sistema` | Sistema de informação (nome, sigla) |
+| `Contrato` | Contrato de fornecimento (número, ano, fornecedor, vigência, valor anual estimado, processo SEI) |
+| `Risco` | Risco associado a contrato/serviço, com categoria (`governanca`, `operacional`, `seguranca`, `dados`, etc.) e origem |
+| `BaseDados` | Base de dados vinculada a um sistema |
+| `PDSTIC` / `LinhaAcaoPDSTIC` | Plano Diretor de TIC do ano e suas linhas de ação |
+| `Indicador` | Indicador de acompanhamento (fórmula, meta, periodicidade, fonte) |
+
+Relações (`Vinculo`) conectam esses nós  por exemplo `PessoaContrato` (`FISCALIZA` / `SUPLENTE_FISCAL` / `GESTOR_CONTRATO`) e `ContratoServico` (`FORNECE` / `FORNECIDO`).
+
+### Rotas disponíveis
+
+Todas sob o prefixo `/v1/governanca`:
+
+| Router | Prefixo | O que expõe |
+| :--- | :--- | :--- |
+| `servico.py` | `/v1/governanca/catalogo/servicos` | CRUD do catálogo de serviços de TIC, com busca por nome |
+| `pessoa.py` | `/v1/governanca/pessoas` | CRUD de pessoas, mais vínculo pessoa↔contrato |
+| `contrato.py` | `/v1/governanca/contratos` | CRUD de contratos, mais vínculo contrato↔serviço |
+| `risco.py` | `/v1/governanca/risco` | Cadastro e listagem de riscos |
+
+<span style="color:red">⚠️ **`sistema.py` existe (`fastapi/app/routers/sistema.py`, rota `/v1/governanca/sistemas`) mas não está registrado em `main.py`.** O router é importado nos outros arquivos internamente, mas falta a linha `app.include_router(sistema.router, prefix="/v1/governanca")` em `fastapi/app/main.py` — hoje a rota de Sistemas não responde, mesmo com o código pronto.</span>
+
+### Variáveis de ambiente usadas
+
+Vêm do `.env` raiz (não é um `.env` separado dentro de `fastapi/`):
+
+```
+DB_NEO4J_URI=bolt://neo4j:7687
+DB_NEO4J_USER=neo4j
+DB_NEO4J_PASSWORD=<definido no .env>
+```
+
+O `fastapi/app/core/config.py` lê essas variáveis via `pydantic-settings`; o `docker-compose.yml` repassa pro container como `NEO4J_URI`/`NEO4J_USER`/`NEO4J_PASSWORD`.
+
+---
+
+---
+
 ## Se algo não subir
 
 Primeiro passo, sempre: olhar o log do serviço que falhou.
@@ -294,14 +349,19 @@ Isso remove só a imagem construída localmente (`airflow-service:*`), sem mexer
 ```
 setup.sh              # prepara permissões e sobe o docker compose
 airflow/dags/          # exclusivamente definições de DAG (.py)
-airflow/include/        # código de coleta, publicação, hash e backup (ETL)
-airflow/dados/          # JSONs gerados em runtime (não versionados)
-nginx/conf.d/           # proxy reverso na frente do BookStack + Airflow
+bookstack/include/      # código de coleta, publicação, hash e backup (ETL) importado pela DAG como include.*
+bookstack/dados/        # JSONs gerados em runtime (não versionados)
+bookstack/assets/       # fluxograma do projeto e guia de estilo do BookStack
+fastapi/app/            # API de Governança TIC (Neo4j) rotas em /v1/governanca/*
+neo4j/scripts/          # cypher de inicialização (constraints, unidades, subprefeituras, PDSTIC)
+mariadb/init/           # scripts SQL de criação dos bancos na primeira subida
+nginx/conf.d/           # proxy reverso na frente de BookStack + Airflow + FastAPI + Neo4j Browser
 nginx/certs/            # certificados HTTPS (não versionados, gerar em produção)
-backups/                # dumps mensais do BookStack (não versionados)
 docker-compose.yml
 Dockerfile
 ```
+
+> **Nota:** o guia de lógica do código abaixo referencia `airflow/include/` como convenção geral de projetos Airflow (DAG separada de código auxiliar). Neste projeto, a pasta física correspondente é `bookstack/include/` é o caminho real montado no `docker-compose.yml` e de onde a DAG importa (`from include.coleta import ...`).
 
 ---
 
