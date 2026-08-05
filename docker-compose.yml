@@ -1,3 +1,17 @@
+# Cada serviço tem seu próprio arquivo de segredos, na pasta dele.
+# O Compose junta os 5 arquivos só pra resolver os ${VAR} deste YAML —
+# isso não expõe variável nenhuma dentro dos containers por si só (quem
+# faz isso são os blocos "environment:" de cada serviço, mais abaixo).
+# Requer Docker Compose >= 2.24. Se sua versão for mais antiga, rode:
+#   docker compose --env-file airflow/.env --env-file bookstack/.env \
+#     --env-file mariadb/.env --env-file neo4j/.env --env-file fastapi/.env up -d
+env_file:
+  - airflow/.env
+  - bookstack/.env
+  - mariadb/.env
+  - neo4j/.env
+  - fastapi/.env
+
 x-airflow-common: &airflow-common
   build:
     context: .

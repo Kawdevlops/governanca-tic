@@ -62,7 +62,6 @@ class CategoriaServico(str, Enum):
     # Existem subclassificações (Classes) no CATSER: https://dadosabertos.compras.gov.br/modulo-servico/4_consultarClasseServico?pagina=1&codigoGrupo=131&statusGrupo=true
     
 
-
 class StatusServico(str, Enum):
     ATIVO = "ativo"
     EM_DESENVOLVIMENTO = "em_desenvolvimento"

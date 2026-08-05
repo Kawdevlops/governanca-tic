@@ -1,14 +1,32 @@
 #!/bin/bash
-if [ ! -f .env ]; then
-    echo ".env não encontrado - copiando de .env.example..."
-    cp .env.example .env
-fi
-
-set -a
-source .env
-set +a
-
 set -e
+
+# Cada serviço tem seu próprio .env, dentro da própria pasta.
+# Esse array é a lista única de referência — se um dia entrar um novo
+# serviço com segredo próprio, só precisa adicionar a linha aqui.
+ARQUIVOS_ENV=(
+    "airflow/.env"
+    "bookstack/.env"
+    "mariadb/.env"
+    "neo4j/.env"
+    "fastapi/.env"
+)
+
+FLAGS_ENV_FILE=()
+for arquivo in "${ARQUIVOS_ENV[@]}"; do
+    FLAGS_ENV_FILE+=(--env-file "$arquivo")
+done
+
+echo "Conferindo os ${#ARQUIVOS_ENV[@]} arquivos .env..."
+for arquivo in "${ARQUIVOS_ENV[@]}"; do
+    if [ ! -f "$arquivo" ]; then
+        echo "  $arquivo não encontrado - copiando de ${arquivo}.example..."
+        cp "${arquivo}.example" "$arquivo"
+    fi
+    set -a
+    source "$arquivo"
+    set +a
+done
 
 FORCAR_REGERACAO="false"
 if [ "$1" = "--regerar-segredos" ]; then
@@ -21,25 +39,28 @@ if ! docker volume ls --format '{{.Name}}' | grep -qE '(^|_)mariadb_data$'; then
     FORCAR_REGERACAO="true"
 fi
 
+# preencher_se_vazio agora recebe TAMBÉM o arquivo onde a variável mora,
+# porque cada segredo pertence a um .env diferente.
 preencher_se_vazio() {
-    local nome_var="$1"
-    local comando_geracao="$2"
+    local arquivo="$1"
+    local nome_var="$2"
+    local comando_geracao="$3"
     local valor_atual
-    valor_atual="$(grep -E "^${nome_var}=" .env 2>/dev/null | cut -d= -f2-)"
+    valor_atual="$(grep -E "^${nome_var}=" "$arquivo" 2>/dev/null | cut -d= -f2-)"
 
     if [ -n "$valor_atual" ] && [ "$FORCAR_REGERACAO" != "true" ]; then
-        echo "  $nome_var já preenchido, mantendo."
+        echo "  [$arquivo] $nome_var já preenchido, mantendo."
         return
     fi
 
     local novo_valor
     novo_valor="$(eval "$comando_geracao")"
-    if grep -q "^${nome_var}=" .env; then
-        sed -i "s|^${nome_var}=.*|${nome_var}=${novo_valor}|" .env
+    if grep -q "^${nome_var}=" "$arquivo"; then
+        sed -i "s|^${nome_var}=.*|${nome_var}=${novo_valor}|" "$arquivo"
     else
-        echo "${nome_var}=${novo_valor}" >> .env
+        echo "${nome_var}=${novo_valor}" >> "$arquivo"
     fi
-    echo "  $nome_var $([ "$FORCAR_REGERACAO" = "true" ] && echo "regerado" || echo "gerado")."
+    echo "  [$arquivo] $nome_var $([ "$FORCAR_REGERACAO" = "true" ] && echo "regerado" || echo "gerado")."
 }
 
 tentar_com_retry() {
@@ -60,25 +81,24 @@ tentar_com_retry() {
     done
 }
 
-echo "Conferindo segredos do .env..."
+echo "Conferindo segredos..."
 
-preencher_se_vazio "AIRFLOW_FERNET_KEY" \
+preencher_se_vazio "airflow/.env" "AIRFLOW_FERNET_KEY" \
     "python3 -c \"import secrets, base64; print(base64.urlsafe_b64encode(secrets.token_bytes(32)).decode())\""
-preencher_se_vazio "AIRFLOW_SECRET_KEY" \
+preencher_se_vazio "airflow/.env" "AIRFLOW_SECRET_KEY" \
     "python3 -c \"import secrets; print(secrets.token_hex(32))\""
-preencher_se_vazio "AIRFLOW_JWT_SECRET" \
+preencher_se_vazio "airflow/.env" "AIRFLOW_JWT_SECRET" \
     "python3 -c \"import secrets; print(secrets.token_hex(32))\""
-preencher_se_vazio "MYSQL_ROOT_PASSWORD" \
+preencher_se_vazio "mariadb/.env" "MYSQL_ROOT_PASSWORD" \
     "python3 -c \"import secrets; print(secrets.token_urlsafe(24))\""
-preencher_se_vazio "BOOKSTACK_APP_KEY" \
+preencher_se_vazio "bookstack/.env" "BOOKSTACK_APP_KEY" \
     "python3 -c \"import secrets, base64; print('base64:' + base64.b64encode(secrets.token_bytes(32)).decode())\""
 
 UID_ATUAL="$(id -u)"
-
-if grep -q '^AIRFLOW_UID=' .env; then
-    sed -i "s|^AIRFLOW_UID=.*|AIRFLOW_UID=${UID_ATUAL}|" .env
+if grep -q '^AIRFLOW_UID=' airflow/.env; then
+    sed -i "s|^AIRFLOW_UID=.*|AIRFLOW_UID=${UID_ATUAL}|" airflow/.env
 else
-    echo "AIRFLOW_UID=${UID_ATUAL}" >> .env
+    echo "AIRFLOW_UID=${UID_ATUAL}" >> airflow/.env
 fi
 AIRFLOW_UID="$UID_ATUAL"
 
@@ -94,17 +114,17 @@ verificar_senha_mariadb() {
         return 0
     fi
 
-    docker compose up -d mariadb_service
-    echo "Verificando se a senha do .env bate com o banco existente..."
+    docker compose "${FLAGS_ENV_FILE[@]}" up -d mariadb_service
+    echo "Verificando se a senha do mariadb/.env bate com o banco existente..."
     sleep 5
 
-    if ! docker compose exec -T mariadb_service \
+    if ! docker compose "${FLAGS_ENV_FILE[@]}" exec -T mariadb_service \
         mariadb -u root -p"${MYSQL_ROOT_PASSWORD}" -e "SELECT 1;" > /dev/null 2>&1; then
         echo ""
-        echo " A senha em MYSQL_ROOT_PASSWORD não bate com o banco já existente."
+        echo " A senha em mariadb/.env (MYSQL_ROOT_PASSWORD) não bate com o banco já existente."
         echo ""
         echo "O que fazer?"
-        echo "  1) Cancelar aqui e eu mesmo corrijo o .env manualmente"
+        echo "  1) Cancelar aqui e eu mesmo corrijo o mariadb/.env manualmente"
         echo "  2) Apagar o volume e recriar o banco do zero (PERDE os dados do BookStack)"
         echo ""
         read -rp "Digite 1 ou 2: " escolha
@@ -112,13 +132,13 @@ verificar_senha_mariadb() {
         case "$escolha" in
             2)
                 echo "Apagando volume do MariaDB..."
-                docker compose down
+                docker compose "${FLAGS_ENV_FILE[@]}" down
                 docker volume rm governanca-tic_mariadb_data
                 echo "Volume removido. Rode o script de novo pra recriar."
                 exit 0
                 ;;
             *)
-                echo "Cancelado. Corrija o .env e rode o script de novo."
+                echo "Cancelado. Corrija o mariadb/.env e rode o script de novo."
                 exit 1
                 ;;
         esac
@@ -129,10 +149,10 @@ verificar_senha_mariadb() {
 verificar_senha_mariadb
 
 echo "Permissões ajustadas. Baixando imagens..."
-tentar_com_retry "docker compose pull" docker compose pull --ignore-buildable
+tentar_com_retry "docker compose pull" docker compose "${FLAGS_ENV_FILE[@]}" pull --ignore-buildable
 
 echo "Construindo imagens locais..."
-tentar_com_retry "docker compose build" docker compose build
+tentar_com_retry "docker compose build" docker compose "${FLAGS_ENV_FILE[@]}" build
 
 echo "Imagens prontas. Subindo os containers..."
-docker compose up -d
+docker compose "${FLAGS_ENV_FILE[@]}" up -d
