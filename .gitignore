@@ -187,3 +187,6 @@ dist/
 *.pem
 certificates/
 keys/
+
+# Pasta de ferramente de licensa 
+ferramentas/

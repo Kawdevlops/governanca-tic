@@ -1,3 +1,19 @@
+# Projeto Hydra - Isto faz aquilo o qual se pretende fazer
+# Copyright (C) 2026 Secretaria Municipal das Subprefeituras
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published
+# by the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program. If not, see <https://www.gnu.org/licenses/>.
+
 from app.repositories.basedados_repo import BaseDadosRepository
 from app.models.basedados import BaseDadosCreate, BaseDadosResponse, BaseDadosUpdate
 from fastapi import HTTPException
@@ -9,7 +25,13 @@ class BaseDadosService:
 
     async def listar_catalogo(self) -> list[BaseDadosResponse]:
         return await self.repo.listar()
+    
+    async def listar_orgaos_existentes(self) -> list[str]:
+        return await self.repo.listar_orgaos_existentes()
 
+    async def listar_setores_existentes(self, orgao: str | None = None) -> list[str]:
+        return await self.repo.listar_setores_existentes(orgao)
+    
     async def obter_por_titulo(self, titulo: str) -> BaseDadosResponse:
         base = await self.repo.obter_por_titulo(titulo)
         if not base:

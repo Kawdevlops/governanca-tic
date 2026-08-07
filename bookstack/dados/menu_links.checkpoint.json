@@ -1,5 +1,5 @@
 {
-  "concluido": false,
+  "concluido": true,
   "categorias_concluidas": [
     "Acessibilidade",
     "Animais",
@@ -14,8 +14,13 @@
     "Lixo e limpeza",
     "Meio ambiente",
     "Obras, imóveis e habitação",
+    "Ouvidoria SUS",
     "Rua e bairro",
-    "Saúde"
+    "Saúde",
+    "Segurança Urbana",
+    "Trabalho",
+    "Trânsito e Transporte",
+    "Áreas municipais"
   ],
   "dados": [
     {
@@ -8605,6 +8610,3255 @@
         "Notificação de receita de controle especial – Cadastrar ou atualizar dados de prescritor e de instituição de saúde"
       ],
       "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3732"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "842",
+      "nome": "Centro de Formação Cultural da Cidade Tiradentes - Reclamação",
+      "titulo": "Trabalho",
+      "categoria": "Trabalho",
+      "grupo": "Bolsas e Programas de Qualificação",
+      "caminho_servico": [
+        "Trabalho",
+        "Bolsas e Programas de Qualificação"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trabalho",
+        "Bolsas e Programas de Qualificação",
+        "Centro de Formação Cultural da Cidade Tiradentes - Reclamação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=842"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3614",
+      "nome": "Programa Mãos e Mentes Paulistanas - Solicitar credenciamento",
+      "titulo": "Trabalho",
+      "categoria": "Trabalho",
+      "grupo": "Empreendedorismo",
+      "caminho_servico": [
+        "Trabalho",
+        "Empreendedorismo"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trabalho",
+        "Empreendedorismo",
+        "Programa Mãos e Mentes Paulistanas - Solicitar credenciamento"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3614"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "841",
+      "nome": "Reclamações sobre serviços prestados aos feirantes",
+      "titulo": "Trabalho",
+      "categoria": "Trabalho",
+      "grupo": "Feira Livre",
+      "caminho_servico": [
+        "Trabalho",
+        "Feira Livre"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trabalho",
+        "Feira Livre",
+        "Reclamações sobre serviços prestados aos feirantes"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=841"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "839",
+      "nome": "MEI - Fazer uma reclamação",
+      "titulo": "Trabalho",
+      "categoria": "Trabalho",
+      "grupo": "Microempreendedor Individual - MEI",
+      "caminho_servico": [
+        "Trabalho",
+        "Microempreendedor Individual - MEI"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trabalho",
+        "Microempreendedor Individual - MEI",
+        "MEI - Fazer uma reclamação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=839"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "843",
+      "nome": "Escola Técnica de Saúde Pública - Reclamação",
+      "titulo": "Trabalho",
+      "categoria": "Trabalho",
+      "grupo": "Qualificação profissional",
+      "caminho_servico": [
+        "Trabalho",
+        "Qualificação profissional"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trabalho",
+        "Qualificação profissional",
+        "Escola Técnica de Saúde Pública - Reclamação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=843"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4629",
+      "nome": "Aquático – SP - Solicitar manutenção",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Aquático - SP",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Aquático - SP"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Aquático - SP",
+        "Aquático – SP - Solicitar manutenção"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4629"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4630",
+      "nome": "Aquático – SP – Denunciar tripulação por conduta inadequada",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Aquático - SP",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Aquático - SP"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Aquático - SP",
+        "Aquático – SP – Denunciar tripulação por conduta inadequada"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4630"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4631",
+      "nome": "Aquático – SP – Fazer sugestão",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Aquático - SP",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Aquático - SP"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Aquático - SP",
+        "Aquático – SP – Fazer sugestão"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4631"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4632",
+      "nome": "Aquático – SP – Reclamar",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Aquático - SP",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Aquático - SP"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Aquático - SP",
+        "Aquático – SP – Reclamar"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4632"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3117",
+      "nome": "Ciclofaixas de lazer - Solicitar avaliação",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Bicicleta",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Bicicleta"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Bicicleta",
+        "Ciclofaixas de lazer - Solicitar avaliação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3117"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "758",
+      "nome": "Ciclovias, ciclofaixas e ciclorrotas - Solicitar avaliação da infraestrutura",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Bicicleta",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Bicicleta"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Bicicleta",
+        "Ciclovias, ciclofaixas e ciclorrotas - Solicitar avaliação da infraestrutura"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=758"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "949",
+      "nome": "Ciclovias, ciclofaixas e ciclorrotas - solicitar manutenção da sinalização e pintura",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Bicicleta",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Bicicleta"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Bicicleta",
+        "Ciclovias, ciclofaixas e ciclorrotas - solicitar manutenção da sinalização e pintura"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=949"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "759",
+      "nome": "Ciclovias, ciclofaixas e ciclorrotas - Sugerir implantação",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Bicicleta",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Bicicleta"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Bicicleta",
+        "Ciclovias, ciclofaixas e ciclorrotas - Sugerir implantação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=759"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3216",
+      "nome": "Estações de bicicletas compartilhadas - solicitar mudança de local",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Bicicleta",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Bicicleta"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Bicicleta",
+        "Estações de bicicletas compartilhadas - solicitar mudança de local"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3216"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3217",
+      "nome": "Estações de bicicletas compartilhadas - Sugerir instalação de nova estação",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Bicicleta",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Bicicleta"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Bicicleta",
+        "Estações de bicicletas compartilhadas - Sugerir instalação de nova estação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3217"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3611",
+      "nome": "Análise de Plano de Atendimento a Emergência no Transporte de Produtos Perigosos",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Análise de Plano de Atendimento a Emergência no Transporte de Produtos Perigosos"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3611"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4761",
+      "nome": "Carga a Frete - Achados e Perdidos",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga a Frete - Achados e Perdidos"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4761"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4762",
+      "nome": "Carga a Frete - Reclamar da conservação e manutenção do veículo",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga a Frete - Reclamar da conservação e manutenção do veículo"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4762"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4106",
+      "nome": "Carga Frete - Dar baixa na licença",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Dar baixa na licença"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4106"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4121",
+      "nome": "Carga Frete - Dar baixa no preposto",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Dar baixa no preposto"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4121"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3192",
+      "nome": "Carga Frete - Denunciar irregularidades no ponto",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Denunciar irregularidades no ponto"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3192"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4117",
+      "nome": "Carga Frete - Fazer Cadastro de Condutax",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Fazer Cadastro de Condutax"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4117"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4122",
+      "nome": "Carga Frete - Nomear preposto",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Nomear preposto"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4122"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4115",
+      "nome": "Carga Frete - Solicitar 2ª via do Alvará",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Solicitar 2ª via do Alvará"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4115"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4116",
+      "nome": "Carga Frete - Solicitar 2ª via do Cadastro",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Solicitar 2ª via do Cadastro"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4116"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4120",
+      "nome": "Carga Frete - Solicitar alteração dos dados do condutor",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Solicitar alteração dos dados do condutor"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4120"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4111",
+      "nome": "Carga Frete - Solicitar baixa do veículo da licença",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Solicitar baixa do veículo da licença"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4111"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4123",
+      "nome": "Carga Frete - Solicitar cadastro de licença",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Solicitar cadastro de licença"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4123"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4112",
+      "nome": "Carga Frete - Solicitar Renovação de Alvará",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Solicitar Renovação de Alvará"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4112"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4114",
+      "nome": "Carga Frete - Solicitar Renovação de Condutax",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Solicitar Renovação de Condutax"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4114"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4119",
+      "nome": "Carga Frete - Solicitar troca de ponto",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Solicitar troca de ponto"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4119"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4113",
+      "nome": "Carga Frete - Solicitar troca de veículo em Licença",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Carga Frete - Solicitar troca de veículo em Licença"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4113"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3583",
+      "nome": "Licença especial de transporte de produtos perigosos - 1ª Licença",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Licença especial de transporte de produtos perigosos - 1ª Licença"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3583"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3588",
+      "nome": "Licença especial de transporte de produtos perigosos - 2ª via",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Licença especial de transporte de produtos perigosos - 2ª via"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3588"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3592",
+      "nome": "Licença especial de transporte de produtos perigosos - Alterar licença",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Licença especial de transporte de produtos perigosos - Alterar licença"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3592"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3591",
+      "nome": "Licença especial de transporte de produtos perigosos - Renovar licença anual",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carga a Frete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carga a Frete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carga a Frete",
+        "Licença especial de transporte de produtos perigosos - Renovar licença anual"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3591"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3514",
+      "nome": "Solicitar devolução de quota-parte do IPVA de carro híbrido, hidrogênio e elétrico",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Carro Híbrido, Hidrogênio e Elétrico",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Carro Híbrido, Hidrogênio e Elétrico"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Carro Híbrido, Hidrogênio e Elétrico",
+        "Solicitar devolução de quota-parte do IPVA de carro híbrido, hidrogênio e elétrico"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3514"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3594",
+      "nome": "Certidão de sinalização viária – Solicitar informações sobre sinalização de trânsito",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Certidões de trânsito",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Certidões de trânsito"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Certidões de trânsito",
+        "Certidão de sinalização viária – Solicitar informações sobre sinalização de trânsito"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3594"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3314",
+      "nome": "Cartão de estacionamento DeFis (pessoa com deficiência)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Cartão de estacionamento DeFis (pessoa com deficiência)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3314"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3315",
+      "nome": "Cartão de estacionamento DeFis (pessoa com deficiência) - Impressão ou 2º Via",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Cartão de estacionamento DeFis (pessoa com deficiência) - Impressão ou 2º Via"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3315"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3316",
+      "nome": "Cartão de estacionamento idoso",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Cartão de estacionamento idoso"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3316"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3317",
+      "nome": "Cartão de estacionamento idoso - Impressão ou 2º Via",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Cartão de estacionamento idoso - Impressão ou 2º Via"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3317"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "2651",
+      "nome": "Denunciar reserva irregular de vaga",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Denunciar reserva irregular de vaga"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2651"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "770",
+      "nome": "Intensificar fiscalização de veículos estacionados/parados irregularmente",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Intensificar fiscalização de veículos estacionados/parados irregularmente"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=770"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3597",
+      "nome": "Recorrer contra remoção de veículo (guinchamento)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Recorrer contra remoção de veículo (guinchamento)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3597"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "930",
+      "nome": "Solicitar fiscalização de ausência de vagas reservadas em estabelecimento comercial",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Solicitar fiscalização de ausência de vagas reservadas em estabelecimento comercial"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=930"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "895",
+      "nome": "Solicitar fiscalização de estacionamentos particulares",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Solicitar fiscalização de estacionamentos particulares"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=895"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "896",
+      "nome": "Solicitar fiscalização de valet",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Solicitar fiscalização de valet"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=896"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "761",
+      "nome": "Sugerir criação e ampliação de estacionamento de veículos em vias públicas",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Sugerir criação e ampliação de estacionamento de veículos em vias públicas"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=761"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "765",
+      "nome": "Sugerir criação e ampliação de vagas para Idoso/Defis em vias públicas",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Sugerir criação e ampliação de vagas para Idoso/Defis em vias públicas"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=765"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "763",
+      "nome": "Vaga de estacionamento na via - solicitar análise de proibição",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Vaga de estacionamento na via - solicitar análise de proibição"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=763"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "762",
+      "nome": "Vaga de estacionamento na via - solicitar desativação ou modificação",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Estacionamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Estacionamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Estacionamento",
+        "Vaga de estacionamento na via - solicitar desativação ou modificação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=762"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "754",
+      "nome": "Faixas e corredores de ônibus - Solicitar avaliação de problemas",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Faixas exclusivas e corredores de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Faixas exclusivas e corredores de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Faixas exclusivas e corredores de ônibus",
+        "Faixas e corredores de ônibus - Solicitar avaliação de problemas"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=754"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "755",
+      "nome": "Faixas e corredores de ônibus - Solicitar implantação",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Faixas exclusivas e corredores de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Faixas exclusivas e corredores de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Faixas exclusivas e corredores de ônibus",
+        "Faixas e corredores de ônibus - Solicitar implantação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=755"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4757",
+      "nome": "Fretamento - Achados e Perdidos",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Fretamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Fretamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Fretamento",
+        "Fretamento - Achados e Perdidos"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4757"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4101",
+      "nome": "Fretamento - Cadastrar ou renovar Certificado de Vínculo ao Serviço (CVS)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Fretamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Fretamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Fretamento",
+        "Fretamento - Cadastrar ou renovar Certificado de Vínculo ao Serviço (CVS)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4101"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4099",
+      "nome": "Fretamento - Cadastrar ou Renovar Termo de Autorização (TA)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Fretamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Fretamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Fretamento",
+        "Fretamento - Cadastrar ou Renovar Termo de Autorização (TA)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4099"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4102",
+      "nome": "Fretamento - Dar baixa de Certificado de Vínculo ao Serviço (CVS)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Fretamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Fretamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Fretamento",
+        "Fretamento - Dar baixa de Certificado de Vínculo ao Serviço (CVS)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4102"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4765",
+      "nome": "Fretamento - Denúncia de conduta ou postura do condutor",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Fretamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Fretamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Fretamento",
+        "Fretamento - Denúncia de conduta ou postura do condutor"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4765"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4764",
+      "nome": "Fretamento - Denúncia ou reclamação de irregularidades ou problemas no transporte",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Fretamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Fretamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Fretamento",
+        "Fretamento - Denúncia ou reclamação de irregularidades ou problemas no transporte"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4764"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4766",
+      "nome": "Fretamento - Reclamação da conservação e manutenção do veículo",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Fretamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Fretamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Fretamento",
+        "Fretamento - Reclamação da conservação e manutenção do veículo"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4766"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4100",
+      "nome": "Inscrição e Renovação Termo de Autorização Simplificado (TAS)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Fretamento",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Fretamento"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Fretamento",
+        "Inscrição e Renovação Termo de Autorização Simplificado (TAS)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4100"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3957",
+      "nome": "Motofrete - Alterar dados do Condutor",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Alterar dados do Condutor"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3957"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3956",
+      "nome": "Motofrete - Cadastrar Licença (Pessoa Física e Pessoa Jurídica)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Cadastrar Licença (Pessoa Física e Pessoa Jurídica)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3956"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3967",
+      "nome": "Motofrete - Dar baixa na licença (cancelar licença de motofrete)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Dar baixa na licença (cancelar licença de motofrete)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3967"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3971",
+      "nome": "Motofrete - Dar baixa no preposto",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Dar baixa no preposto"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3971"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3958",
+      "nome": "Motofrete - Dar baixa no veículo",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Dar baixa no veículo"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3958"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "2752",
+      "nome": "Motofrete - Denunciar a postura ou conduta do condutor",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Denunciar a postura ou conduta do condutor"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2752"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3191",
+      "nome": "Motofrete - Denúncia de irregularidades",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Denúncia de irregularidades"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3191"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3979",
+      "nome": "Motofrete - Fazer cadastro do Condumoto",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Fazer cadastro do Condumoto"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3979"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3966",
+      "nome": "Motofrete - Nomear preposto",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Nomear preposto"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3966"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "2749",
+      "nome": "Motofrete - Reclamar da conservação e manutenção do veículo",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Reclamar da conservação e manutenção do veículo"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2749"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3963",
+      "nome": "Motofrete - Renovar Condumoto",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Renovar Condumoto"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3963"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3962",
+      "nome": "Motofrete - Renovar licença (Pessoa Física)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Renovar licença (Pessoa Física)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3962"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3965",
+      "nome": "Motofrete - Segunda via de Condumoto",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Segunda via de Condumoto"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3965"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3964",
+      "nome": "Motofrete - Segunda via de Licença",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Segunda via de Licença"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3964"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3973",
+      "nome": "Motofrete - Trocar veículo da licença",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Motofrete - Trocar veículo da licença"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3973"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4751",
+      "nome": "Renovação de licença Pessoa fisica e Pessoa juridica",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Motofrete",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Motofrete"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Motofrete",
+        "Renovação de licença Pessoa fisica e Pessoa juridica"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4751"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4017",
+      "nome": "Multas de trânsito - Desvincular multas de trânsito nos casos de perdimento de bens e/ou leilão judicial",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Multas de trânsito e guinchamentos",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Multas de trânsito e guinchamentos"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Multas de trânsito e guinchamentos",
+        "Multas de trânsito - Desvincular multas de trânsito nos casos de perdimento de bens e/ou leilão judicial"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4017"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4006",
+      "nome": "Veículo guinchado - Solicitar liberação",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Multas de trânsito e guinchamentos",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Multas de trânsito e guinchamentos"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Multas de trânsito e guinchamentos",
+        "Veículo guinchado - Solicitar liberação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4006"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "757",
+      "nome": "Circulação de caminhões - Solicitar avaliação",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Circulação de caminhões - Solicitar avaliação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=757"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "756",
+      "nome": "Circulação e acesso de veículos e pessoas - Solicitar avaliação",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Circulação e acesso de veículos e pessoas - Solicitar avaliação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=756"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "768",
+      "nome": "Denunciar má conduta de empregados da CET",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Denunciar má conduta de empregados da CET"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=768"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "767",
+      "nome": "Funcionários da CET - Fazer elogio",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Funcionários da CET - Fazer elogio"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=767"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "778",
+      "nome": "Instalação de placa com nome de rua",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Instalação de placa com nome de rua"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=778"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "771",
+      "nome": "Intensificar fiscalização de veículos em movimento",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Intensificar fiscalização de veículos em movimento"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=771"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "779",
+      "nome": "Manutenção de placa com nome de rua",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Manutenção de placa com nome de rua"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=779"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "773",
+      "nome": "Manutenção de placas de trânsito",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Manutenção de placas de trânsito"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=773"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3579",
+      "nome": "Rodízio de veículos - Cancelar isenção para PCD",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Rodízio de veículos - Cancelar isenção para PCD"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3579"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3581",
+      "nome": "Rodízio de veículos - Isenção para PCD (pessoa jurídica)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Rodízio de veículos - Isenção para PCD (pessoa jurídica)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3581"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3580",
+      "nome": "Rodízio de veículos - Isenção para pessoa com deficiência (PCD)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Rodízio de veículos - Isenção para pessoa com deficiência (PCD)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3580"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3582",
+      "nome": "Rodízio de veículos – Isenção para pessoas que estão em tratamento debilitante de doença grave",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Rodízio de veículos – Isenção para pessoas que estão em tratamento debilitante de doença grave"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3582"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "753",
+      "nome": "Semáforo de veículos e pedestres - Sugerir ajuste de tempo",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Semáforo de veículos e pedestres - Sugerir ajuste de tempo"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=753"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "774",
+      "nome": "Sinalização horizontal apagada (pintura de solo) – Solicitar repintura",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Sinalização horizontal apagada (pintura de solo) – Solicitar repintura"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=774"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "752",
+      "nome": "Travessia de pedestres - Solicitar avaliação",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Sinalização e Circulação de Veículos e Pedestres",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Sinalização e Circulação de Veículos e Pedestres",
+        "Travessia de pedestres - Solicitar avaliação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=752"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "2745",
+      "nome": "Taxi - Denúncia de conduta ou postura do condutor",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Taxi - Denúncia de conduta ou postura do condutor"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2745"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3186",
+      "nome": "Taxi - Elogio ao condutor",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Taxi - Elogio ao condutor"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3186"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3187",
+      "nome": "Táxi - Achados e perdidos",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Táxi - Achados e perdidos"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3187"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3183",
+      "nome": "Táxi - Denunciar cobrança indevida durante viagem",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Táxi - Denunciar cobrança indevida durante viagem"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3183"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3184",
+      "nome": "Táxi - Denunciar veículo clandestino ou problemas no transporte",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Táxi - Denunciar veículo clandestino ou problemas no transporte"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3184"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4425",
+      "nome": "Táxi - Fazer cadastro de Condutax",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Táxi - Fazer cadastro de Condutax"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4425"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "2746",
+      "nome": "Táxi - Reclamar da conservação e manutenção do veículo",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Táxi - Reclamar da conservação e manutenção do veículo"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2746"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3185",
+      "nome": "Táxi - Reclamar de desobediência ao regulamento de ponto de táxi",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Táxi - Reclamar de desobediência ao regulamento de ponto de táxi"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3185"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4424",
+      "nome": "Táxi - Solicitar 2° via do Condutax",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Táxi - Solicitar 2° via do Condutax"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4424"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4002",
+      "nome": "Táxi - Solicitar certidão para isenção de Imposto sobre Circulação de Mercadorias e Prestação de Serviços (ICMS)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Táxi - Solicitar certidão para isenção de Imposto sobre Circulação de Mercadorias e Prestação de Serviços (ICMS)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4002"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4001",
+      "nome": "Táxi - Solicitar certidão para isenção de Imposto sobre Produtos Industrializados (IPI)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Táxi - Solicitar certidão para isenção de Imposto sobre Produtos Industrializados (IPI)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4001"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4427",
+      "nome": "Táxi - Solicitar renovação do Condutax",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Táxi - Solicitar renovação do Condutax"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4427"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4426",
+      "nome": "Táxi - Solicitar termo de encerramento do Condutax",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Táxi - Solicitar termo de encerramento do Condutax"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4426"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4415",
+      "nome": "Táxi - Solicitar transferência de alvará de estacionamento (T. Nome)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Táxi",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Táxi"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Táxi",
+        "Táxi - Solicitar transferência de alvará de estacionamento (T. Nome)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4415"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "1037",
+      "nome": "Solicitar remoção de veículo/carcaça abandonado na via pública",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Veículos abandonados",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Veículos abandonados"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Veículos abandonados",
+        "Solicitar remoção de veículo/carcaça abandonado na via pública"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=1037"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "780",
+      "nome": "Denunciar irregularidade na venda de Cartão Azul Digital – CAD por postos credenciados",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Zona Azul",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Zona Azul"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Zona Azul",
+        "Denunciar irregularidade na venda de Cartão Azul Digital – CAD por postos credenciados"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=780"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3854",
+      "nome": "Zona Azul Digital - Fazer elogio ou reclamação à equipe",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Zona Azul",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Zona Azul"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Zona Azul",
+        "Zona Azul Digital - Fazer elogio ou reclamação à equipe"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3854"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3855",
+      "nome": "Zona Azul Digital - Solicitar suporte para o aplicativo",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Zona Azul",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Zona Azul"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Zona Azul",
+        "Zona Azul Digital - Solicitar suporte para o aplicativo"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3855"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3856",
+      "nome": "Zona Azul Digital – Solicitar reembolso, estorno ou transferência de crédito",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Zona Azul",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Zona Azul"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Zona Azul",
+        "Zona Azul Digital – Solicitar reembolso, estorno ou transferência de crédito"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3856"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3575",
+      "nome": "Calçadão (rua de pedestre) - Acessar área com veículo para evento ou obra",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Áreas de pedestre (calçadões)",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Áreas de pedestre (calçadões)"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Áreas de pedestre (calçadões)",
+        "Calçadão (rua de pedestre) - Acessar área com veículo para evento ou obra"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3575"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "1010",
+      "nome": "Olho Vivo - Reclamações",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+        "Olho Vivo - Reclamações"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=1010"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "978",
+      "nome": "Ônibus - Denunciar alteração de itinerário ou ponto inicial/final",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+        "Ônibus - Denunciar alteração de itinerário ou ponto inicial/final"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=978"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3938",
+      "nome": "Ônibus - Denunciar importunação sexual praticado por passageiro ou operador (motorista, cobrador ou fiscal)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+        "Ônibus - Denunciar importunação sexual praticado por passageiro ou operador (motorista, cobrador ou fiscal)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3938"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "984",
+      "nome": "Ônibus - Denunciar motorista por atraso na partida",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+        "Ônibus - Denunciar motorista por atraso na partida"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=984"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "975",
+      "nome": "Ônibus - Denunciar motorista por direção perigosa",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+        "Ônibus - Denunciar motorista por direção perigosa"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=975"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "977",
+      "nome": "Ônibus - Denunciar motorista por não atender ao sinal de embarque e desembarque",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+        "Ônibus - Denunciar motorista por não atender ao sinal de embarque e desembarque"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=977"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "976",
+      "nome": "Ônibus – Denunciar motorista, cobrador ou fiscal por atitude inadequada",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
+        "Ônibus – Denunciar motorista, cobrador ou fiscal por atitude inadequada"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=976"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "990",
+      "nome": "Ônibus - Denunciar veículo clandestino ou não credenciado",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Linhas e itinerários",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários",
+        "Ônibus - Denunciar veículo clandestino ou não credenciado"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=990"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "983",
+      "nome": "Ônibus - Reclamar de descumprimento de partida no ponto inicial/final",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Linhas e itinerários",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários",
+        "Ônibus - Reclamar de descumprimento de partida no ponto inicial/final"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=983"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "991",
+      "nome": "Ônibus - Reclamar de falta de comunicado sobre alterações na linha",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Linhas e itinerários",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários",
+        "Ônibus - Reclamar de falta de comunicado sobre alterações na linha"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=991"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "982",
+      "nome": "Ônibus - Reclamar de intervalo excessivo da linha",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Linhas e itinerários",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários",
+        "Ônibus - Reclamar de intervalo excessivo da linha"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=982"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "989",
+      "nome": "Ônibus - Reclamar de veículo com superlotação",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Linhas e itinerários",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários",
+        "Ônibus - Reclamar de veículo com superlotação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=989"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "981",
+      "nome": "Ônibus - Solicitar criação de partida em uma linha",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Linhas e itinerários",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários",
+        "Ônibus - Solicitar criação de partida em uma linha"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=981"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "988",
+      "nome": "Ônibus - Solicitar criação ou reativação de linha",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Linhas e itinerários",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários",
+        "Ônibus - Solicitar criação ou reativação de linha"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=988"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "987",
+      "nome": "Ônibus - Solicitar estudo para alteração de itinerário ou ponto inicial/final",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Linhas e itinerários",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Linhas e itinerários",
+        "Ônibus - Solicitar estudo para alteração de itinerário ou ponto inicial/final"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=987"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4554",
+      "nome": "Terminal - Reclamar dos serviços prestados",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus - Terminal, Estação de Transferência e Corredor",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus - Terminal, Estação de Transferência e Corredor"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus - Terminal, Estação de Transferência e Corredor",
+        "Terminal - Reclamar dos serviços prestados"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4554"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "1001",
+      "nome": "Ponto de ônibus - Solicitar mudança de ponto ou abrigo",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "Ponto de ônibus - Solicitar mudança de ponto ou abrigo"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=1001"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "1003",
+      "nome": "Ponto de ônibus - Solicitar reinstalação de ponto ou abrigo",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "Ponto de ônibus - Solicitar reinstalação de ponto ou abrigo"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=1003"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "1002",
+      "nome": "Ponto de ônibus – Solicitar implantação de ponto ou abrigo",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "Ponto de ônibus – Solicitar implantação de ponto ou abrigo"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=1002"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "965",
+      "nome": "Ponto de ônibus – Solicitar manutenção, conserto ou limpeza de equipamento existente",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "Ponto de ônibus – Solicitar manutenção, conserto ou limpeza de equipamento existente"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=965"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "966",
+      "nome": "Ponto de ônibus – Solicitar substituição de modelo antigo (madeira ou tubo) por modelo novo (totem metálico)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "Ponto de ônibus – Solicitar substituição de modelo antigo (madeira ou tubo) por modelo novo (totem metálico)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=966"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "1008",
+      "nome": "SPTrans - Sugerir melhorias para o sistema de transporte público por ônibus",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "SPTrans - Sugerir melhorias para o sistema de transporte público por ônibus"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=1008"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "979",
+      "nome": "Ônibus - Elogiar o(a) motorista, cobrador(a) ou fiscal",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "Ônibus - Elogiar o(a) motorista, cobrador(a) ou fiscal"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=979"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "1011",
+      "nome": "Ônibus - Elogiar ou sugerir melhorias ao Sistema Olho Vivo",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "Ônibus - Elogiar ou sugerir melhorias ao Sistema Olho Vivo"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=1011"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "994",
+      "nome": "Ônibus - Manutenção do veículo em geral",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "Ônibus - Manutenção do veículo em geral"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=994"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "992",
+      "nome": "Ônibus - Reclamar sobre Plano Emergencial (PAESE)",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "Ônibus - Reclamar sobre Plano Emergencial (PAESE)"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=992"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "996",
+      "nome": "Ônibus - Reparar catraca eletrônica, validador ou terminal de recarga com falha",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "Ônibus - Reparar catraca eletrônica, validador ou terminal de recarga com falha"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=996"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "993",
+      "nome": "Ônibus - Solicitar limpeza e higienização",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "Ônibus - Solicitar limpeza e higienização"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=993"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "995",
+      "nome": "Ônibus - Solicitar reparo de problemas mecânicos",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "Ônibus - Solicitar reparo de problemas mecânicos"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=995"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "1007",
+      "nome": "Ônibus – Elogiar empresa operadora",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus e ponto de ônibus",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus e ponto de ônibus",
+        "Ônibus – Elogiar empresa operadora"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=1007"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "2751",
+      "nome": "Ônibus fretado - Denúncia de conduta ou postura do condutor",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus fretado",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus fretado"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus fretado",
+        "Ônibus fretado - Denúncia de conduta ou postura do condutor"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2751"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3193",
+      "nome": "Ônibus fretado - Denúncia ou reclamação de irregularidades ou problemas no transporte",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus fretado",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus fretado"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus fretado",
+        "Ônibus fretado - Denúncia ou reclamação de irregularidades ou problemas no transporte"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3193"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "2750",
+      "nome": "Ônibus fretado - Reclamação da conservação e manutenção do veículo",
+      "titulo": "Trânsito e Transporte",
+      "categoria": "Trânsito e Transporte",
+      "grupo": "Ônibus fretado",
+      "caminho_servico": [
+        "Trânsito e Transporte",
+        "Ônibus fretado"
+      ],
+      "caminho": [
+        "Inicio",
+        "Trânsito e Transporte",
+        "Ônibus fretado",
+        "Ônibus fretado - Reclamação da conservação e manutenção do veículo"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2750"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3559",
+      "nome": "Alistamento no Serviço Militar - Fora do Prazo",
+      "titulo": "Segurança Urbana",
+      "categoria": "Segurança Urbana",
+      "grupo": "Alistamento e Serviço Militar",
+      "caminho_servico": [
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar"
+      ],
+      "caminho": [
+        "Inicio",
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar",
+        "Alistamento no Serviço Militar - Fora do Prazo"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3559"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3916",
+      "nome": "Certificado de Dispensa de Incorporação (CDI) - 1ª via",
+      "titulo": "Segurança Urbana",
+      "categoria": "Segurança Urbana",
+      "grupo": "Alistamento e Serviço Militar",
+      "caminho_servico": [
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar"
+      ],
+      "caminho": [
+        "Inicio",
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar",
+        "Certificado de Dispensa de Incorporação (CDI) - 1ª via"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3916"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3550",
+      "nome": "Certificado de Dispensa de Incorporação (CDI) - 2ª via",
+      "titulo": "Segurança Urbana",
+      "categoria": "Segurança Urbana",
+      "grupo": "Alistamento e Serviço Militar",
+      "caminho_servico": [
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar"
+      ],
+      "caminho": [
+        "Inicio",
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar",
+        "Certificado de Dispensa de Incorporação (CDI) - 2ª via"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3550"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3556",
+      "nome": "Certificado de Dispensa do Serviço Alternativo (CDSA) - 2ª via",
+      "titulo": "Segurança Urbana",
+      "categoria": "Segurança Urbana",
+      "grupo": "Alistamento e Serviço Militar",
+      "caminho_servico": [
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar"
+      ],
+      "caminho": [
+        "Inicio",
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar",
+        "Certificado de Dispensa do Serviço Alternativo (CDSA) - 2ª via"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3556"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3557",
+      "nome": "Certificado de Notoriamente Incapaz (CI) - 2ª via",
+      "titulo": "Segurança Urbana",
+      "categoria": "Segurança Urbana",
+      "grupo": "Alistamento e Serviço Militar",
+      "caminho_servico": [
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar"
+      ],
+      "caminho": [
+        "Inicio",
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar",
+        "Certificado de Notoriamente Incapaz (CI) - 2ª via"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3557"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3553",
+      "nome": "Certificado de Reservista - 2ª via",
+      "titulo": "Segurança Urbana",
+      "categoria": "Segurança Urbana",
+      "grupo": "Alistamento e Serviço Militar",
+      "caminho_servico": [
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar"
+      ],
+      "caminho": [
+        "Inicio",
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar",
+        "Certificado de Reservista - 2ª via"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3553"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3552",
+      "nome": "Reabilitação do Serviço Militar",
+      "titulo": "Segurança Urbana",
+      "categoria": "Segurança Urbana",
+      "grupo": "Alistamento e Serviço Militar",
+      "caminho_servico": [
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar"
+      ],
+      "caminho": [
+        "Inicio",
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar",
+        "Reabilitação do Serviço Militar"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3552"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3560",
+      "nome": "Transferência de Junta do Serviço Militar",
+      "titulo": "Segurança Urbana",
+      "categoria": "Segurança Urbana",
+      "grupo": "Alistamento e Serviço Militar",
+      "caminho_servico": [
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar"
+      ],
+      "caminho": [
+        "Inicio",
+        "Segurança Urbana",
+        "Alistamento e Serviço Militar",
+        "Transferência de Junta do Serviço Militar"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3560"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "823",
+      "nome": "Guarda Civil Metropolitana (GCM) - Denunciar atuação de servidor",
+      "titulo": "Segurança Urbana",
+      "categoria": "Segurança Urbana",
+      "grupo": "Guarda Civil Metropolitana",
+      "caminho_servico": [
+        "Segurança Urbana",
+        "Guarda Civil Metropolitana"
+      ],
+      "caminho": [
+        "Inicio",
+        "Segurança Urbana",
+        "Guarda Civil Metropolitana",
+        "Guarda Civil Metropolitana (GCM) - Denunciar atuação de servidor"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=823"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "820",
+      "nome": "Guarda Civil Metropolitana (GCM) - Fazer elogio",
+      "titulo": "Segurança Urbana",
+      "categoria": "Segurança Urbana",
+      "grupo": "Guarda Civil Metropolitana",
+      "caminho_servico": [
+        "Segurança Urbana",
+        "Guarda Civil Metropolitana"
+      ],
+      "caminho": [
+        "Inicio",
+        "Segurança Urbana",
+        "Guarda Civil Metropolitana",
+        "Guarda Civil Metropolitana (GCM) - Fazer elogio"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=820"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "821",
+      "nome": "Guarda Civil Metropolitana (GCM) - Fazer sugestão",
+      "titulo": "Segurança Urbana",
+      "categoria": "Segurança Urbana",
+      "grupo": "Guarda Civil Metropolitana",
+      "caminho_servico": [
+        "Segurança Urbana",
+        "Guarda Civil Metropolitana"
+      ],
+      "caminho": [
+        "Inicio",
+        "Segurança Urbana",
+        "Guarda Civil Metropolitana",
+        "Guarda Civil Metropolitana (GCM) - Fazer sugestão"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=821"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "822",
+      "nome": "Guarda Civil Metropolitana (GCM) – Fazer crítica ou reclamação",
+      "titulo": "Segurança Urbana",
+      "categoria": "Segurança Urbana",
+      "grupo": "Guarda Civil Metropolitana",
+      "caminho_servico": [
+        "Segurança Urbana",
+        "Guarda Civil Metropolitana"
+      ],
+      "caminho": [
+        "Inicio",
+        "Segurança Urbana",
+        "Guarda Civil Metropolitana",
+        "Guarda Civil Metropolitana (GCM) – Fazer crítica ou reclamação"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=822"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "819",
+      "nome": "Solicitação de policiamento",
+      "titulo": "Segurança Urbana",
+      "categoria": "Segurança Urbana",
+      "grupo": "Guarda Civil Metropolitana",
+      "caminho_servico": [
+        "Segurança Urbana",
+        "Guarda Civil Metropolitana"
+      ],
+      "caminho": [
+        "Inicio",
+        "Segurança Urbana",
+        "Guarda Civil Metropolitana",
+        "Solicitação de policiamento"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=819"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4740",
+      "nome": "Ouvidoria SUS da Cidade de São Paulo - Denunciar Condições Sanitárias Inadequadas ou de risco à Saúde do Trabalhador",
+      "titulo": "Ouvidoria SUS",
+      "categoria": "Ouvidoria SUS",
+      "grupo": "Saúde",
+      "caminho_servico": [
+        "Ouvidoria SUS",
+        "Saúde"
+      ],
+      "caminho": [
+        "Inicio",
+        "Ouvidoria SUS",
+        "Saúde",
+        "Ouvidoria SUS da Cidade de São Paulo - Denunciar Condições Sanitárias Inadequadas ou de risco à Saúde do Trabalhador"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4740"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4747",
+      "nome": "Ouvidoria SUS da Cidade de São Paulo - Fazer Sugestão",
+      "titulo": "Ouvidoria SUS",
+      "categoria": "Ouvidoria SUS",
+      "grupo": "Saúde",
+      "caminho_servico": [
+        "Ouvidoria SUS",
+        "Saúde"
+      ],
+      "caminho": [
+        "Inicio",
+        "Ouvidoria SUS",
+        "Saúde",
+        "Ouvidoria SUS da Cidade de São Paulo - Fazer Sugestão"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4747"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4507",
+      "nome": "Ouvidoria SUS da Cidade de São Paulo - Manifestar-se sobre problemas com sua solicitação no HSPM",
+      "titulo": "Ouvidoria SUS",
+      "categoria": "Ouvidoria SUS",
+      "grupo": "Saúde",
+      "caminho_servico": [
+        "Ouvidoria SUS",
+        "Saúde"
+      ],
+      "caminho": [
+        "Inicio",
+        "Ouvidoria SUS",
+        "Saúde",
+        "Ouvidoria SUS da Cidade de São Paulo - Manifestar-se sobre problemas com sua solicitação no HSPM"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4507"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4712",
+      "nome": "Ouvidoria SUS da cidade de São Paulo - Manifestar-se sobre Problemas com sua solicitação no SUS",
+      "titulo": "Ouvidoria SUS",
+      "categoria": "Ouvidoria SUS",
+      "grupo": "Saúde",
+      "caminho_servico": [
+        "Ouvidoria SUS",
+        "Saúde"
+      ],
+      "caminho": [
+        "Inicio",
+        "Ouvidoria SUS",
+        "Saúde",
+        "Ouvidoria SUS da cidade de São Paulo - Manifestar-se sobre Problemas com sua solicitação no SUS"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4712"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4760",
+      "nome": "Ouvidoria SUS da Cidade de São Paulo - Reclamação sobre serviços de Saúde Animal",
+      "titulo": "Ouvidoria SUS",
+      "categoria": "Ouvidoria SUS",
+      "grupo": "Saúde",
+      "caminho_servico": [
+        "Ouvidoria SUS",
+        "Saúde"
+      ],
+      "caminho": [
+        "Inicio",
+        "Ouvidoria SUS",
+        "Saúde",
+        "Ouvidoria SUS da Cidade de São Paulo - Reclamação sobre serviços de Saúde Animal"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4760"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4730",
+      "nome": "Ouvidoria SUS da Cidade de São Paulo – Fazer Elogio sobre Serviços Prestados",
+      "titulo": "Ouvidoria SUS",
+      "categoria": "Ouvidoria SUS",
+      "grupo": "Saúde",
+      "caminho_servico": [
+        "Ouvidoria SUS",
+        "Saúde"
+      ],
+      "caminho": [
+        "Inicio",
+        "Ouvidoria SUS",
+        "Saúde",
+        "Ouvidoria SUS da Cidade de São Paulo – Fazer Elogio sobre Serviços Prestados"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4730"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4743",
+      "nome": "Ouvidoria SUS da Cidade de São Paulo – Fazer Reclamação sobre serviços prestados",
+      "titulo": "Ouvidoria SUS",
+      "categoria": "Ouvidoria SUS",
+      "grupo": "Saúde",
+      "caminho_servico": [
+        "Ouvidoria SUS",
+        "Saúde"
+      ],
+      "caminho": [
+        "Inicio",
+        "Ouvidoria SUS",
+        "Saúde",
+        "Ouvidoria SUS da Cidade de São Paulo – Fazer Reclamação sobre serviços prestados"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4743"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "4567",
+      "nome": "Ouvidoria SUS da Cidade de São Paulo – Fazer reclamação sobre serviços prestados de Vigilância em Saúde",
+      "titulo": "Ouvidoria SUS",
+      "categoria": "Ouvidoria SUS",
+      "grupo": "Saúde",
+      "caminho_servico": [
+        "Ouvidoria SUS",
+        "Saúde"
+      ],
+      "caminho": [
+        "Inicio",
+        "Ouvidoria SUS",
+        "Saúde",
+        "Ouvidoria SUS da Cidade de São Paulo – Fazer reclamação sobre serviços prestados de Vigilância em Saúde"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4567"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3800",
+      "nome": "Procon Cidade de São Paulo - Denunciar conduta do fornecedor que afete público geral",
+      "titulo": "Áreas municipais",
+      "categoria": "Áreas municipais",
+      "grupo": "Procon Cidade de São Paulo",
+      "caminho_servico": [
+        "Áreas municipais",
+        "Procon Cidade de São Paulo"
+      ],
+      "caminho": [
+        "Inicio",
+        "Áreas municipais",
+        "Procon Cidade de São Paulo",
+        "Procon Cidade de São Paulo - Denunciar conduta do fornecedor que afete público geral"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3800"
+    },
+    {
+      "tipo": "servico",
+      "codigo_servico": "3799",
+      "nome": "Procon Cidade de São Paulo - Reclamar de lesão a direito individual do consumidor",
+      "titulo": "Áreas municipais",
+      "categoria": "Áreas municipais",
+      "grupo": "Procon Cidade de São Paulo",
+      "caminho_servico": [
+        "Áreas municipais",
+        "Procon Cidade de São Paulo"
+      ],
+      "caminho": [
+        "Inicio",
+        "Áreas municipais",
+        "Procon Cidade de São Paulo",
+        "Procon Cidade de São Paulo - Reclamar de lesão a direito individual do consumidor"
+      ],
+      "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3799"
     }
   ]
 }

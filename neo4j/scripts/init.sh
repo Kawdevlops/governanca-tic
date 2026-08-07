@@ -28,6 +28,6 @@ cypher-shell -a bolt://neo4j:7687 \
   -u "$DB_NEO4J_USER" \
   -p "$DB_NEO4J_PASSWORD" \
   -d "$DB_NEO4J_DATABASE" \
-  -f /scripts/inti_pdstic_2026.cypher
+  -f /scripts/init_pdstic_2026.cypher
 
 echo "Finalizado."
