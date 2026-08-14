@@ -16,6 +16,7 @@ ARQUIVOS_ENV=(
     "mariadb/.env"
     "neo4j/.env"
     "fastapi/.env"
+    "streamlit/.env"
 )
 
 # BLOCO 2 — Definição dos GRUPOS de serviços
@@ -27,6 +28,7 @@ GRUPOS_SERVICOS["neo4j"]="neo4j neo4j-init"
 GRUPOS_SERVICOS["bookstack"]="bookstack"
 GRUPOS_SERVICOS["fastapi"]="fastapi"
 GRUPOS_SERVICOS["nginx"]="nginx"
+GRUPOS_SERVICOS["streamlit"]="streamlit"
 
 # BLOCO 3 — Lista de todos os serviços (para referência)
 TODOS_SERVICOS=(
@@ -41,6 +43,7 @@ TODOS_SERVICOS=(
     "airflow-scheduler"
     "airflow-dag-processor"
     "nginx"
+    "streamlit"
 )
 
 # BLOCO 4 — Função para obter serviços de um grupo
@@ -349,7 +352,7 @@ selecionar_containers() {
         echo -e "${BLUE}═══════════════════════════════════════════════════════════${NC}"
         echo ""
         
-        GRUPOS=("airflow" "database" "neo4j" "bookstack" "fastapi" "nginx")
+        GRUPOS=("airflow" "database" "neo4j" "bookstack" "fastapi" "nginx" "streamlit")
         
         for i in "${!GRUPOS[@]}"; do
             SERVICOS=$(get_servicos_do_grupo "${GRUPOS[$i]}")
@@ -744,6 +747,7 @@ source ./bookstack/.env
 source ./mariadb/.env
 source ./neo4j/.env
 source ./fastapi/.env
+source ./streamlit/.env
 set +a
 
 # Gera o .env com VALORES REAIS (sem referências circulares)
@@ -785,6 +789,11 @@ DB_NEO4J_PASSWORD=${DB_NEO4J_PASSWORD}
 
 # FastAPI
 FASTAPI_ENV=development
+
+# Streamlit
+DB_STREAMLIT_USER=${DB_STREAMLIT_USER}
+DB_STREAMLIT_PASSWORD=${DB_STREAMLIT_PASSWORD}
+DB_STREAMLIT_DATABASE=${DB_STREAMLIT_DATABASE}
 EOF
 
 echo -e "${GREEN}✓${NC} .env central criado com sucesso!"
