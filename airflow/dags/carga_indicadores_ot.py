@@ -17,6 +17,16 @@ def conectar():
 
 def carregar_bronze():
     engine = conectar()
+    
+    # -------------------------------------------------------------
+    # CRIAÇÃO DOS SCHEMAS (Garante que bronze, prata e ouro existam)
+    # -------------------------------------------------------------
+    with engine.begin() as conn:
+        conn.execute(text("CREATE EXTENSION IF NOT EXISTS pgcrypto;"))
+        conn.execute(text("CREATE SCHEMA IF NOT EXISTS bronze;"))
+        conn.execute(text("CREATE SCHEMA IF NOT EXISTS prata;"))
+        conn.execute(text("CREATE SCHEMA IF NOT EXISTS ouro;"))
+
     df = pd.read_excel(CAMINHO_EXCEL, sheet_name="Sheet1")
     df = df.rename(columns={
         "SEGMENTO": "segmento",
@@ -38,6 +48,7 @@ def carregar_bronze():
     ]
     df = df[colunas_bronze]
     df["fonte_arquivo"] = "base_consolidada_validada.xlsx"
+    
     df.to_sql("ot_bruto", engine, schema="bronze", if_exists="replace", index=False)
     print(f"Bronze: {len(df)} linhas gravadas.")
 

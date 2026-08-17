@@ -990,7 +990,7 @@
   {
     "tipo": "servico",
     "codigo_servico": "4800",
-    "nome": "Paraoficina Móvel - Solicitar Agendamento",
+    "nome": "Paraoficina Móvel - Solicitar Triagem de Agendamento",
     "titulo": "Acessibilidade",
     "categoria": "Acessibilidade",
     "grupo": "Unidades Móveis",
@@ -1002,7 +1002,7 @@
       "Inicio",
       "Acessibilidade",
       "Unidades Móveis",
-      "Paraoficina Móvel - Solicitar Agendamento"
+      "Paraoficina Móvel - Solicitar Triagem de Agendamento"
     ],
     "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4800"
   },
@@ -2205,120 +2205,6 @@
   },
   {
     "tipo": "servico",
-    "codigo_servico": "4679",
-    "nome": "Descomplica SP Itaim Paulista - Elogio",
-    "titulo": "Canais de Atendimento",
-    "categoria": "Canais de Atendimento",
-    "grupo": "Descomplica SP - Itaim Paulista",
-    "caminho_servico": [
-      "Canais de Atendimento",
-      "Descomplica SP - Itaim Paulista"
-    ],
-    "caminho": [
-      "Inicio",
-      "Canais de Atendimento",
-      "Descomplica SP - Itaim Paulista",
-      "Descomplica SP Itaim Paulista - Elogio"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4679"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4681",
-    "nome": "Descomplica SP Itaim Paulista - Sugestão",
-    "titulo": "Canais de Atendimento",
-    "categoria": "Canais de Atendimento",
-    "grupo": "Descomplica SP - Itaim Paulista",
-    "caminho_servico": [
-      "Canais de Atendimento",
-      "Descomplica SP - Itaim Paulista"
-    ],
-    "caminho": [
-      "Inicio",
-      "Canais de Atendimento",
-      "Descomplica SP - Itaim Paulista",
-      "Descomplica SP Itaim Paulista - Sugestão"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4681"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4680",
-    "nome": "Descomplica SP Itaim Paulista- Reclamação",
-    "titulo": "Canais de Atendimento",
-    "categoria": "Canais de Atendimento",
-    "grupo": "Descomplica SP - Itaim Paulista",
-    "caminho_servico": [
-      "Canais de Atendimento",
-      "Descomplica SP - Itaim Paulista"
-    ],
-    "caminho": [
-      "Inicio",
-      "Canais de Atendimento",
-      "Descomplica SP - Itaim Paulista",
-      "Descomplica SP Itaim Paulista- Reclamação"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4680"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4660",
-    "nome": "Descomplica SP Itaquera - Elogio",
-    "titulo": "Canais de Atendimento",
-    "categoria": "Canais de Atendimento",
-    "grupo": "Descomplica SP - Itaquera",
-    "caminho_servico": [
-      "Canais de Atendimento",
-      "Descomplica SP - Itaquera"
-    ],
-    "caminho": [
-      "Inicio",
-      "Canais de Atendimento",
-      "Descomplica SP - Itaquera",
-      "Descomplica SP Itaquera - Elogio"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4660"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4661",
-    "nome": "Descomplica SP Itaquera - Reclamação",
-    "titulo": "Canais de Atendimento",
-    "categoria": "Canais de Atendimento",
-    "grupo": "Descomplica SP - Itaquera",
-    "caminho_servico": [
-      "Canais de Atendimento",
-      "Descomplica SP - Itaquera"
-    ],
-    "caminho": [
-      "Inicio",
-      "Canais de Atendimento",
-      "Descomplica SP - Itaquera",
-      "Descomplica SP Itaquera - Reclamação"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4661"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "4662",
-    "nome": "Descomplica SP Itaquera - Sugestão",
-    "titulo": "Canais de Atendimento",
-    "categoria": "Canais de Atendimento",
-    "grupo": "Descomplica SP - Itaquera",
-    "caminho_servico": [
-      "Canais de Atendimento",
-      "Descomplica SP - Itaquera"
-    ],
-    "caminho": [
-      "Inicio",
-      "Canais de Atendimento",
-      "Descomplica SP - Itaquera",
-      "Descomplica SP Itaquera - Sugestão"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4662"
-  },
-  {
-    "tipo": "servico",
     "codigo_servico": "3599",
     "nome": "Descomplica SP Jabaquara - Elogio",
     "titulo": "Canais de Atendimento",
@@ -2430,6 +2316,63 @@
       "Descomplica SP Jaçanã/Tremembé - Sugestão"
     ],
     "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4615"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "4611",
+    "nome": "Descomplica SP Lapa - Elogio",
+    "titulo": "Canais de Atendimento",
+    "categoria": "Canais de Atendimento",
+    "grupo": "Descomplica SP - Lapa",
+    "caminho_servico": [
+      "Canais de Atendimento",
+      "Descomplica SP - Lapa"
+    ],
+    "caminho": [
+      "Inicio",
+      "Canais de Atendimento",
+      "Descomplica SP - Lapa",
+      "Descomplica SP Lapa - Elogio"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4611"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "4610",
+    "nome": "Descomplica SP Lapa - Reclamação",
+    "titulo": "Canais de Atendimento",
+    "categoria": "Canais de Atendimento",
+    "grupo": "Descomplica SP - Lapa",
+    "caminho_servico": [
+      "Canais de Atendimento",
+      "Descomplica SP - Lapa"
+    ],
+    "caminho": [
+      "Inicio",
+      "Canais de Atendimento",
+      "Descomplica SP - Lapa",
+      "Descomplica SP Lapa - Reclamação"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4610"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "4609",
+    "nome": "Descomplica SP Lapa - Sugestão",
+    "titulo": "Canais de Atendimento",
+    "categoria": "Canais de Atendimento",
+    "grupo": "Descomplica SP - Lapa",
+    "caminho_servico": [
+      "Canais de Atendimento",
+      "Descomplica SP - Lapa"
+    ],
+    "caminho": [
+      "Inicio",
+      "Canais de Atendimento",
+      "Descomplica SP - Lapa",
+      "Descomplica SP Lapa - Sugestão"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4609"
   },
   {
     "tipo": "servico",
@@ -5264,25 +5207,6 @@
   },
   {
     "tipo": "servico",
-    "codigo_servico": "3115",
-    "nome": "WiFi Livre SP - Sugerir local para instalação",
-    "titulo": "Cultura, esporte e lazer",
-    "categoria": "Cultura, esporte e lazer",
-    "grupo": "WiFi Livre SP",
-    "caminho_servico": [
-      "Cultura, esporte e lazer",
-      "WiFi Livre SP"
-    ],
-    "caminho": [
-      "Inicio",
-      "Cultura, esporte e lazer",
-      "WiFi Livre SP",
-      "WiFi Livre SP - Sugerir local para instalação"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3115"
-  },
-  {
-    "tipo": "servico",
     "codigo_servico": "3587",
     "nome": "Certidão negativa referente a denúncias ambientais",
     "titulo": "Documentos e licenças",
@@ -7066,6 +6990,101 @@
       "Taxas Mobiliárias – Fale com a Fazenda"
     ],
     "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3505"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "723",
+    "nome": "Instalação de contêiner para coleta de lixo domiciliar",
+    "titulo": "Lixo e limpeza",
+    "categoria": "Lixo e limpeza",
+    "grupo": "Coleta de lixo domiciliar",
+    "caminho_servico": [
+      "Lixo e limpeza",
+      "Coleta de lixo domiciliar"
+    ],
+    "caminho": [
+      "Inicio",
+      "Lixo e limpeza",
+      "Coleta de lixo domiciliar",
+      "Instalação de contêiner para coleta de lixo domiciliar"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=723"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "721",
+    "nome": "Lixo domiciliar – Denunciar colocação de lixo fora do horário de coleta",
+    "titulo": "Lixo e limpeza",
+    "categoria": "Lixo e limpeza",
+    "grupo": "Coleta de lixo domiciliar",
+    "caminho_servico": [
+      "Lixo e limpeza",
+      "Coleta de lixo domiciliar"
+    ],
+    "caminho": [
+      "Inicio",
+      "Lixo e limpeza",
+      "Coleta de lixo domiciliar",
+      "Lixo domiciliar – Denunciar colocação de lixo fora do horário de coleta"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=721"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "722",
+    "nome": "Manutenção de caminhão de lixo",
+    "titulo": "Lixo e limpeza",
+    "categoria": "Lixo e limpeza",
+    "grupo": "Coleta de lixo domiciliar",
+    "caminho_servico": [
+      "Lixo e limpeza",
+      "Coleta de lixo domiciliar"
+    ],
+    "caminho": [
+      "Inicio",
+      "Lixo e limpeza",
+      "Coleta de lixo domiciliar",
+      "Manutenção de caminhão de lixo"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=722"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "720",
+    "nome": "Reclamar sobre coleta de lixo domiciliar",
+    "titulo": "Lixo e limpeza",
+    "categoria": "Lixo e limpeza",
+    "grupo": "Coleta de lixo domiciliar",
+    "caminho_servico": [
+      "Lixo e limpeza",
+      "Coleta de lixo domiciliar"
+    ],
+    "caminho": [
+      "Inicio",
+      "Lixo e limpeza",
+      "Coleta de lixo domiciliar",
+      "Reclamar sobre coleta de lixo domiciliar"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=720"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "724",
+    "nome": "Remoção de contêiner para coleta de lixo domiciliar",
+    "titulo": "Lixo e limpeza",
+    "categoria": "Lixo e limpeza",
+    "grupo": "Coleta de lixo domiciliar",
+    "caminho_servico": [
+      "Lixo e limpeza",
+      "Coleta de lixo domiciliar"
+    ],
+    "caminho": [
+      "Inicio",
+      "Lixo e limpeza",
+      "Coleta de lixo domiciliar",
+      "Remoção de contêiner para coleta de lixo domiciliar"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=724"
   },
   {
     "tipo": "servico",
@@ -8875,7 +8894,7 @@
   {
     "tipo": "servico",
     "codigo_servico": "3611",
-    "nome": "Análise de Plano de Atendimento a Emergência no Transporte de Produtos Perigosos",
+    "nome": "Análise do Plano de Atendimento a Emergência no Transporte de Produtos Perigosos",
     "titulo": "Trânsito e Transporte",
     "categoria": "Trânsito e Transporte",
     "grupo": "Carga a Frete",
@@ -8887,7 +8906,7 @@
       "Inicio",
       "Trânsito e Transporte",
       "Carga a Frete",
-      "Análise de Plano de Atendimento a Emergência no Transporte de Produtos Perigosos"
+      "Análise do Plano de Atendimento a Emergência no Transporte de Produtos Perigosos"
     ],
     "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3611"
   },

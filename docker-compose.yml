@@ -187,11 +187,11 @@ services:
     networks:
       - service_net
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
-      interval: 20s
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER:-postgres}"]
+      interval: 10s
       timeout: 5s
-      retries: 10
-      start_period: 40s
+      retries: 5
+      start_period: 60s
 
   airflow-init:
     <<: *airflow-common
@@ -255,8 +255,8 @@ services:
     image: streamlit-indicadores:1.0
     container_name: streamlit
     build:
-      context: ./streamlit
-      dockerfile: Dockerfile
+      context: .
+      dockerfile:  streamlit/Dockerfile
     depends_on:
       postgres:
         condition: service_healthy
@@ -266,6 +266,7 @@ services:
       DB_STREAMLIT_USER: ${DB_STREAMLIT_USER}
       DB_STREAMLIT_PASSWORD: ${DB_STREAMLIT_PASSWORD}
       DB_STREAMLIT_DATABASE: ${DB_STREAMLIT_DATABASE}
+      STREAMLIT_THEME_BASE: "light"
     networks:
       - service_net
     expose:
