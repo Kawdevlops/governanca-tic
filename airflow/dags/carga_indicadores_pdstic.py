@@ -79,7 +79,7 @@ def carregar_prata():
             observacoes,
             orcamento_previsto_pdstic AS valor_previsto,
             orcamento_liquidado AS valor_realizado,
-            encode(digest('PDSTIC|' || numero || '|' || objeto, 'sha256'), 'hex') AS chave_natural,
+            encode(digest('PDSTIC|' || COALESCE(numero::text, '') || '|' || COALESCE(objeto, linha_acao, ''), 'sha256'), 'hex') AS chave_natural,
             encode(digest(
                 COALESCE(percentual_executado::text, '') || '|' ||
                 COALESCE(orcamento_liquidado::text, ''),
@@ -116,11 +116,14 @@ def atualizar_ouro():
             segmento AS objeto,
             item_avaliado AS linha_acao,
             CASE
-                WHEN status_bruto::numeric = 1 THEN 'Concluída'
-                WHEN status_bruto::numeric = 0 THEN 'Não Iniciada'
+                WHEN status_bruto ~ '^[0-9]+(\.[0-9]+)?$' AND status_bruto::numeric >= 1 THEN 'Concluída'
+                WHEN status_bruto ~ '^[0-9]+(\.[0-9]+)?$' AND status_bruto::numeric = 0 THEN 'Não Iniciada'
                 ELSE 'Em Andamento'
             END AS status,
-            status_bruto::numeric AS percentual_executado,
+            CASE 
+                WHEN status_bruto ~ '^[0-9]+(\.[0-9]+)?$' THEN status_bruto::numeric
+                ELSE NULL
+            END AS percentual_executado,
             valor_previsto,
             valor_realizado,
             COALESCE(valor_previsto, 0) - COALESCE(valor_realizado, 0) AS diferenca

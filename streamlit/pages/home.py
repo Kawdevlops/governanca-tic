@@ -1,13 +1,14 @@
-from pathlib import Path
-import streamlit as st
 import base64
+from pathlib import Path
+
+import streamlit as st
+
 from style_lateral import aplicar_estilo_lateral
+
 aplicar_estilo_lateral()
 
-st.set_page_config(
-    page_title="Painel de Indicadores TI",
-    layout="wide",
-)
+# NÃO chame st.set_page_config aqui — já foi chamado uma vez no app.py,
+# e o Streamlit só permite uma chamada por execução.
 
 # CSS GLOBAL — Estilo melhorado
 
@@ -78,7 +79,7 @@ st.html("""
         line-height: 1.7;
     }
 
-    /* Menu lateral de navegação (app / OT / etc.) */
+    /* Menu lateral de navegação (Home / OT / PDSTIC / ...) */
     [data-testid="stSidebarNav"] {
         padding-top: 16px;
     }
@@ -116,7 +117,7 @@ st.html("""
         box-shadow: 0 8px 30px rgba(0,0,0,0.10);
         transform: translateY(-4px);
     }
-    
+
     /* Barra superior colorida nos cards */
     .card-modern::before {
         content: '';
@@ -164,12 +165,12 @@ st.html("""
         border-radius: 20px;
         margin-bottom: 14px;
     }
-    .status-disponivel { 
-        color: #1a8a3f; 
+    .status-disponivel {
+        color: #1a8a3f;
         background: #e8f5ed;
     }
-    .status-construcao { 
-        color: var(--gray); 
+    .status-construcao {
+        color: var(--gray);
         background: #f5f6f8;
     }
 
@@ -215,21 +216,21 @@ st.html("""
     }
 
     .btn-primary {
-    background: var(--blue);
-    color: white !important;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    margin: 16px auto 0 auto;  /* Centraliza */
-    width: auto;               /* Largura automática */
-    min-width: 160px;          /* Largura mínima */
+        background: var(--blue);
+        color: white !important;
+        border: none;
+        padding: 10px 24px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        margin: 16px auto 0 auto;
+        width: auto;
+        min-width: 160px;
     }
 
     .btn-primary:hover {
@@ -249,9 +250,9 @@ st.html("""
         cursor: not-allowed;
         display: inline-block;
         text-align: center;
-        margin: 16px auto 0 auto;  /* Centraliza */
-        width: auto;               /* Largura automática */
-        min-width: 160px;          /* Largura mínima */
+        margin: 16px auto 0 auto;
+        width: auto;
+        min-width: 160px;
         opacity: 0.7;
     }
 
@@ -267,13 +268,15 @@ st.html("""
 """)
 
 # MARCA D'ÁGUA - Logo centralizado e grande
+# Caminho absoluto baseado no arquivo, não na pasta de onde o comando é rodado
+# (home.py está em streamlit/pages/, então sobe 2 níveis até streamlit/)
 
-caminho_logo = Path("assets/marcadagua.png")
+CAMINHO_LOGO = Path(__file__).resolve().parent.parent / "assets" / "marcadagua.png"
 
-if caminho_logo.exists():
-    with open(caminho_logo, "rb") as f:
+if CAMINHO_LOGO.exists():
+    with open(CAMINHO_LOGO, "rb") as f:
         img_data = base64.b64encode(f.read()).decode()
-    
+
     st.html(f"""
         <div class="watermark">
             <img src="data:image/png;base64,{img_data}" alt="Logo Subprefeitura">
@@ -322,14 +325,14 @@ with col1:
                 <span class="info-badge" style="margin-left:6px;">3 OTs</span>
             </div>
             <div class="btn-wrapper">
-                <a href="/pages/1_OT" target="_self" style="text-decoration:none;">
+                <a href="/ot" target="_self" style="text-decoration:none;">
                     <div class="btn-primary">Abrir OT →</div>
                 </a>
             </div>
         </div>
     """)
 
-# CARD 2 - PDSTIC
+# CARD 2 - PDSTIC (ativado)
 
 with col2:
     st.html("""
@@ -338,20 +341,22 @@ with col2:
                 <span class="card-title">PDSTIC</span>
             </div>
             <div class="card-subtitle">Plano Diretor de TIC</div>
-            <div class="status-tag status-construcao"> ● Em construção</div>
+            <div class="status-tag status-disponivel">● Disponível</div>
             <div class="card-description">
                 Acompanha as linhas de ação do Plano Diretor de Tecnologia da Informação e Comunicação:
             </div>
             <ul class="feature-list">
-                <li><span class="bullet">•</span> Orçamento planejado</li>
-                <li><span class="bullet">•</span> Status de execução</li>
-                <li><span class="bullet">•</span> Metas e entregas</li>
+                <li><span class="bullet">•</span> Orçamento planejado x liquidado</li>
+                <li><span class="bullet">•</span> Status de execução por área</li>
+                <li><span class="bullet">•</span> Linhas concluídas / em andamento / não iniciadas</li>
             </ul>
             <div style="margin-top:12px;">
-                <span class="info-badge">Em desenvolvimento</span>
+                <span class="info-badge">47 linhas de ação</span>
             </div>
-            <div style="margin-top:16px;">
-                <div class="btn-disabled">Em breve</div>
+            <div class="btn-wrapper">
+                <a href="/pdstic" target="_self" style="text-decoration:none;">
+                    <div class="btn-primary">Abrir PDSTIC →</div>
+                </a>
             </div>
         </div>
     """)
@@ -361,7 +366,7 @@ with col2:
 with col3:
     st.html("""
         <div class="card-modern maturidade">
-            <div class="card-header">              
+            <div class="card-header">
                 <span class="card-title">Maturidade</span>
             </div>
             <div class="card-subtitle">Escala de Maturidade</div>

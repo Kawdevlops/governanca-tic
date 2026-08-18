@@ -7,22 +7,26 @@ st.set_page_config(
 )
 
 # NAVEGAÇÃO
+# url_path definido explicitamente para os links do home.py baterem certo
 
-# Página inicial
 home_page = st.Page(
-    "pages/home.py",  
+    "pages/home.py",
     title="Home",
-    default=True
+    default=True,
+    url_path="",
 )
 
-# Páginas secundárias
 ot_page = st.Page(
     "pages/1_OT.py",
     title="OT - Orientações Técnicas",
+    url_path="ot",
 )
 
-# Cria a navegação
-pg = st.navigation([home_page, ot_page])
+pdstic_page = st.Page(
+    "pages/2_PDSTIC.py",
+    title="PDSTIC",
+    url_path="pdstic",
+)
 
-# Executa a página selecionada
+pg = st.navigation([home_page, ot_page, pdstic_page])
 pg.run()

@@ -35,7 +35,7 @@ x-airflow-common: &airflow-common
     - ./bookstack/include:/opt/airflow/include    
     - ./bookstack/dados:/opt/airflow/dados        
     - ./bookstack/backups:/opt/airflow/backups      
-    - ./streamlit/saidas:/opt/airflow/saidas
+    - ./streamlit/dados:/opt/airflow/saidas:ro
   networks:
     - service_net
   depends_on:
@@ -137,11 +137,11 @@ services:
       - "80"
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost/status"]
-      interval: 10s
-      timeout: 5s
-      retries: 12
-      start_period: 300s
+      test: ["CMD-SHELL", "curl -k -I -f http://127.0.0.1:80/ || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
   
   fastapi:
       image: fastapi-smsub:1.0
@@ -302,7 +302,9 @@ services:
       - ./nginx/certs:/etc/nginx/certs:ro
       - ./nginx/logs:/var/log/nginx
     networks:
-      - service_net
+      service_net:
+        aliases:
+          - bookstack.localhost
 
 volumes:
   mariadb_data:

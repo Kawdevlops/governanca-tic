@@ -2205,6 +2205,120 @@
   },
   {
     "tipo": "servico",
+    "codigo_servico": "4679",
+    "nome": "Descomplica SP Itaim Paulista - Elogio",
+    "titulo": "Canais de Atendimento",
+    "categoria": "Canais de Atendimento",
+    "grupo": "Descomplica SP - Itaim Paulista",
+    "caminho_servico": [
+      "Canais de Atendimento",
+      "Descomplica SP - Itaim Paulista"
+    ],
+    "caminho": [
+      "Inicio",
+      "Canais de Atendimento",
+      "Descomplica SP - Itaim Paulista",
+      "Descomplica SP Itaim Paulista - Elogio"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4679"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "4681",
+    "nome": "Descomplica SP Itaim Paulista - Sugestão",
+    "titulo": "Canais de Atendimento",
+    "categoria": "Canais de Atendimento",
+    "grupo": "Descomplica SP - Itaim Paulista",
+    "caminho_servico": [
+      "Canais de Atendimento",
+      "Descomplica SP - Itaim Paulista"
+    ],
+    "caminho": [
+      "Inicio",
+      "Canais de Atendimento",
+      "Descomplica SP - Itaim Paulista",
+      "Descomplica SP Itaim Paulista - Sugestão"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4681"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "4680",
+    "nome": "Descomplica SP Itaim Paulista- Reclamação",
+    "titulo": "Canais de Atendimento",
+    "categoria": "Canais de Atendimento",
+    "grupo": "Descomplica SP - Itaim Paulista",
+    "caminho_servico": [
+      "Canais de Atendimento",
+      "Descomplica SP - Itaim Paulista"
+    ],
+    "caminho": [
+      "Inicio",
+      "Canais de Atendimento",
+      "Descomplica SP - Itaim Paulista",
+      "Descomplica SP Itaim Paulista- Reclamação"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4680"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "4660",
+    "nome": "Descomplica SP Itaquera - Elogio",
+    "titulo": "Canais de Atendimento",
+    "categoria": "Canais de Atendimento",
+    "grupo": "Descomplica SP - Itaquera",
+    "caminho_servico": [
+      "Canais de Atendimento",
+      "Descomplica SP - Itaquera"
+    ],
+    "caminho": [
+      "Inicio",
+      "Canais de Atendimento",
+      "Descomplica SP - Itaquera",
+      "Descomplica SP Itaquera - Elogio"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4660"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "4661",
+    "nome": "Descomplica SP Itaquera - Reclamação",
+    "titulo": "Canais de Atendimento",
+    "categoria": "Canais de Atendimento",
+    "grupo": "Descomplica SP - Itaquera",
+    "caminho_servico": [
+      "Canais de Atendimento",
+      "Descomplica SP - Itaquera"
+    ],
+    "caminho": [
+      "Inicio",
+      "Canais de Atendimento",
+      "Descomplica SP - Itaquera",
+      "Descomplica SP Itaquera - Reclamação"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4661"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "4662",
+    "nome": "Descomplica SP Itaquera - Sugestão",
+    "titulo": "Canais de Atendimento",
+    "categoria": "Canais de Atendimento",
+    "grupo": "Descomplica SP - Itaquera",
+    "caminho_servico": [
+      "Canais de Atendimento",
+      "Descomplica SP - Itaquera"
+    ],
+    "caminho": [
+      "Inicio",
+      "Canais de Atendimento",
+      "Descomplica SP - Itaquera",
+      "Descomplica SP Itaquera - Sugestão"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4662"
+  },
+  {
+    "tipo": "servico",
     "codigo_servico": "3599",
     "nome": "Descomplica SP Jabaquara - Elogio",
     "titulo": "Canais de Atendimento",
@@ -4314,25 +4428,6 @@
   },
   {
     "tipo": "servico",
-    "codigo_servico": "4513",
-    "nome": "Arquivo Histórico Municipal - Agendamento para pesquisa presencial ao Acervo Permanente",
-    "titulo": "Cultura, esporte e lazer",
-    "categoria": "Cultura, esporte e lazer",
-    "grupo": "Arquivo Histórico Municipal",
-    "caminho_servico": [
-      "Cultura, esporte e lazer",
-      "Arquivo Histórico Municipal"
-    ],
-    "caminho": [
-      "Inicio",
-      "Cultura, esporte e lazer",
-      "Arquivo Histórico Municipal",
-      "Arquivo Histórico Municipal - Agendamento para pesquisa presencial ao Acervo Permanente"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4513"
-  },
-  {
-    "tipo": "servico",
     "codigo_servico": "4810",
     "nome": "Visita monitorada nas bibliotecas da Coordenação do Sistema Municipal de Bibliotecas",
     "titulo": "Cultura, esporte e lazer",
@@ -5356,82 +5451,6 @@
       "Reparação de danos - Solicitar indenização por danos materiais"
     ],
     "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=3959"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "872",
-    "nome": "Alimentação escolar - Reclamar sobre alimentação nas unidades",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Alimentação escolar",
-    "caminho_servico": [
-      "Educação",
-      "Alimentação escolar"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Alimentação escolar",
-      "Alimentação escolar - Reclamar sobre alimentação nas unidades"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=872"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "2694",
-    "nome": "Alimentação escolar - Sugerir cardápio",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Alimentação escolar",
-    "caminho_servico": [
-      "Educação",
-      "Alimentação escolar"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Alimentação escolar",
-      "Alimentação escolar - Sugerir cardápio"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2694"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "880",
-    "nome": "Leve Leite - Denúncia de venda ou desvio de leite",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Leve Leite",
-    "caminho_servico": [
-      "Educação",
-      "Leve Leite"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Leve Leite",
-      "Leve Leite - Denúncia de venda ou desvio de leite"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=880"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "2652",
-    "nome": "Leve Leite - Reclamação de não entrega do leite",
-    "titulo": "Educação",
-    "categoria": "Educação",
-    "grupo": "Leve Leite",
-    "caminho_servico": [
-      "Educação",
-      "Leve Leite"
-    ],
-    "caminho": [
-      "Inicio",
-      "Educação",
-      "Leve Leite",
-      "Leve Leite - Reclamação de não entrega do leite"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2652"
   },
   {
     "tipo": "servico",

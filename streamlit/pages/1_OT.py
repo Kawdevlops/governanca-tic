@@ -1,22 +1,24 @@
 import base64
-from pathlib import Path
 import os
+import sys
+from pathlib import Path
 
 import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
 from sqlalchemy import create_engine
-import sys
-from pathlib import Path
-sys.path.append(str(Path(__file__).resolve().parent.parent))
 
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 from style_lateral import aplicar_estilo_lateral
+
 aplicar_estilo_lateral()
 
-st.set_page_config(page_title="Painel de conformidade TI", layout="wide")
+# NÃO chame st.set_page_config aqui — já foi chamado uma vez no app.py.
 
 PASTA_PROJETO = Path(__file__).resolve().parent.parent
-CAMINHO_LOGO = PASTA_PROJETO / "assets" / "marcadagua.png"  # Vira /app/pages/assets/marcadagua.png
+# 1_OT.py está em streamlit/pages/, então .parent.parent chega em streamlit/
+CAMINHO_LOGO = PASTA_PROJETO / "assets" / "marcadagua.png"
+
 
 def logo_em_base64(caminho: Path) -> str:
     if not caminho.exists():
@@ -662,9 +664,9 @@ HTML_TEMPLATE = """
 """
 
 # DADOS
-# Fonte única agora: Postgres (banco indicadores_smsub, tabela recomendacoes_ot).
-# Nada de Excel/upload dentro do app — quem alimenta essa tabela é um script
-# de carga separado (ver explicação fora do código).
+# Fonte: Postgres (banco indicadores_tic, tabela ouro.fato_ot).
+# Nada de Excel/upload dentro do app — quem alimenta essa tabela é a DAG
+# carga_indicadores_ot (ou o script streamlit/cargas/carregar_ot.py, na mão).
 
 @st.cache_data
 def carregar_dados() -> pd.DataFrame:
@@ -975,13 +977,19 @@ st.sidebar.header("Fonte de dados")
 
 st.sidebar.caption(
     f"Banco: {os.environ.get('DB_STREAMLIT_DATABASE', '?')} "
-    f"· Tabela: recomendacoes_ot"
+    f"· Tabela: ouro.fato_ot"
 )
 
 if st.sidebar.button("🔄 Atualizar dados"):
     st.cache_data.clear()
 
 df = carregar_dados()
+
+if not LOGO_BASE64:
+    st.sidebar.warning("Logo não encontrada.")
+    st.sidebar.code(str(CAMINHO_LOGO))
+else:
+    st.sidebar.success("Logo encontrada.")
 
 
 # HTML
@@ -1039,7 +1047,7 @@ components.html(
 st.sidebar.markdown("---")
 
 st.sidebar.caption(
-    "Os dados vêm direto do banco Postgres (indicadores_smsub). "
-    "Para atualizar, recarregue a tabela recomendacoes_ot e clique "
-    "em 'Atualizar dados' na barra lateral."
+    "Os dados vêm direto do banco Postgres (indicadores_tic). "
+    "Para atualizar, rode a DAG carga_indicadores_ot (ou o script "
+    "de carga na mão) e clique em 'Atualizar dados' na barra lateral."
 )
