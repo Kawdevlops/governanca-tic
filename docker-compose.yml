@@ -28,6 +28,7 @@ x-airflow-common: &airflow-common
     POSTGRES_DB: ${POSTGRES_DB}
     MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     MARIADB_HOST: ${MARIADB_HOST}
+    MATURIDADE_API_BASE_URL: ${MATURIDADE_API_BASE_URL:-http://ec2-18-229-112-109.sa-east-1.compute.amazonaws.com/api/public}  
   volumes:
     - ./airflow/dags:/opt/airflow/dags
     - ./airflow/logs:/opt/airflow/logs
@@ -36,7 +37,7 @@ x-airflow-common: &airflow-common
     - ./bookstack/dados:/opt/airflow/dados
     - ./bookstack/backups:/opt/airflow/backups
     - ./streamlit/dados:/opt/airflow/saidas:ro
-    - ./postgres/init:/opt/airflow/sql_setup:ro
+    - ./postgres:/opt/airflow/sql_setup:ro
   networks:
     - service_net
   depends_on:

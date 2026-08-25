@@ -28,5 +28,11 @@ pdstic_page = st.Page(
     url_path="pdstic",
 )
 
-pg = st.navigation([home_page, ot_page, pdstic_page])
+maturidade_page = st.Page(
+    "pages/3_MATURIDADE.py",
+    title="Escala de Maturidade",
+    url_path="maturidade",
+)
+
+pg = st.navigation([home_page, ot_page, pdstic_page, maturidade_page])
 pg.run()

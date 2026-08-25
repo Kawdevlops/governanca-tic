@@ -370,7 +370,7 @@ with col3:
                 <span class="card-title">Maturidade</span>
             </div>
             <div class="card-subtitle">Escala de Maturidade</div>
-            <div class="status-tag status-construcao">● Em construção</div>
+            <div class="status-tag status-disponivel">● Disponível</div>
             <div class="card-description">
                 Mede o nível de maturidade dos processos de governança de TI dos Órgãos Setoriais:
             </div>
@@ -379,11 +379,13 @@ with col3:
                 <li><span class="bullet">•</span> Práticas por área</li>
                 <li><span class="bullet">•</span> Evolução temporal</li>
             </ul>
-            <div style="margin-top:12px;">
-                <span class="info-badge">Em desenvolvimento</span>
+            <div style="margin-top:10px;">
+                <span class="info-badge"> 187 Critérios Existentes </span>
             </div>
-            <div style="margin-top:16px;">
-                <div class="btn-disabled">Em breve</div>
+            <div class="btn-wrapper">
+                <a href="/pdstic" target="_self" style="text-decoration:none;">
+                    <div class="btn-primary">Abrir Maturidade →</div>
+                </a>
             </div>
         </div>
     """)

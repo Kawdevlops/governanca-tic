@@ -59,9 +59,7 @@ body{
   background:transparent;
 }
 
-.painel-conformidade *{
-  box-sizing:border-box;
-}
+.painel-conformidade *{ box-sizing:border-box;}
 
 .painel-conformidade{
   font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',
@@ -91,67 +89,7 @@ body{
 
 
 /* 
-   MARCA D'ÁGUA
- */
-
-.painel-conformidade .slide::before{
-  content:"";
-  position:absolute;
-  bottom: 20px;
-  right: 20px;
-  width: 150px;
-  height: 150px;
-
-  background-image:url("data:image/png;base64,{{LOGO_BASE64}}");
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:contain;
-
-  opacity:0.10;
-  pointer-events:none;
-  z-index:0;
-}
-
-/* 
-   TEXTOS
-*/
-
-.painel-conformidade .tag{
-  display:inline-block;
-  font-size:16px;
-  letter-spacing:.14em;
-  font-weight:800;
-  color:var(--blue-dark);
-  background:#EAF0FB;
-  border-radius:26px;
-  padding:6px 15px;
-  margin-bottom:14px;
-  text-transform:uppercase;
-}
-
-.painel-conformidade h1{
-  font-size:36px;
-  line-height:1.08;
-  font-weight:900;
-  margin:0 0 4px;
-  letter-spacing:-0.5px;
-}
-
-.painel-conformidade h1 span{
-  color:var(--blue);
-}
-
-.painel-conformidade .lead{
-  color:var(--gray);
-  font-size:18px;
-  line-height:1.8;
-  max-width:480px;
-  margin-top:16px;
-}
-
-
-/* 
-   PRINCIPAL
+   PRINCIPAL =================================================================
 */
 
 .painel-conformidade .grid-2{
@@ -207,9 +145,68 @@ body{
   line-height:1.6;
 }
 
+/* 
+   MARCA D'ÁGUA Padrão =================================================================
+ */
+
+.painel-conformidade .slide::before{
+  content:"";
+  position:absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+
+  background-image:url("data:image/png;base64,{{LOGO_BASE64}}");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+
+  opacity:0.10;
+  pointer-events:none;
+  z-index:0;
+}
+
+/*  
+   TEXTOS PADRÃOo =================================================================
+*/
+
+.painel-conformidade .tag{
+  display:inline-block;
+  font-size:16px;
+  letter-spacing:.14em;
+  font-weight:800;
+  color:var(--blue-dark);
+  background:#EAF0FB;
+  border-radius:26px;
+  padding:6px 15px;
+  margin-bottom:14px;
+  text-transform:uppercase;
+}
+
+.painel-conformidade h1{
+  font-size:36px;
+  line-height:1.08;
+  font-weight:900;
+  margin:0 0 4px;
+  letter-spacing:-0.5px;
+}
+
+.painel-conformidade h1 span{
+  color:var(--blue);
+}
+
+.painel-conformidade .lead{
+  color:var(--gray);
+  font-size:18px;
+  line-height:1.8;
+  max-width:480px;
+  margin-top:16px;
+}
+
 
 /* 
-   KPIs
+   KPIs PADRÃO =================================================================
 */
 
 .painel-conformidade .kpi-cards{
@@ -268,9 +265,8 @@ body{
 
 
 /* 
-   BARRA
+   BARRA =================================================================
 */
-
 .painel-conformidade .barbox{
   margin-top:10px;
 }
@@ -306,14 +302,13 @@ body{
 
 
 /* 
-   OT
+   CAIXA DAS 3 OTs =================================================================
 */
-
 .painel-conformidade .ot-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:24px;
-  margin-top:12px;
+  margin-top:10px;
 }
 
 .painel-conformidade .ot-card{
@@ -360,9 +355,8 @@ body{
 
 
 /*
-   TABELA
+   TABELA =================================================================
 */
-
 .painel-conformidade table.seg{
   width:100%;
   border-collapse:collapse;
@@ -391,9 +385,8 @@ body{
 
 
 /*
-   OTS
+   LEGENDA DA TABELA  =================================================================
 */
-
 .painel-conformidade .pill{
   display:inline-block;
   padding:3px 10px;
@@ -437,7 +430,7 @@ body{
 
 
 /* 
-   RESPONSIVO
+   RESPONSIVO =================================================================
  */
 
 @media (max-width:820px){
