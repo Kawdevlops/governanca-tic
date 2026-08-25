@@ -16,9 +16,9 @@ x-airflow-common: &airflow-common
     AIRFLOW__API__EXPOSE_CONFIG: "True"
     DB_STREAMLIT_HOST: postgres
     DB_STREAMLIT_PORT: 5432
-    DB_STREAMLIT_USER: ${DB_STREAMLIT_USER}
-    DB_STREAMLIT_PASSWORD: ${DB_STREAMLIT_PASSWORD}
     DB_STREAMLIT_DATABASE: ${DB_STREAMLIT_DATABASE}
+    DB_ETL_USER: ${DB_ETL_USER}
+    DB_ETL_PASSWORD: ${DB_ETL_PASSWORD}
     PYTHONPATH: /opt/airflow
     BOOKSTACK_URL: ${BOOKSTACK_URL}
     BOOKSTACK_DB_HOST: mariadb_service
@@ -32,10 +32,11 @@ x-airflow-common: &airflow-common
     - ./airflow/dags:/opt/airflow/dags
     - ./airflow/logs:/opt/airflow/logs
     - ./airflow/plugins:/opt/airflow/plugins
-    - ./bookstack/include:/opt/airflow/include    
-    - ./bookstack/dados:/opt/airflow/dados        
-    - ./bookstack/backups:/opt/airflow/backups      
+    - ./bookstack/include:/opt/airflow/include
+    - ./bookstack/dados:/opt/airflow/dados
+    - ./bookstack/backups:/opt/airflow/backups
     - ./streamlit/dados:/opt/airflow/saidas:ro
+    - ./postgres/init:/opt/airflow/sql_setup:ro
   networks:
     - service_net
   depends_on:
@@ -272,6 +273,9 @@ services:
     expose:
       - "8501"
     restart: unless-stopped
+    volumes:
+      - ./streamlit/pages:/app/pages
+      - ./streamlit/app.py:/app/app.py
     healthcheck:
       test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:8501/_stcore/health || exit 1"]
       interval: 15s

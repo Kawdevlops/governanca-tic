@@ -1,0 +1,8 @@
+# Banco de Dados (Pré-compilado para Docker Slim)
+psycopg2-binary>=2.9.9
+sqlalchemy
+
+# Interface e Manipulação de Dados
+streamlit>=1.50
+pandas>=2.0
+openpyxl>=3.1

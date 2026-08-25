@@ -10,7 +10,7 @@ st.set_page_config(
 # url_path definido explicitamente para os links do home.py baterem certo
 
 home_page = st.Page(
-    "pages/home.py",
+    "pages/0_HOME.py",
     title="Home",
     default=True,
     url_path="",

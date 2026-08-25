@@ -7,12 +7,38 @@ from datetime import datetime
 
 CAMINHO_EXCEL = "/opt/airflow/saidas/PDSTIC.xlsx"
 
-
 def conectar():
     return create_engine(
-        f"postgresql+psycopg2://{os.environ['DB_STREAMLIT_USER']}:{os.environ['DB_STREAMLIT_PASSWORD']}"
+        f"postgresql+psycopg2://{os.environ['DB_ETL_USER']}:{os.environ['DB_ETL_PASSWORD']}"
         f"@{os.environ['DB_STREAMLIT_HOST']}:{os.environ['DB_STREAMLIT_PORT']}/{os.environ['DB_STREAMLIT_DATABASE']}"
     )
+
+PASTA_SQL_SETUP = "/opt/airflow/sql_setup"
+ARQUIVOS_ESTRUTURA = [
+    "schema_bronze_prata_ouro.sql",
+    "tabela_bronze_ot.sql",
+    "tabela_bronze_pdstic.sql",
+    "tabela_prata.sql",
+    "extender_prata_pdstic.sql",
+    "tabela_ouro.sql",
+    "tabela_ouro_pdstic.sql",
+]
+
+
+def garantir_estrutura():
+    engine = conectar()
+    with engine.begin() as conn:
+        for nome_arquivo in ARQUIVOS_ESTRUTURA:
+            caminho = os.path.join(PASTA_SQL_SETUP, nome_arquivo)
+            if not os.path.exists(caminho):
+                print(f"Aviso: {nome_arquivo} não encontrado, pulando.")
+                continue
+            with open(caminho, "r", encoding="utf-8") as f:
+                sql = f.read()
+            conn.execute(text(sql))
+            print(f"Estrutura aplicada: {nome_arquivo}")
+def carregar_bronze():
+    engine = conectar()
 
 
 def carregar_bronze():
@@ -143,8 +169,9 @@ with DAG(
     tags=["indicadores", "pdstic"],
 ) as dag:
 
-    tarefa_bronze = PythonOperator(task_id="carregar_bronze", python_callable=carregar_bronze)
-    tarefa_prata = PythonOperator(task_id="carregar_prata", python_callable=carregar_prata)
-    tarefa_ouro = PythonOperator(task_id="atualizar_ouro", python_callable=atualizar_ouro)
+        tarefa_estrutura = PythonOperator(task_id="garantir_estrutura", python_callable=garantir_estrutura)
+        tarefa_bronze = PythonOperator(task_id="carregar_bronze", python_callable=carregar_bronze)
+        tarefa_prata = PythonOperator(task_id="carregar_prata", python_callable=carregar_prata)
+        tarefa_ouro = PythonOperator(task_id="atualizar_ouro", python_callable=atualizar_ouro)
 
-    tarefa_bronze >> tarefa_prata >> tarefa_ouro
+        tarefa_estrutura >> tarefa_bronze >> tarefa_prata >> tarefa_ouro

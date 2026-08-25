@@ -11,14 +11,9 @@ from sqlalchemy import create_engine
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 from style_lateral import aplicar_estilo_lateral
 
-
-
 aplicar_estilo_lateral()
 
-# ==========================================================================
 # LOGO (mesma lógica do OT)
-# ==========================================================================
-
 PASTA_PROJETO = Path(__file__).resolve().parent.parent
 
 CAMINHO_LOGO = PASTA_PROJETO / "assets" / "marcadagua.png"
@@ -36,10 +31,8 @@ def logo_em_base64(caminho: Path) -> str:
 
 LOGO_BASE64 = logo_em_base64(CAMINHO_LOGO)
 
-# ==========================================================================
-# CSS — mesma paleta e fonte do painel de OT
-# ==========================================================================
 
+# CSS — mesma paleta e fonte do painel de OT
 CSS_TEMPLATE = """
 :root{
   --navy:#12203D;
@@ -215,10 +208,8 @@ body{ background:transparent; }
 }
 """
 
-# ==========================================================================
-# DADOS
-# ==========================================================================
 
+# DADOS
 @st.cache_data
 def carregar_dados() -> pd.DataFrame:
     engine = create_engine(
@@ -246,22 +237,17 @@ def montar_linhas_tabela(df: pd.DataFrame) -> str:
     linhas = []
     for _, row in df.sort_values("percentual_executado").iterrows():
         classe = classe_status.get(row["status"], "andamento")
-        pct = f"{(row['percentual_executado'] or 0) * 100:.0f}%"
         linhas.append(
             f'<tr>'
             f'<td>{row["area_responsavel"]}</td>'
             f'<td>{row["objeto"]}</td>'
             f'<td><span class="pill {classe}">{row["status"]}</span></td>'
-            f'<td>{pct}</td>'
             f'</tr>'
         )
     return "\n".join(linhas)
 
 
-# ==========================================================================
 # STREAMLIT — barra lateral
-# ==========================================================================
-
 st.sidebar.header("Fonte de dados")
 st.sidebar.caption(
     f"Banco: {os.environ.get('DB_STREAMLIT_DATABASE', '?')} · Tabela: ouro.fato_pdstic"
@@ -270,6 +256,7 @@ if st.sidebar.button("🔄 Atualizar dados"):
     st.cache_data.clear()
 
 df = carregar_dados()
+df = df.dropna(subset=["objeto", "percentual_executado"])
 
 if not LOGO_BASE64:
     st.sidebar.warning("Logo não encontrada.")
@@ -277,10 +264,8 @@ if not LOGO_BASE64:
 else:
     st.sidebar.success("Logo encontrada.")
 
-# ==========================================================================
-# KPIs
-# ==========================================================================
 
+# KPIs
 total = len(df)
 concluidas = int((df["status"] == "Concluída").sum())
 andamento = int((df["status"] == "Em Andamento").sum())
@@ -299,8 +284,8 @@ HTML_TEMPLATE = f"""
 <div class="deck">
 
   <section class="slide">
-    <span class="tag">Governança de TI · SMSUB</span>
-    <h1>PLANO DIRETOR DE <span>TIC — PDSTIC</span></h1>
+    <span class="tag">Governança de TIC · SMSUB</span>
+    <h1>PLANO DIRETOR DE <span>TIC PDSTIC</span></h1>
     <p class="lead">
       Acompanhamento das linhas de ação do PDSTIC: percentual de execução,
       orçamento previsto e valores já liquidados por área responsável.
@@ -360,7 +345,7 @@ HTML_TEMPLATE = f"""
     <span class="tag" style="margin-top:32px;">Detalhamento</span>
     <h1 style="font-size:26px;">LINHAS DE AÇÃO <span>POR ÁREA</span></h1>
     <table class="seg">
-      <tr><th>Área Responsável</th><th>Objeto</th><th>Status</th><th>% Executado</th></tr>
+      <tr><th>Área Responsável</th><th>Objeto</th><th>Status</th></tr>
       {montar_linhas_tabela(df)}
     </table>
 

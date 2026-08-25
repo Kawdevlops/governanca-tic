@@ -4428,6 +4428,25 @@
   },
   {
     "tipo": "servico",
+    "codigo_servico": "4513",
+    "nome": "Arquivo Histórico Municipal - Agendamento para pesquisa presencial ao Acervo Permanente",
+    "titulo": "Cultura, esporte e lazer",
+    "categoria": "Cultura, esporte e lazer",
+    "grupo": "Arquivo Histórico Municipal",
+    "caminho_servico": [
+      "Cultura, esporte e lazer",
+      "Arquivo Histórico Municipal"
+    ],
+    "caminho": [
+      "Inicio",
+      "Cultura, esporte e lazer",
+      "Arquivo Histórico Municipal",
+      "Arquivo Histórico Municipal - Agendamento para pesquisa presencial ao Acervo Permanente"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4513"
+  },
+  {
+    "tipo": "servico",
     "codigo_servico": "4810",
     "nome": "Visita monitorada nas bibliotecas da Coordenação do Sistema Municipal de Bibliotecas",
     "titulo": "Cultura, esporte e lazer",
@@ -4672,25 +4691,6 @@
       "Reclamar sobre eventos na via"
     ],
     "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=769"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "850",
-    "nome": "Fab Lab - Reclamação",
-    "titulo": "Cultura, esporte e lazer",
-    "categoria": "Cultura, esporte e lazer",
-    "grupo": "Fab Lab",
-    "caminho_servico": [
-      "Cultura, esporte e lazer",
-      "Fab Lab"
-    ],
-    "caminho": [
-      "Inicio",
-      "Cultura, esporte e lazer",
-      "Fab Lab",
-      "Fab Lab - Reclamação"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=850"
   },
   {
     "tipo": "servico",
@@ -5454,6 +5454,82 @@
   },
   {
     "tipo": "servico",
+    "codigo_servico": "872",
+    "nome": "Alimentação escolar - Reclamar sobre alimentação nas unidades",
+    "titulo": "Educação",
+    "categoria": "Educação",
+    "grupo": "Alimentação escolar",
+    "caminho_servico": [
+      "Educação",
+      "Alimentação escolar"
+    ],
+    "caminho": [
+      "Inicio",
+      "Educação",
+      "Alimentação escolar",
+      "Alimentação escolar - Reclamar sobre alimentação nas unidades"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=872"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "2694",
+    "nome": "Alimentação escolar - Sugerir cardápio",
+    "titulo": "Educação",
+    "categoria": "Educação",
+    "grupo": "Alimentação escolar",
+    "caminho_servico": [
+      "Educação",
+      "Alimentação escolar"
+    ],
+    "caminho": [
+      "Inicio",
+      "Educação",
+      "Alimentação escolar",
+      "Alimentação escolar - Sugerir cardápio"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2694"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "880",
+    "nome": "Leve Leite - Denúncia de venda ou desvio de leite",
+    "titulo": "Educação",
+    "categoria": "Educação",
+    "grupo": "Leve Leite",
+    "caminho_servico": [
+      "Educação",
+      "Leve Leite"
+    ],
+    "caminho": [
+      "Inicio",
+      "Educação",
+      "Leve Leite",
+      "Leve Leite - Denúncia de venda ou desvio de leite"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=880"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "2652",
+    "nome": "Leve Leite - Reclamação de não entrega do leite",
+    "titulo": "Educação",
+    "categoria": "Educação",
+    "grupo": "Leve Leite",
+    "caminho_servico": [
+      "Educação",
+      "Leve Leite"
+    ],
+    "caminho": [
+      "Inicio",
+      "Educação",
+      "Leve Leite",
+      "Leve Leite - Reclamação de não entrega do leite"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=2652"
+  },
+  {
+    "tipo": "servico",
     "codigo_servico": "3798",
     "nome": "Material escolar - Avisar sobre problemas na compra do material",
     "titulo": "Educação",
@@ -6158,7 +6234,7 @@
   {
     "tipo": "servico",
     "codigo_servico": "4798",
-    "nome": "Transação de Débitos Municipais (TDM) - Problemas com pagamento ou sistema - Programa Fique Em Dia #FiqueEmDia",
+    "nome": "Transação de Débitos Municipais (TDM) – Questões relacionadas à adesão e execução",
     "titulo": "Finanças",
     "categoria": "Finanças",
     "grupo": "Dívida Ativa",
@@ -6170,7 +6246,7 @@
       "Inicio",
       "Finanças",
       "Dívida Ativa",
-      "Transação de Débitos Municipais (TDM) - Problemas com pagamento ou sistema - Programa Fique Em Dia #FiqueEmDia"
+      "Transação de Débitos Municipais (TDM) – Questões relacionadas à adesão e execução"
     ],
     "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=4798"
   },
@@ -8665,6 +8741,25 @@
   },
   {
     "tipo": "servico",
+    "codigo_servico": "850",
+    "nome": "Fab Lab - Reclamação",
+    "titulo": "Trabalho",
+    "categoria": "Trabalho",
+    "grupo": "Fab Lab",
+    "caminho_servico": [
+      "Trabalho",
+      "Fab Lab"
+    ],
+    "caminho": [
+      "Inicio",
+      "Trabalho",
+      "Fab Lab",
+      "Fab Lab - Reclamação"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=850"
+  },
+  {
+    "tipo": "servico",
     "codigo_servico": "841",
     "nome": "Reclamações sobre serviços prestados aos feirantes",
     "titulo": "Trabalho",
@@ -10147,6 +10242,44 @@
   },
   {
     "tipo": "servico",
+    "codigo_servico": "1010",
+    "nome": "Olho Vivo - Reclamações",
+    "titulo": "Trânsito e Transporte",
+    "categoria": "Trânsito e Transporte",
+    "grupo": "Olho Vivo",
+    "caminho_servico": [
+      "Trânsito e Transporte",
+      "Olho Vivo"
+    ],
+    "caminho": [
+      "Inicio",
+      "Trânsito e Transporte",
+      "Olho Vivo",
+      "Olho Vivo - Reclamações"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=1010"
+  },
+  {
+    "tipo": "servico",
+    "codigo_servico": "1011",
+    "nome": "Ônibus - Elogiar ou sugerir melhorias ao Sistema Olho Vivo",
+    "titulo": "Trânsito e Transporte",
+    "categoria": "Trânsito e Transporte",
+    "grupo": "Olho Vivo",
+    "caminho_servico": [
+      "Trânsito e Transporte",
+      "Olho Vivo"
+    ],
+    "caminho": [
+      "Inicio",
+      "Trânsito e Transporte",
+      "Olho Vivo",
+      "Ônibus - Elogiar ou sugerir melhorias ao Sistema Olho Vivo"
+    ],
+    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=1011"
+  },
+  {
+    "tipo": "servico",
     "codigo_servico": "757",
     "nome": "Circulação de caminhões - Solicitar avaliação",
     "titulo": "Trânsito e Transporte",
@@ -10812,25 +10945,6 @@
   },
   {
     "tipo": "servico",
-    "codigo_servico": "1010",
-    "nome": "Olho Vivo - Reclamações",
-    "titulo": "Trânsito e Transporte",
-    "categoria": "Trânsito e Transporte",
-    "grupo": "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
-    "caminho_servico": [
-      "Trânsito e Transporte",
-      "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal"
-    ],
-    "caminho": [
-      "Inicio",
-      "Trânsito e Transporte",
-      "Ônibus - Conduta de Trabalho do Motorista, Cobrador e Fiscal",
-      "Olho Vivo - Reclamações"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=1010"
-  },
-  {
-    "tipo": "servico",
     "codigo_servico": "978",
     "nome": "Ônibus - Denunciar alteração de itinerário ou ponto inicial/final",
     "titulo": "Trânsito e Transporte",
@@ -11246,25 +11360,6 @@
       "Ônibus - Elogiar o(a) motorista, cobrador(a) ou fiscal"
     ],
     "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=979"
-  },
-  {
-    "tipo": "servico",
-    "codigo_servico": "1011",
-    "nome": "Ônibus - Elogiar ou sugerir melhorias ao Sistema Olho Vivo",
-    "titulo": "Trânsito e Transporte",
-    "categoria": "Trânsito e Transporte",
-    "grupo": "Ônibus e ponto de ônibus",
-    "caminho_servico": [
-      "Trânsito e Transporte",
-      "Ônibus e ponto de ônibus"
-    ],
-    "caminho": [
-      "Inicio",
-      "Trânsito e Transporte",
-      "Ônibus e ponto de ônibus",
-      "Ônibus - Elogiar ou sugerir melhorias ao Sistema Olho Vivo"
-    ],
-    "link": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=1011"
   },
   {
     "tipo": "servico",
