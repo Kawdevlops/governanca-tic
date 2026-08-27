@@ -13,10 +13,8 @@ from style_lateral import aplicar_estilo_lateral
 
 aplicar_estilo_lateral()
 
-# NÃO chame st.set_page_config aqui — já foi chamado uma vez no app.py.
 
 PASTA_PROJETO = Path(__file__).resolve().parent.parent
-# 1_OT.py está em streamlit/pages/, então .parent.parent chega em streamlit/
 CAMINHO_LOGO = PASTA_PROJETO / "assets" / "marcadagua.png"
 
 
@@ -659,7 +657,7 @@ HTML_TEMPLATE = """
 # DADOS
 # Fonte: Postgres (banco indicadores_tic, tabela ouro.fato_ot).
 # Nada de Excel/upload dentro do app — quem alimenta essa tabela é a DAG
-# carga_indicadores_ot (ou o script streamlit/cargas/carregar_ot.py, na mão).
+# carga_indicadores_ot (Airflow), que lê o Excel e grava direto em ouro.
 
 @st.cache_data
 def carregar_dados() -> pd.DataFrame:
@@ -982,7 +980,7 @@ if not LOGO_BASE64:
     st.sidebar.warning("Logo não encontrada.")
     st.sidebar.code(str(CAMINHO_LOGO))
 else:
-    st.sidebar.success("Logo encontrada.")
+    st.sidebar.success("")
 
 
 # HTML
@@ -991,7 +989,6 @@ conteudo = preencher_template(
     HTML_TEMPLATE,
     df
 )
-
 
 css_final = CSS_TEMPLATE.replace(
     "{{LOGO_BASE64}}",
@@ -1036,11 +1033,8 @@ components.html(
     scrolling=True
 )
 
-
 st.sidebar.markdown("---")
 
 st.sidebar.caption(
-    "Os dados vêm direto do banco Postgres (indicadores_tic). "
-    "Para atualizar, rode a DAG carga_indicadores_ot (ou o script "
-    "de carga na mão) e clique em 'Atualizar dados' na barra lateral."
+    ""
 )

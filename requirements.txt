@@ -1,7 +1,7 @@
 # APIs e Requisições
 requests>=2.32.0
 
-# Web Scraping e Automação
+# Web Scraping e Automação (usa o chromium/chromium-driver instalados no Dockerfile)
 selenium==4.15.2
 beautifulsoup4==4.12.2
 
@@ -10,9 +10,14 @@ psycopg2-binary>=2.9.9
 sqlalchemy
 
 # Validação de Dados
-pydantic==2.11.7 
+pydantic==2.11.7
+
+# Manipulação de Dados
+pandas>=2.0
+openpyxl>=3.1
 
 # Interface e Manipulação de Dados
 streamlit>=1.50
 pandas>=2.0
 openpyxl>=3.1
+

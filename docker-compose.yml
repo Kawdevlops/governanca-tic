@@ -17,6 +17,8 @@ x-airflow-common: &airflow-common
     DB_STREAMLIT_HOST: postgres
     DB_STREAMLIT_PORT: 5432
     DB_STREAMLIT_DATABASE: ${DB_STREAMLIT_DATABASE}
+    DB_STREAMLIT_USER: ${DB_STREAMLIT_USER}
+    DB_STREAMLIT_PASSWORD: ${DB_STREAMLIT_PASSWORD}
     DB_ETL_USER: ${DB_ETL_USER}
     DB_ETL_PASSWORD: ${DB_ETL_PASSWORD}
     PYTHONPATH: /opt/airflow
@@ -37,7 +39,7 @@ x-airflow-common: &airflow-common
     - ./bookstack/dados:/opt/airflow/dados
     - ./bookstack/backups:/opt/airflow/backups
     - ./streamlit/dados:/opt/airflow/saidas:ro
-    - ./postgres:/opt/airflow/sql_setup:ro
+    - ./postgres/init:/opt/airflow/sql_setup:ro
   networks:
     - service_net
   depends_on:

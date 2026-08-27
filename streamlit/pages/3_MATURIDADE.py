@@ -240,7 +240,7 @@ def montar_linhas_pilares(df: pd.DataFrame) -> str:
             f'<tr>'
             f'<td>{row["nome_pilar"]}</td>'
             f'<td>{int(row["pontos_obtidos"])} / {int(row["pontos_possiveis"])}</td>'
-            f'<td><span class="pill {classe}">{row["percentual_obtido"]:.0f}%</span></td>'
+            # f'<td><span class="pill {classe}">{row["percentual_obtido"]:.0f}%</span></td>'
             f'</tr>'
         )
     return "\n".join(linhas)
@@ -342,7 +342,7 @@ HTML_TEMPLATE = f"""
     <span class="tag" style="margin-top:32px;">Detalhamento</span>
     <h1 style="font-size:26px;">DESEMPENHO <span>POR PILAR</span></h1>
     <table class="seg">
-      <tr><th>Pilar</th><th>Pontos</th><th>% Cumprido</th></tr>
+      <tr><th>Pilar</th><th>Pontos</th><th></th></tr>
       {montar_linhas_pilares(df_pilares)}
     </table>
 

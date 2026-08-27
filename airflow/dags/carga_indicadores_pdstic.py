@@ -1,56 +1,77 @@
+"""
+DAG: carga_indicadores_pdstic
+
+Lê a planilha do PDSTIC, transforma tudo em memória com pandas e grava
+direto na tabela final `ouro.fato_pdstic`.
+"""
+import hashlib
 import os
+from datetime import datetime
+
 import pandas as pd
 from sqlalchemy import create_engine, text
+
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from datetime import datetime
 
 CAMINHO_EXCEL = "/opt/airflow/saidas/PDSTIC.xlsx"
 
-def conectar():
-    return create_engine(
-        f"postgresql+psycopg2://{os.environ['DB_ETL_USER']}:{os.environ['DB_ETL_PASSWORD']}"
-        f"@{os.environ['DB_STREAMLIT_HOST']}:{os.environ['DB_STREAMLIT_PORT']}/{os.environ['DB_STREAMLIT_DATABASE']}"
-    )
-
 PASTA_SQL_SETUP = "/opt/airflow/sql_setup"
+
 ARQUIVOS_ESTRUTURA = [
-    "schema_bronze_prata_ouro.sql",
-    "tabela_bronze_ot.sql",
-    "tabela_bronze_pdstic.sql",
-    "tabela_prata.sql",
-    "extender_prata_pdstic.sql",
-    "tabela_ouro.sql",
+    "schema_ouro.sql",
     "tabela_ouro_pdstic.sql",
 ]
 
 
+def conectar():
+    return create_engine(
+        f"postgresql+psycopg2://{os.environ['DB_STREAMLIT_USER']}:{os.environ['DB_STREAMLIT_PASSWORD']}"
+        f"@{os.environ['DB_STREAMLIT_HOST']}:{os.environ['DB_STREAMLIT_PORT']}/{os.environ['DB_STREAMLIT_DATABASE']}"
+    )
+
+
 def garantir_estrutura():
+    """Cria o schema `ouro` e a tabela `ouro.fato_pdstic`, se ainda não existirem."""
     engine = conectar()
     with engine.begin() as conn:
+        conn.execute(text("CREATE EXTENSION IF NOT EXISTS pgcrypto;"))
         for nome_arquivo in ARQUIVOS_ESTRUTURA:
             caminho = os.path.join(PASTA_SQL_SETUP, nome_arquivo)
             if not os.path.exists(caminho):
-                print(f"Aviso: {nome_arquivo} não encontrado, pulando.")
-                continue
+                raise FileNotFoundError(
+                    f"Arquivo de estrutura obrigatório não encontrado: {caminho}. "
+                    f"Verifique o volume montado em {PASTA_SQL_SETUP}."
+                )
             with open(caminho, "r", encoding="utf-8") as f:
                 sql = f.read()
             conn.execute(text(sql))
             print(f"Estrutura aplicada: {nome_arquivo}")
-def carregar_bronze():
+
+
+def _calcular_status(percentual) -> str:
+    """Mesma regra que antes era um CASE WHEN em SQL sobre status_bruto."""
+    if pd.isna(percentual):
+        return "Em Andamento"
+    if percentual >= 1:
+        return "Concluída"
+    if percentual == 0:
+        return "Não Iniciada"
+    return "Em Andamento"
+
+
+def _calcular_chave_natural(row) -> str:
+    """
+    Mesmo hash (SHA-256) que antes era gerado pelo Postgres via
+    `digest('PDSTIC|' || numero || '|' || COALESCE(objeto, linha_acao), 'sha256')`.
+    """
+    identificador = row["objeto"] if pd.notna(row["objeto"]) else row["linha_acao"]
+    texto = f"PDSTIC|{row['numero']}|{identificador or ''}"
+    return hashlib.sha256(texto.encode("utf-8")).hexdigest()
+
+
+def carregar_e_publicar_ouro():
     engine = conectar()
-
-
-def carregar_bronze():
-    engine = conectar()
-
-    # CRIAÇÃO DOS SCHEMAS (Garante que bronze, prata e ouro existam)
-        # -------------------------------------------------------------
-    with engine.begin() as conn:
-        conn.execute(text("CREATE EXTENSION IF NOT EXISTS pgcrypto;"))
-        conn.execute(text("CREATE SCHEMA IF NOT EXISTS bronze;"))
-        conn.execute(text("CREATE SCHEMA IF NOT EXISTS prata;"))
-        conn.execute(text("CREATE SCHEMA IF NOT EXISTS ouro;"))
 
     df = pd.read_excel(CAMINHO_EXCEL, sheet_name="Página1")
     df = df.rename(columns={
@@ -58,107 +79,32 @@ def carregar_bronze():
         "Linha de Ação": "linha_acao",
         "Objeto": "objeto",
         "Área Responsável": "area_responsavel",
-        "Público Alvo": "publico_alvo",
         "Percentual Executado": "percentual_executado",
-        "Comentário": "comentario",
-        "Prazo da Contratação": "prazo_contratacao",
-        "Número do SEI": "numero_sei",
-        "Dotação Orçamentária": "dotacao_orcamentaria",
-        "Orçamento Previsto no PDSTIC": "orcamento_previsto_pdstic",
-        "Dotação Orçamentária da Contratação": "dotacao_orcamentaria_contratacao",
-        "Projeto/Atividade": "projeto_atividade",
-        "Orçamento Previsto no GC": "orcamento_previsto_gc",
-        "Orçamento Liquidado": "orcamento_liquidado",
-        "Observações": "observacoes",
+        "Orçamento Previsto no PDSTIC": "valor_previsto",
+        "Orçamento Liquidado": "valor_realizado",
     })
-    colunas_bronze = [
-        "numero", "linha_acao", "objeto", "area_responsavel", "publico_alvo",
-        "percentual_executado", "comentario", "prazo_contratacao", "numero_sei",
-        "dotacao_orcamentaria", "orcamento_previsto_pdstic",
-        "dotacao_orcamentaria_contratacao", "projeto_atividade",
-        "orcamento_previsto_gc", "orcamento_liquidado", "observacoes",
-    ]
-    df = df[colunas_bronze].dropna(subset=["numero"])
-    df["fonte_arquivo"] = "PDSTIC.xlsx"
-    df.to_sql("pdstic_bruto", engine, schema="bronze", if_exists="replace", index=False)
-    print(f"Bronze: {len(df)} linhas gravadas.")
+    df = df.dropna(subset=["numero"])
 
+    # Garante que percentual/valores sejam numéricos (o Excel às vezes traz texto).
+    df["percentual_executado"] = pd.to_numeric(df["percentual_executado"], errors="coerce")
+    df["valor_previsto"] = pd.to_numeric(df["valor_previsto"], errors="coerce")
+    df["valor_realizado"] = pd.to_numeric(df["valor_realizado"], errors="coerce")
 
-def carregar_prata():
-    engine = conectar()
-    sql_upsert_prata = text("""
-        INSERT INTO prata.indicadores_padrao (
-            indicador, subcategoria, subcategoria_titulo, segmento, item_avaliado,
-            responsavel, status_bruto, evidencia, observacoes,
-            valor_previsto, valor_realizado,
-            chave_natural, hash_conteudo, fonte_arquivo
-        )
-        SELECT
-            'PDSTIC' AS indicador,
-            area_responsavel AS subcategoria,
-            area_responsavel AS subcategoria_titulo,
-            objeto AS segmento,
-            linha_acao AS item_avaliado,
-            area_responsavel AS responsavel,
-            percentual_executado::text AS status_bruto,
-            numero_sei AS evidencia,
-            observacoes,
-            orcamento_previsto_pdstic AS valor_previsto,
-            orcamento_liquidado AS valor_realizado,
-            encode(digest('PDSTIC|' || COALESCE(numero::text, '') || '|' || COALESCE(objeto, linha_acao, ''), 'sha256'), 'hex') AS chave_natural,
-            encode(digest(
-                COALESCE(percentual_executado::text, '') || '|' ||
-                COALESCE(orcamento_liquidado::text, ''),
-                'sha256'
-            ), 'hex') AS hash_conteudo,
-            fonte_arquivo
-        FROM bronze.pdstic_bruto
-        ON CONFLICT (chave_natural) DO UPDATE
-            SET status_bruto     = EXCLUDED.status_bruto,
-                evidencia        = EXCLUDED.evidencia,
-                observacoes      = EXCLUDED.observacoes,
-                valor_previsto   = EXCLUDED.valor_previsto,
-                valor_realizado  = EXCLUDED.valor_realizado,
-                hash_conteudo    = EXCLUDED.hash_conteudo,
-                data_ingestao    = now()
-            WHERE prata.indicadores_padrao.hash_conteudo IS DISTINCT FROM EXCLUDED.hash_conteudo;
-    """)
+    # Monta as colunas finais que a tabela ouro.fato_pdstic espera.
+    df["status"] = df["percentual_executado"].apply(_calcular_status)
+    df["diferenca"] = df["valor_previsto"].fillna(0) - df["valor_realizado"].fillna(0)
+    df["chave_natural"] = df.apply(_calcular_chave_natural, axis=1)
+
+    df_final = df[[
+        "chave_natural", "area_responsavel", "objeto", "linha_acao", "status",
+        "percentual_executado", "valor_previsto", "valor_realizado", "diferenca",
+    ]]
+
     with engine.begin() as conn:
-        conn.execute(sql_upsert_prata)
-    print("Prata: upsert concluído.")
+        conn.execute(text("TRUNCATE ouro.fato_pdstic;"))
+        df_final.to_sql("fato_pdstic", conn, schema="ouro", if_exists="append", index=False)
 
-
-def atualizar_ouro():
-    engine = conectar()
-    sql_atualizar_ouro = text("""
-        TRUNCATE ouro.fato_pdstic;
-        INSERT INTO ouro.fato_pdstic (
-            chave_natural, area_responsavel, objeto, linha_acao, status,
-            percentual_executado, valor_previsto, valor_realizado, diferenca
-        )
-        SELECT
-            chave_natural,
-            subcategoria AS area_responsavel,
-            segmento AS objeto,
-            item_avaliado AS linha_acao,
-            CASE
-                WHEN status_bruto ~ '^[0-9]+(\.[0-9]+)?$' AND status_bruto::numeric >= 1 THEN 'Concluída'
-                WHEN status_bruto ~ '^[0-9]+(\.[0-9]+)?$' AND status_bruto::numeric = 0 THEN 'Não Iniciada'
-                ELSE 'Em Andamento'
-            END AS status,
-            CASE 
-                WHEN status_bruto ~ '^[0-9]+(\.[0-9]+)?$' THEN status_bruto::numeric
-                ELSE NULL
-            END AS percentual_executado,
-            valor_previsto,
-            valor_realizado,
-            COALESCE(valor_previsto, 0) - COALESCE(valor_realizado, 0) AS diferenca
-        FROM prata.indicadores_padrao
-        WHERE indicador = 'PDSTIC';
-    """)
-    with engine.begin() as conn:
-        conn.execute(sql_atualizar_ouro)
-    print("Ouro atualizada.")
+    print(f"Ouro (fato_pdstic) atualizada: {len(df_final)} linhas gravadas.")
 
 
 with DAG(
@@ -169,9 +115,7 @@ with DAG(
     tags=["indicadores", "pdstic"],
 ) as dag:
 
-        tarefa_estrutura = PythonOperator(task_id="garantir_estrutura", python_callable=garantir_estrutura)
-        tarefa_bronze = PythonOperator(task_id="carregar_bronze", python_callable=carregar_bronze)
-        tarefa_prata = PythonOperator(task_id="carregar_prata", python_callable=carregar_prata)
-        tarefa_ouro = PythonOperator(task_id="atualizar_ouro", python_callable=atualizar_ouro)
+    tarefa_estrutura = PythonOperator(task_id="garantir_estrutura", python_callable=garantir_estrutura)
+    tarefa_ouro = PythonOperator(task_id="carregar_e_publicar_ouro", python_callable=carregar_e_publicar_ouro)
 
-        tarefa_estrutura >> tarefa_bronze >> tarefa_prata >> tarefa_ouro
+    tarefa_estrutura >> tarefa_ouro

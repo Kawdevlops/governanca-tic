@@ -1,142 +1,96 @@
+
+
+# Lê a planilha de OT (Orientações Técnicas), transforma tudo em memória com pandas e grava direto na tabela final `ouro.fato_ot`.
+
+import hashlib
 import os
+from datetime import datetime
+
 import pandas as pd
 from sqlalchemy import create_engine, text
+
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from datetime import datetime
 
 CAMINHO_EXCEL = "/opt/airflow/saidas/base_consolidada_validada.xlsx"
 
-def conectar():
-    return create_engine(
-        f"postgresql+psycopg2://{os.environ['DB_ETL_USER']}:{os.environ['DB_ETL_PASSWORD']}"
-        f"@{os.environ['DB_STREAMLIT_HOST']}:{os.environ['DB_STREAMLIT_PORT']}/{os.environ['DB_STREAMLIT_DATABASE']}"
-    )
-
 PASTA_SQL_SETUP = "/opt/airflow/sql_setup"
+
+
 ARQUIVOS_ESTRUTURA = [
-    "schema_bronze_prata_ouro.sql",
-    "tabela_bronze_ot.sql",
-    "tabela_bronze_pdstic.sql",
-    "tabela_prata.sql",
-    "extender_prata_pdstic.sql",
+    "schema_ouro.sql",
     "tabela_ouro.sql",
-    "tabela_ouro_pdstic.sql",
 ]
 
 
+def conectar():
+    return create_engine(
+        f"postgresql+psycopg2://{os.environ['DB_STREAMLIT_USER']}:{os.environ['DB_STREAMLIT_PASSWORD']}"
+        f"@{os.environ['DB_STREAMLIT_HOST']}:{os.environ['DB_STREAMLIT_PORT']}/{os.environ['DB_STREAMLIT_DATABASE']}"
+    )
+
+
+"""Cria o schema `ouro` e a tabela `ouro.fato_ot`, se ainda não existirem."""
+
 def garantir_estrutura():
+    """Cria o schema `ouro` e a tabela `ouro.fato_ot`, se ainda não existirem."""
     engine = conectar()
     with engine.begin() as conn:
+        conn.execute(text("CREATE EXTENSION IF NOT EXISTS pgcrypto;"))
         for nome_arquivo in ARQUIVOS_ESTRUTURA:
             caminho = os.path.join(PASTA_SQL_SETUP, nome_arquivo)
             if not os.path.exists(caminho):
-                print(f"Aviso: {nome_arquivo} não encontrado, pulando.")
-                continue
+                raise FileNotFoundError(
+                    f"Arquivo de estrutura obrigatório não encontrado: {caminho}. "
+                    f"Verifique o volume montado em {PASTA_SQL_SETUP}."
+                )
             with open(caminho, "r", encoding="utf-8") as f:
                 sql = f.read()
             conn.execute(text(sql))
             print(f"Estrutura aplicada: {nome_arquivo}")
-def carregar_bronze():
+
+
+def _calcular_status(row) -> str:
+    """Repete em Python a mesma regra que antes era um CASE WHEN em SQL."""
+    if row["cumprida_totalmente"]:
+        return "Cumprida Totalmente"
+    if row["cumprida_parcialmente"]:
+        return "Cumprida Parcialmente"
+    if row["nao_cumprida"]:
+        return "Não Cumprida"
+    return "Indefinido"
+
+
+def _calcular_chave_natural(row) -> str:
+    texto = f"OT|{row['ot']}|{row['segmento']}|{row['recomendacao']}"
+    return hashlib.sha256(texto.encode("utf-8")).hexdigest()
+
+
+def carregar_e_publicar_ouro():
     engine = conectar()
-    
-    # -------------------------------------------------------------
-    # CRIAÇÃO DOS SCHEMAS (Garante que bronze, prata e ouro existam)
-    # -------------------------------------------------------------
-    with engine.begin() as conn:
-        conn.execute(text("CREATE EXTENSION IF NOT EXISTS pgcrypto;"))
-        conn.execute(text("CREATE SCHEMA IF NOT EXISTS bronze;"))
-        conn.execute(text("CREATE SCHEMA IF NOT EXISTS prata;"))
-        conn.execute(text("CREATE SCHEMA IF NOT EXISTS ouro;"))
 
     df = pd.read_excel(CAMINHO_EXCEL, sheet_name="Sheet1")
     df = df.rename(columns={
         "SEGMENTO": "segmento",
         "RECOMENDACAO": "recomendacao",
-        "PESSOA_CONTATO": "pessoa_contato",
-        "DATA_VERIFICACAO_CUMPRIMENTO": "data_verificacao",
+        "DATA_VERIFICACAO_CUMPRIMENTO": "data_avaliacao",
         "CUMPRIDA_TOTALMENTE": "cumprida_totalmente",
         "CUMPRIDA_PARCIALMENTE": "cumprida_parcialmente",
         "NAO_CUMPRIDA": "nao_cumprida",
-        "EVIDENCIAS_CUMPRIMENTO": "evidencias",
-        "OBSERVACOES": "observacoes",
         "OT": "ot",
         "OT_TITULO": "ot_titulo",
     })
-    colunas_bronze = [
-        "segmento", "recomendacao", "pessoa_contato", "data_verificacao",
-        "cumprida_totalmente", "cumprida_parcialmente", "nao_cumprida",
-        "evidencias", "observacoes", "ot", "ot_titulo",
-    ]
-    df = df[colunas_bronze]
-    df["fonte_arquivo"] = "base_consolidada_validada.xlsx"
-    
-    df.to_sql("ot_bruto", engine, schema="bronze", if_exists="replace", index=False)
-    print(f"Bronze: {len(df)} linhas gravadas.")
 
+    df["status"] = df.apply(_calcular_status, axis=1)
+    df["chave_natural"] = df.apply(_calcular_chave_natural, axis=1)
 
-def carregar_prata():
-    engine = conectar()
-    sql_upsert_prata = text("""
-        INSERT INTO prata.indicadores_padrao (
-            indicador, subcategoria, subcategoria_titulo, segmento, item_avaliado,
-            responsavel, data_avaliacao, status_bruto, evidencia, observacoes,
-            chave_natural, hash_conteudo, fonte_arquivo
-        )
-        SELECT
-            'OT' AS indicador,
-            ot AS subcategoria,
-            ot_titulo AS subcategoria_titulo,
-            segmento,
-            recomendacao AS item_avaliado,
-            pessoa_contato AS responsavel,
-            data_verificacao AS data_avaliacao,
-            CASE
-                WHEN cumprida_totalmente   THEN 'Cumprida Totalmente'
-                WHEN cumprida_parcialmente THEN 'Cumprida Parcialmente'
-                WHEN nao_cumprida          THEN 'Não Cumprida'
-                ELSE 'Indefinido'
-            END AS status_bruto,
-            evidencias AS evidencia,
-            observacoes,
-            encode(digest('OT|' || ot || '|' || segmento || '|' || recomendacao, 'sha256'), 'hex') AS chave_natural,
-            encode(digest(
-                (CASE
-                    WHEN cumprida_totalmente   THEN 'Cumprida Totalmente'
-                    WHEN cumprida_parcialmente THEN 'Cumprida Parcialmente'
-                    WHEN nao_cumprida          THEN 'Não Cumprida'
-                    ELSE 'Indefinido'
-                END) || '|' || COALESCE(data_verificacao::text, ''),
-                'sha256'
-            ), 'hex') AS hash_conteudo,
-            fonte_arquivo
-        FROM bronze.ot_bruto
-        ON CONFLICT (chave_natural) DO UPDATE
-            SET status_bruto   = EXCLUDED.status_bruto,
-                evidencia      = EXCLUDED.evidencia,
-                observacoes    = EXCLUDED.observacoes,
-                data_avaliacao = EXCLUDED.data_avaliacao,
-                hash_conteudo  = EXCLUDED.hash_conteudo,
-                data_ingestao  = now()
-            WHERE prata.indicadores_padrao.hash_conteudo IS DISTINCT FROM EXCLUDED.hash_conteudo;
-    """)
+    df_final = df[["chave_natural", "ot", "ot_titulo", "segmento", "status", "data_avaliacao"]]
+
     with engine.begin() as conn:
-        conn.execute(sql_upsert_prata)
-    print("Prata: upsert concluído.")
+        conn.execute(text("TRUNCATE ouro.fato_ot;"))
+        df_final.to_sql("fato_ot", conn, schema="ouro", if_exists="append", index=False)
 
-
-def atualizar_ouro():
-    engine = conectar()
-    sql_atualizar_ouro = text("""
-        TRUNCATE ouro.fato_ot;
-        INSERT INTO ouro.fato_ot (chave_natural, ot, ot_titulo, segmento, status, data_avaliacao)
-        SELECT chave_natural, subcategoria, subcategoria_titulo, segmento, status_bruto, data_avaliacao
-        FROM prata.indicadores_padrao
-        WHERE indicador = 'OT';
-    """)
-    with engine.begin() as conn:
-        conn.execute(sql_atualizar_ouro)
-    print("Ouro atualizada.")
+    print(f"Ouro (fato_ot) atualizada: {len(df_final)} linhas gravadas.")
 
 
 with DAG(
@@ -147,9 +101,7 @@ with DAG(
     tags=["indicadores", "ot"],
 ) as dag:
 
-        tarefa_estrutura = PythonOperator(task_id="garantir_estrutura", python_callable=garantir_estrutura)
-        tarefa_bronze = PythonOperator(task_id="carregar_bronze", python_callable=carregar_bronze)
-        tarefa_prata = PythonOperator(task_id="carregar_prata", python_callable=carregar_prata)
-        tarefa_ouro = PythonOperator(task_id="atualizar_ouro", python_callable=atualizar_ouro)
+    tarefa_estrutura = PythonOperator(task_id="garantir_estrutura", python_callable=garantir_estrutura)
+    tarefa_ouro = PythonOperator(task_id="carregar_e_publicar_ouro", python_callable=carregar_e_publicar_ouro)
 
-        tarefa_estrutura >> tarefa_bronze >> tarefa_prata >> tarefa_ouro
+    tarefa_estrutura >> tarefa_ouro

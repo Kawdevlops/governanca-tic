@@ -6,10 +6,10 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends curl \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements-streamlit.txt .
+COPY requirements.txt .
 
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip install -r requirements-streamlit.txt
+    pip install -r requirements.txt
 
 COPY streamlit/app.py .
 COPY streamlit/pages ./pages
