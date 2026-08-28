@@ -27,7 +27,7 @@ st.html("""
 
     html, body, [class*="css"] {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     /* MARCA D'ÁGUA - Logo centralizado e grande */
@@ -50,6 +50,7 @@ st.html("""
     }
 
     /* Garante que o conteúdo fique acima da marca d'água */
+
     .main > div {
         position: relative;
         z-index: 1;
@@ -64,7 +65,7 @@ st.html("""
     }
 
     .titulo-hero {
-        font-size: 48px;
+        font-size: 60px;
         font-weight: 900;
         letter-spacing: -0.5px;
         margin: 0 0 14px 0;
@@ -73,13 +74,14 @@ st.html("""
     }
 
     .subtitulo-hero {
-        font-size: 16px;
-        color: var(--gray);
+        font-size: 20px;
+        color: --line;
         max-width: 600px;
         line-height: 1.7;
     }
 
     /* Menu lateral de navegação (Home / OT / PDSTIC / ...) */
+
     [data-testid="stSidebarNav"] {
         padding-top: 16px;
     }
@@ -93,7 +95,7 @@ st.html("""
         transition: background 0.15s ease, color 0.15s ease;
     }
     [data-testid="stSidebarNav"] a:hover {
-        background: rgba(46, 90, 172, 0.15);
+        background: var(--blue);
         color: var(--blue);
     }
     [data-testid="stSidebarNav"] a[aria-current="page"] {
@@ -102,6 +104,7 @@ st.html("""
     }
 
     /* Cards melhorados */
+
     .card-modern {
         background: white;
         border-radius: 16px;
@@ -119,6 +122,7 @@ st.html("""
     }
 
     /* Barra superior colorida nos cards */
+
     .card-modern::before {
         content: '';
         position: absolute;
@@ -138,7 +142,7 @@ st.html("""
         margin-bottom: 8px;
     }
     .card-icon {
-        font-size: 32px;
+        font-size: 50px;
         line-height: 1;
     }
     .card-title {
@@ -148,7 +152,7 @@ st.html("""
         color: #1F3E7A;
     }
     .card-subtitle {
-        font-size: 14px;
+        font-size: 20px;
         color: #666;
         margin-bottom: 4px;
     }
@@ -157,7 +161,7 @@ st.html("""
         display: inline-flex;
         align-items: center;
         gap: 6px;
-        font-size: 13px;
+        font-size: 14px;
         text-transform: uppercase;
         letter-spacing: .06em;
         font-weight: 800;
@@ -177,11 +181,12 @@ st.html("""
     .card-description {
         color: #555;
         line-height: 1.7;
-        font-size: 15px;
+        font-size: 16px;
         margin-bottom: 16px;
     }
 
     /* Lista de itens do card */
+
     .feature-list {
         margin: 12px 0 18px 0;
         padding: 0;
@@ -190,7 +195,7 @@ st.html("""
     .feature-list li {
         padding: 6px 0;
         color: #444;
-        font-size: 14px;
+        font-size: 15px;
         display: flex;
         align-items: center;
         gap: 8px;
@@ -205,6 +210,7 @@ st.html("""
     }
 
     /* Badge de informação */
+    
     .info-badge {
         display: inline-block;
         background: #f0f4ff;
@@ -266,10 +272,6 @@ st.html("""
     }
     </style>
 """)
-
-# MARCA D'ÁGUA - Logo centralizado e grande
-# Caminho absoluto baseado no arquivo, não na pasta de onde o comando é rodado
-# (home.py está em streamlit/pages/, então sobe 2 níveis até streamlit/)
 
 CAMINHO_LOGO = Path(__file__).resolve().parent.parent / "assets" / "marcadagua.png"
 
