@@ -124,6 +124,7 @@ mysql/logs/
 backups/
 *.sql
 !mariadb/init/*.sql
+!postgres/init/*.sql
 *.bak
 *.dump
 

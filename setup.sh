@@ -718,6 +718,10 @@ preencher_se_vazio "mariadb/.env" "MYSQL_ROOT_PASSWORD" \
     "python3 -c \"import secrets; print(secrets.token_urlsafe(24))\""
 preencher_se_vazio "bookstack/.env" "BOOKSTACK_APP_KEY" \
     "python3 -c \"import secrets, base64; print('base64:' + base64.b64encode(secrets.token_bytes(32)).decode())\""
+preencher_se_vazio "airflow/.env" "DB_ETL_USER" \
+    "echo airflow_etl"
+preencher_se_vazio "airflow/.env" "DB_ETL_PASSWORD" \
+    "python3 -c \"import secrets; print(secrets.token_urlsafe(24))\""
 
 echo ""
 
@@ -795,6 +799,10 @@ FASTAPI_ENV=development
 DB_STREAMLIT_USER=${DB_STREAMLIT_USER}
 DB_STREAMLIT_PASSWORD=${DB_STREAMLIT_PASSWORD}
 DB_STREAMLIT_DATABASE=${DB_STREAMLIT_DATABASE}
+
+# ETL (usuário de escrita nas tabelas ouro, usado pelas DAGs)
+DB_ETL_USER=${DB_ETL_USER}
+DB_ETL_PASSWORD=${DB_ETL_PASSWORD}
 EOF
 
 echo -e "${GREEN}✓${NC} .env central criado com sucesso!"
