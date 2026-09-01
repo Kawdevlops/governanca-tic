@@ -13,6 +13,7 @@ from style_lateral import aplicar_estilo_lateral
 
 aplicar_estilo_lateral()
 
+
 PASTA_PROJETO = Path(__file__).resolve().parent.parent
 CAMINHO_LOGO = PASTA_PROJETO / "assets" / "marcadagua.png"
 
@@ -20,6 +21,7 @@ CAMINHO_LOGO = PASTA_PROJETO / "assets" / "marcadagua.png"
 def logo_em_base64(caminho: Path) -> str:
     if not caminho.exists():
         return ""
+
     try:
         with open(caminho, "rb") as f:
             return base64.b64encode(f.read()).decode("utf-8")
@@ -30,16 +32,428 @@ def logo_em_base64(caminho: Path) -> str:
 LOGO_BASE64 = logo_em_base64(CAMINHO_LOGO)
 
 
-def carregar_css() -> str:
-    caminho_css = PASTA_PROJETO / "assets" / "style.css"
-    with open(caminho_css, "r", encoding="utf-8") as f:
-        return f.read()
+# CSS
+
+CSS_TEMPLATE = """
+:root{
+  --navy:#12203D;
+  --blue:#2E5AAC;
+  --blue-dark:#1F3E7A;
+  --orange:#E8813A;
+  --yellow:#F6D64A;
+  --beige:#F2E9D8;
+  --paper:#FFFFFF;
+  --gray:#5B6373;
+  --line:#E7E9EF;
+}
+
+html, body{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+body{
+  background:transparent;
+}
+
+.painel-conformidade *{ box-sizing:border-box;}
+
+.painel-conformidade{
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',
+  Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  color:var(--navy);
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+.painel-conformidade .deck{
+  width:100%;
+  max-width:1450px;
+  margin:0 auto;
+  padding:16px 12px 48px;
+}
+
+.painel-conformidade .slide{
+  background:var(--paper);
+  border-radius:18px;
+  padding:42px 46px;
+  margin-bottom:32px;
+  box-shadow:0 2px 18px rgba(18,32,61,0.08);
+  position:relative;
+  overflow:hidden;
+}
 
 
-CSS_TEMPLATE = carregar_css()
+/* 
+   PRINCIPAL =================================================================
+*/
+
+.painel-conformidade .grid-2{
+  display:grid;
+  grid-template-columns:1.10fr 1fr;
+  gap:36px;
+  align-items:start;
+}
+
+.painel-conformidade .stat-row{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:18px;
+}
+
+.painel-conformidade .stat-big{
+  font-size:62px;
+  font-weight:900;
+  color:var(--navy);
+  line-height:1.6;
+}
+
+.painel-conformidade .stat-arrow{
+  color:var(--orange);
+  font-size:22px;
+  font-weight:900;
+}
+
+.painel-conformidade .stat-branch{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-left:6px;
+}
+
+.painel-conformidade .stat-branch .b{
+  display:flex;
+  align-items:baseline;
+  gap:8px;
+}
+
+.painel-conformidade .stat-branch .n{
+  font-size:30px;
+  font-weight:900;
+  color:var(--blue);
+}
+
+.painel-conformidade .stat-branch .l{
+  font-size:18px;
+  color:var(--gray);
+  max-width:220px;
+  line-height:1.6;
+}
+
+/* 
+   MARCA D'ÁGUA Padrão =================================================================
+ */
+
+.painel-conformidade .slide::before{
+  content:"";
+  position:absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+
+  background-image:url("data:image/png;base64,{{LOGO_BASE64}}");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+
+  opacity:0.10;
+  pointer-events:none;
+  z-index:0;
+}
+
+/*  
+   TEXTOS PADRÃOo =================================================================
+*/
+
+.painel-conformidade .tag{
+  display:inline-block;
+  font-size:16px;
+  letter-spacing:.14em;
+  font-weight:800;
+  color:var(--blue-dark);
+  background:#EAF0FB;
+  border-radius:26px;
+  padding:6px 15px;
+  margin-bottom:14px;
+  text-transform:uppercase;
+}
+
+.painel-conformidade h1{
+  font-size:36px;
+  line-height:1.08;
+  font-weight:900;
+  margin:0 0 4px;
+  letter-spacing:-0.5px;
+}
+
+.painel-conformidade h1 span{
+  color:var(--blue);
+}
+
+.painel-conformidade .lead{
+  color:var(--gray);
+  font-size:18px;
+  line-height:1.8;
+  max-width:480px;
+  margin-top:16px;
+}
+
+
+/* 
+   KPIs PADRÃO =================================================================
+*/
+
+.painel-conformidade .kpi-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:32px;
+}
+
+.painel-conformidade .kpi{
+  background:#F7F9FC;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:20px 18px;
+  position:relative;
+  overflow:hidden;
+}
+
+.painel-conformidade .kpi .ytag{
+  display:inline-block;
+  background:var(--yellow);
+  color:var(--navy);
+  font-weight:800;
+  font-size:14px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  border-radius:6px;
+  padding:3px 9px;
+  margin-bottom:10px;
+}
+
+.painel-conformidade .kpi .num{
+  font-size:32px;
+  font-weight:900;
+  line-height:1;
+}
+
+.painel-conformidade .kpi .cap{
+  font-size:12px;
+  color:var(--gray);
+  margin-top:6px;
+  line-height:1.4;
+}
+
+.painel-conformidade .kpi.total .num{
+  color:var(--blue);
+}
+
+.painel-conformidade .kpi.parcial .num{
+  color:var(--orange);
+}
+
+.painel-conformidade .kpi.nao .num{
+  color:#C63C3C;
+}
+
+
+/* 
+   BARRA =================================================================
+*/
+.painel-conformidade .barbox{
+  margin-top:10px;
+}
+
+.painel-conformidade .bar-track{
+  background:#EEF1F6;
+  border-radius:8px;
+  height:10px;
+  overflow:hidden;
+  display:flex;
+}
+
+.painel-conformidade .bar-fill{
+  height:100%;
+}
+
+.painel-conformidade .legend{
+  display:flex;
+  column-gap:40px;
+  font-size:12px;
+  color:var(--gray);
+  margin-top:18px;
+  flex-wrap:wrap;
+}
+
+.painel-conformidade .dot{
+  display:inline-block;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  margin-right:5px;
+}
+
+
+/* 
+   CAIXA DAS 3 OTs =================================================================
+*/
+.painel-conformidade .ot-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  margin-top:10px;
+}
+
+.painel-conformidade .ot-card{
+  background:var(--beige);
+  border-radius:14px;
+  padding:30px 28px;
+}
+
+.painel-conformidade .ot-card h3{
+  font-size:19px;
+  margin:0 0 8px;
+  font-weight:900;
+}
+
+.painel-conformidade .ot-card .sub{
+  font-size:14px;
+  color:var(--gray);
+  margin-bottom:18px;
+}
+
+.painel-conformidade .ot-card .pct{
+  font-size:48px;
+  font-weight:900;
+  color:var(--blue-dark);
+}
+
+.painel-conformidade .ot-card .pctcap{
+  font-size:14px;
+  color:var(--gray);
+  margin-bottom:18px;
+}
+
+.painel-conformidade .mini-row{
+  display:flex;
+  justify-content:space-between;
+  font-size:15px;
+  padding:16px 0;
+  border-top:1px solid rgba(18,32,61,0.08);
+}
+
+.painel-conformidade .mini-row b{
+  color:var(--navy);
+}
+
+
+/*
+   TABELA =================================================================
+*/
+.painel-conformidade table.seg{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:18px;
+  font-size:16px;
+}
+
+.painel-conformidade table.seg th{
+  text-align:left;
+  font-size:16px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--gray);
+  border-bottom:2px solid var(--navy);
+  padding:12px 14px;
+}
+
+.painel-conformidade table.seg td{
+  padding:16px;
+  border-bottom:1px solid var(--line);
+}
+
+.painel-conformidade table.seg tr:hover td{
+  background:#F7F9FC;
+}
+
+
+/*
+   LEGENDA DA TABELA  =================================================================
+*/
+.painel-conformidade .pill{
+  display:inline-block;
+  padding:3px 10px;
+  border-radius:20px;
+  font-size:11px;
+  font-weight:800;
+}
+
+.painel-conformidade .pill.ot007{
+  background:#E9F0FF;
+  color:var(--blue-dark);
+}
+
+.painel-conformidade .pill.ot013{
+  background:#FFF1E3;
+  color:#B5601C;
+}
+
+.painel-conformidade .pill.ot014{
+  background:#EAF7EE;
+  color:#1D7A3C;
+}
+
+
+/* 
+   RODAPÉ
+ */
+
+.painel-conformidade .footnote{
+  font-size:12px;
+  color:var(--gray);
+  border-top:1px dashed var(--line);
+  margin-top:32px;
+  padding-top:16px;
+}
+
+.painel-conformidade .section-divider{
+  border-top:1px solid var(--line);
+  margin:8px 0 0;
+}
+
+
+/* 
+   RESPONSIVO =================================================================
+ */
+
+@media (max-width:820px){
+
+  .painel-conformidade .grid-2,
+  .painel-conformidade .ot-grid,
+  .painel-conformidade .kpi-cards{
+    grid-template-columns:1fr;
+  }
+
+  .painel-conformidade .slide{
+    padding:28px 24px;
+  }
+
+  .painel-conformidade .slide::before{
+    width:400px;
+    height:400px;
+  }
+}
+"""
+
+# HTML
 
 HTML_TEMPLATE = """
-<div class="painel-conformidade pagina-ot">
+<div class="painel-conformidade">
 
 <div class="deck">
 
@@ -94,32 +508,25 @@ HTML_TEMPLATE = """
 
   </div>
 
-  <div class="resumo-executivo">{{RESUMO_EXECUTIVO}}</div>
 
-  <div class="kpi-cards" style="grid-template-columns: repeat(4, 1fr);">
+  <div class="kpi-cards">
 
     <div class="kpi total">
       <span class="ytag">Cumprida Totalmente</span>
       <div class="num">{{TOTALMENTE}}</div>
-      <div class="cap">{{PCT_TOTALMENTE}}% das recomendações</div>
+      <div class="cap">{{PCT_TOTALMENTE}}% das recomendações auditadas</div>
     </div>
 
     <div class="kpi parcial">
       <span class="ytag">Cumprida Parcialmente</span>
       <div class="num">{{PARCIAL}}</div>
-      <div class="cap">{{PCT_PARCIAL}}% — em andamento</div>
+      <div class="cap">{{PCT_PARCIAL}}% — em andamento (peso 0,5)</div>
     </div>
 
     <div class="kpi nao">
       <span class="ytag">Não Cumprida</span>
       <div class="num">{{NAO}}</div>
-      <div class="cap">{{PCT_NAO}}% — requer ação</div>
-    </div>
-
-    <div class="kpi evidencia" style="border-left: 4px solid var(--navy, #1E293B);">
-      <span class="ytag">Com Evidência Documentada</span>
-      <div class="num">{{EVIDENCIA_QTD}}</div>
-      <div class="cap">{{PCT_EVIDENCIA}}% do total auditado</div>
+      <div class="cap">{{PCT_NAO}}% — requer plano de ação</div>
     </div>
 
   </div>
@@ -169,10 +576,6 @@ HTML_TEMPLATE = """
         Indefinida
       </span>
 
-      <span style="margin-left:auto;font-weight:800;color:var(--navy);">
-        Índice de cumprimento oficial: {{INDICE_CUMPRIMENTO}}%
-      </span>
-
     </div>
 
   </div>
@@ -206,6 +609,37 @@ HTML_TEMPLATE = """
     <br><br>
   </div>
 
+
+  <span class="tag">
+    Prioridade de ação
+  </span>
+
+  <h1 style="font-size:32px;">
+    <br>
+    SEGMENTOS
+    <span>MAIS CRÍTICOS</span>
+  </h1>
+
+  <p class="lead" style="max-width:640px;">
+    Segmentos com maior número de recomendações não cumpridas,
+    bons candidatos a plano de ação imediato.
+  </p>
+
+  <table class="seg">
+
+    <tr>
+      <th>OT</th>
+      <th>Segmento</th>
+      <th>Total</th>
+      <th>Não cumprida</th>
+      <th>% Cumprimento</th>
+    </tr>
+
+    {{LINHAS_SEGMENTOS}}
+
+  </table>
+
+
   <div class="footnote">
     Governança DGTIC/SMSUB 2026
   </div>
@@ -216,62 +650,67 @@ HTML_TEMPLATE = """
 </div>
 """
 
+# DADOS
+# Fonte: Postgres (banco indicadores_tic, tabela ouro.fato_ot).
+# Nada de Excel/upload dentro do app — quem alimenta essa tabela é a DAG
+# carga_indicadores_ot (ou o script streamlit/cargas/carregar_ot.py, na mão).
 
 @st.cache_data
 def carregar_dados() -> pd.DataFrame:
     engine = create_engine(
         f"postgresql+psycopg2://"
-        f"{os.environ.get('DB_STREAMLIT_USER', 'postgres')}:{os.environ.get('DB_STREAMLIT_PASSWORD', '')}"
-        f"@{os.environ.get('DB_STREAMLIT_HOST', 'localhost')}:{os.environ.get('DB_STREAMLIT_PORT', '5432')}"
-        f"/{os.environ.get('DB_STREAMLIT_DATABASE', 'indicadores_tic')}"
+        f"{os.environ['DB_STREAMLIT_USER']}:{os.environ['DB_STREAMLIT_PASSWORD']}"
+        f"@{os.environ['DB_STREAMLIT_HOST']}:{os.environ['DB_STREAMLIT_PORT']}"
+        f"/{os.environ['DB_STREAMLIT_DATABASE']}"
     )
 
     df = pd.read_sql("SELECT * FROM ouro.fato_ot", engine)
 
-    df = df.rename(
-        columns={
-            "ot": "OT",
-            "ot_titulo": "OT_TITULO",
-            "segmento": "SEGMENTO",
-            "status": "STATUS",
-            "pessoa_contato": "PESSOA_CONTATO",
-            "tem_evidencia": "TEM_EVIDENCIA",
-        }
-    )
+    df = df.rename(columns={
+        "ot": "OT",
+        "ot_titulo": "OT_TITULO",
+        "segmento": "SEGMENTO",
+        "status": "STATUS",
+    })
 
     df["SEGMENTO"] = df["SEGMENTO"].astype(str).str.strip()
-
-    if "TEM_EVIDENCIA" not in df.columns:
-        df["TEM_EVIDENCIA"] = False
 
     return df
 
 
 def kpis_gerais(df: pd.DataFrame) -> dict:
+
     total = len(df)
     cont = df["STATUS"].value_counts()
 
-    totalmente = int(cont.get("Cumprida Totalmente", 0))
-    parcial = int(cont.get("Cumprida Parcialmente", 0))
-    nao = int(cont.get("Não Cumprida", 0))
-    indefinido = total - (totalmente + parcial + nao)
+    totalmente = int(
+        cont.get("Cumprida Totalmente", 0)
+    )
 
-    evidencia_qtd = int(df["TEM_EVIDENCIA"].astype(bool).sum())
+    parcial = int(
+        cont.get("Cumprida Parcialmente", 0)
+    )
 
-    if total > 0:
+    nao = int(
+        cont.get("Não Cumprida", 0)
+    )
+
+    indefinido = total - (
+        totalmente + parcial + nao
+    )
+
+    if total:
         pct_totalmente = totalmente / total * 100
         pct_parcial = parcial / total * 100
         pct_nao = nao / total * 100
         pct_indefinido = indefinido / total * 100
-        pct_evidencia = evidencia_qtd / total * 100
-        # CORREÇÃO DA FÓRMULA OFICIAL: peso 0,5 para cumprida parcialmente
         indice = ((totalmente + (0.5 * parcial)) / total) * 100
+        
     else:
         pct_totalmente = 0
         pct_parcial = 0
         pct_nao = 0
         pct_indefinido = 0
-        pct_evidencia = 0
         indice = 0
 
     return {
@@ -280,40 +719,16 @@ def kpis_gerais(df: pd.DataFrame) -> dict:
         "parcial": parcial,
         "nao": nao,
         "indefinido": indefinido,
-        "evidencia_qtd": evidencia_qtd,
         "pct_totalmente": pct_totalmente,
         "pct_parcial": pct_parcial,
         "pct_nao": pct_nao,
         "pct_indefinido": pct_indefinido,
-        "pct_evidencia": pct_evidencia,
         "indice_cumprimento": indice,
     }
 
 
-def gerar_resumo_executivo(k: dict, tab_seg: pd.DataFrame) -> str:
-    pior = tab_seg.iloc[0] if len(tab_seg) else None
-
-    if pior is not None and pior["Não Cumprida"] > 0:
-        alerta = (
-            f'O segmento com mais pendências é <strong>{pior["SEGMENTO"]}</strong> '
-            f'(<strong>{pior["OT"]}</strong>), com '
-            f'<strong>{int(pior["Não Cumprida"])} recomendação(ões) não cumprida(s)</strong>.'
-        )
-    else:
-        alerta = "Nenhum segmento crítico identificado no momento."
-
-    return (
-        f'Das <strong>{k["total"]} recomendações avaliadas</strong>, '
-        f'<strong>{k["totalmente"]} ({k["pct_totalmente"]:.0f}%)</strong> foram cumpridas totalmente, '
-        f'<strong>{k["parcial"]}</strong> parcialmente e '
-        f'<strong>{k["nao"]}</strong> ainda não foram cumpridas. '
-        f'O índice oficial de cumprimento ponderado está em '
-        f'<strong>{k["indice_cumprimento"]:.1f}%</strong> (considerando peso 0,5 para itens parciais). '
-        f'Há evidência documentada em <strong>{k["evidencia_qtd"]} ({k["pct_evidencia"]:.0f}%)</strong> dos casos. {alerta}'
-    )
-
-
 def resumo_por_ot(df: pd.DataFrame) -> pd.DataFrame:
+
     tab = (
         df.groupby(["OT", "OT_TITULO"])["STATUS"]
         .value_counts()
@@ -322,30 +737,35 @@ def resumo_por_ot(df: pd.DataFrame) -> pd.DataFrame:
             columns=[
                 "Cumprida Totalmente",
                 "Cumprida Parcialmente",
-                "Não Cumprida",
+                "Não Cumprida"
             ],
-            fill_value=0,
+            fill_value=0
         )
         .reset_index()
     )
 
     tab["Total"] = tab[
-        ["Cumprida Totalmente", "Cumprida Parcialmente", "Não Cumprida"]
+        [
+            "Cumprida Totalmente",
+            "Cumprida Parcialmente",
+            "Não Cumprida"
+        ]
     ].sum(axis=1)
 
-    # Cálculo por OT também ajustado
     tab["% Cumprimento"] = (
-        (tab["Cumprida Totalmente"] + (0.5 * tab["Cumprida Parcialmente"]))
-        / tab["Total"]
-        * 100
-    )
+    (tab["Cumprida Totalmente"] + (0.5 * tab["Cumprida Parcialmente"]))
+    / tab["Total"]
+    * 100
+  )
 
     return tab.sort_values("OT").reset_index(drop=True)
 
 
 def segmentos_criticos(
-    df: pd.DataFrame, top_n: int = 7
+    df: pd.DataFrame,
+    top_n: int = 7
 ) -> pd.DataFrame:
+
     tab = (
         df.groupby(["OT", "SEGMENTO"])["STATUS"]
         .value_counts()
@@ -354,43 +774,62 @@ def segmentos_criticos(
             columns=[
                 "Cumprida Totalmente",
                 "Cumprida Parcialmente",
-                "Não Cumprida",
+                "Não Cumprida"
             ],
-            fill_value=0,
+            fill_value=0
         )
         .reset_index()
     )
 
     tab["Total"] = tab[
-        ["Cumprida Totalmente", "Cumprida Parcialmente", "Não Cumprida"]
+        [
+            "Cumprida Totalmente",
+            "Cumprida Parcialmente",
+            "Não Cumprida"
+        ]
     ].sum(axis=1)
 
     tab["% Cumprimento"] = (
-        (tab["Cumprida Totalmente"] + (0.5 * tab["Cumprida Parcialmente"]))
-        / tab["Total"]
-        * 100
-    )
+    (tab["Cumprida Totalmente"] + (0.5 * tab["Cumprida Parcialmente"]))
+    / tab["Total"]
+    * 100
+  ) 
 
     tab = tab.sort_values(
-        ["Não Cumprida", "% Cumprimento"], ascending=[False, True]
+        ["Não Cumprida", "% Cumprimento"],
+        ascending=[False, True]
     )
 
     return tab.head(top_n).reset_index(drop=True)
 
+# HTML DINÂMICO
 
-OTS = {"OT007": "ot007", "OT013": "ot013", "OT014": "ot014"}
+OTS = {
+    "OT007": "ot007",
+    "OT013": "ot013",
+    "OT014": "ot014"
+}
 
 
-def montar_branch_ot(tab_ot: pd.DataFrame, indefinido: int) -> str:
+def montar_branch_ot(
+    tab_ot: pd.DataFrame,
+    indefinido: int
+) -> str:
+
     linhas = []
+
     for _, row in tab_ot.iterrows():
-        nome_curto = str(row["OT_TITULO"]).split(" - ")[-1]
+
+        nome_curto = str(
+            row["OT_TITULO"]
+        ).split(" - ")[-1]
+
         linhas.append(
             f'<div class="b">'
             f'<span class="stat-arrow">↳</span>'
             f'<span class="n">{int(row["Total"])}</span>'
             f'<span class="l">{row["OT"]} — {nome_curto}</span>'
-            f"</div>"
+            f'</div>'
         )
 
     if indefinido:
@@ -399,103 +838,173 @@ def montar_branch_ot(tab_ot: pd.DataFrame, indefinido: int) -> str:
             f'<span class="stat-arrow">↳</span>'
             f'<span class="n">{indefinido}</span>'
             f'<span class="l">Sem status definido</span>'
-            f"</div>"
+            f'</div>'
         )
 
     return "\n".join(linhas)
 
 
 def montar_cards_ot(tab_ot: pd.DataFrame) -> str:
+
     blocos = []
+
     for _, row in tab_ot.iterrows():
-        nome_curto = str(row["OT_TITULO"]).split(" - ")[-1]
-        blocos.append(
-            f"""
+
+        nome_curto = str(
+            row["OT_TITULO"]
+        ).split(" - ")[-1]
+
+        blocos.append(f"""
         <div class="ot-card">
+
           <h3>{row['OT']} · {nome_curto}</h3>
+
           <div class="sub">
             {int(row['Total'])} recomendações avaliadas
           </div>
+
           <div class="pct">
             {row['% Cumprimento']:.1f}%
           </div>
+
           <div class="pctcap">
-            índice ponderado (total + 0.5 × parcial)
+            índice ponderado (peso 0,5 parcial)
           </div>
+
           <div class="mini-row">
             <span>Cumprida totalmente</span>
             <b>{int(row['Cumprida Totalmente'])}</b>
           </div>
+
           <div class="mini-row">
             <span>Cumprida parcialmente</span>
             <b>{int(row['Cumprida Parcialmente'])}</b>
           </div>
+
           <div class="mini-row">
             <span>Não cumprida</span>
             <b>{int(row['Não Cumprida'])}</b>
           </div>
+
         </div>
-        """
-        )
+        """)
+
     return "\n".join(blocos)
 
 
-def preencher_template(html_template: str, df: pd.DataFrame) -> str:
+def montar_linhas_segmentos(
+    tab_seg: pd.DataFrame
+) -> str:
+
+    linhas = []
+
+    for _, row in tab_seg.iterrows():
+
+        classe = OTS.get(
+            row["OT"],
+            "ot007"
+        )
+
+        linhas.append(
+            f'<tr>'
+            f'<td><span class="pill {classe}">{row["OT"]}</span></td>'
+            f'<td>{row["SEGMENTO"]}</td>'
+            f'<td>{int(row["Total"])}</td>'
+            f'<td>{int(row["Não Cumprida"])}</td>'
+            f'<td>{row["% Cumprimento"]:.1f}%</td>'
+            f'</tr>'
+        )
+
+    return "\n".join(linhas)
+
+
+def preencher_template(
+    html_template: str,
+    df: pd.DataFrame
+) -> str:
+
     k = kpis_gerais(df)
     tab_ot = resumo_por_ot(df)
     tab_seg = segmentos_criticos(df)
 
     substituicoes = {
         "{{TOTAL}}": str(k["total"]),
-        "{{BRANCH_OT}}": montar_branch_ot(tab_ot, k["indefinido"]),
+        "{{BRANCH_OT}}": montar_branch_ot(
+            tab_ot,
+            k["indefinido"]
+        ),
         "{{TOTALMENTE}}": str(k["totalmente"]),
         "{{PARCIAL}}": str(k["parcial"]),
         "{{NAO}}": str(k["nao"]),
-        "{{EVIDENCIA_QTD}}": str(k["evidencia_qtd"]),
         "{{PCT_TOTALMENTE}}": f'{k["pct_totalmente"]:.1f}',
         "{{PCT_PARCIAL}}": f'{k["pct_parcial"]:.1f}',
         "{{PCT_NAO}}": f'{k["pct_nao"]:.1f}',
         "{{PCT_INDEFINIDO}}": f'{k["pct_indefinido"]:.1f}',
-        "{{PCT_EVIDENCIA}}": f'{k["pct_evidencia"]:.1f}',
         "{{INDICE_CUMPRIMENTO}}": f'{k["indice_cumprimento"]:.1f}',
         "{{CARDS_OT}}": montar_cards_ot(tab_ot),
-        "{{RESUMO_EXECUTIVO}}": gerar_resumo_executivo(k, tab_seg),
+        "{{LINHAS_SEGMENTOS}}": montar_linhas_segmentos(tab_seg),
     }
 
     for chave, valor in substituicoes.items():
-        html_template = html_template.replace(chave, valor)
+        html_template = html_template.replace(
+            chave,
+            valor
+        )
 
     return html_template
 
-
-if st.sidebar.button("🔄 Atualizar dados"):
-    st.cache_data.clear()
+# STREAMLIT
 
 df = carregar_dados()
 
-if not LOGO_BASE64:
-    st.sidebar.code(str(CAMINHO_LOGO))
+# HTML
 
-conteudo = preencher_template(HTML_TEMPLATE, df)
-css_final = CSS_TEMPLATE.replace("{{LOGO_BASE64}}", LOGO_BASE64)
+conteudo = preencher_template(
+    HTML_TEMPLATE,
+    df
+)
+
+
+css_final = CSS_TEMPLATE.replace(
+    "{{LOGO_BASE64}}",
+    LOGO_BASE64
+)
+
 
 pagina_html = f"""
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
+
 <style>
+
 body {{
   margin:0;
   background:transparent;
 }}
+
 {css_final}
+
 </style>
+
 </head>
+
 <body>
+
 {conteudo}
+
 </body>
+
 </html>
 """
 
-components.html(pagina_html, height=2400, scrolling=True)
+
+components.html(
+    pagina_html,
+    height=2400,
+    scrolling=True
+)
+
